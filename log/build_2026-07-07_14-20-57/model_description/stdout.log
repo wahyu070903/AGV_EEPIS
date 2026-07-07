@@ -1,0 +1,62 @@
+running develop
+running egg_info
+creating model_description.egg-info
+writing model_description.egg-info/PKG-INFO
+writing dependency_links to model_description.egg-info/dependency_links.txt
+writing requirements to model_description.egg-info/requires.txt
+writing top-level names to model_description.egg-info/top_level.txt
+writing manifest file 'model_description.egg-info/SOURCES.txt'
+reading manifest file 'model_description.egg-info/SOURCES.txt'
+writing manifest file 'model_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/lib/python3.12/site-packages/model-description.egg-link (link to .)
+
+Installed /home/orsted-793/Documents/AGV_EEPIS/build/model_description
+running symlink_data
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/ament_index
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/ament_index/resource_index
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/ament_index/resource_index/packages
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/resource/model_description -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/ament_index/resource_index/packages
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/package.xml -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/launch
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/launch/gazebo.launch.py -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/launch
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/launch/agv_spawn.launch.py -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/launch
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/launch/agv_world.launch.py -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/launch
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/launch/display.launch.py -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/launch
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/launch/state_publisher.launch.py -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/launch
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/urdf
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/urdf/materials.xacro -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/urdf
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/urdf/model.xacro -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/urdf
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/urdf/model.gazebo -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/urdf
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/urdf/camera.xacro -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/urdf
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/urdf/model.ros2control -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/urdf
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/r_caster_wheel_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/stacker_slider_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/l_caster_wheel_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/steer_head_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/l_wheel_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/stacker_fork_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/r_static_wheel_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/r_caster_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/base_link.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/steering_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/l_caster_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/l_static_wheel_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/meshes/r_wheel_1.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/meshes
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/config
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/config/ros_gz_bridge_gazebo.yaml -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/config
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/config/gazebo.rviz -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/config
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/config/display.rviz -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/config
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/params
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/params/agv_bridge.yaml -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/params
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/model.sdf -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world
+creating /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/Asphalt010_1K_Color.jpg -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/Rough_Square_Concrete_Block.jpg -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/warehouse.dae -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/Tape001_1K_Color.png -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/warehouse_colision.stl -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/Terrazzo005_1K_Color.jpg -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes
+symbolically linking /home/orsted-793/Documents/AGV_EEPIS/build/model_description/world/meshes/ground.png -> /home/orsted-793/Documents/AGV_EEPIS/install/model_description/share/model_description/world/meshes

@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+bringup/__init__.py
+bringup.egg-info/PKG-INFO
+bringup.egg-info/SOURCES.txt
+bringup.egg-info/dependency_links.txt
+bringup.egg-info/requires.txt
+bringup.egg-info/top_level.txt
+bringup.egg-info/zip-safe
+resource/bringup
