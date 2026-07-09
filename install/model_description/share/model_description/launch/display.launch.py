@@ -1,1 +1,0 @@
-/home/orsted-793/Documents/AGV_EEPIS/build/model_description/launch/display.launch.py

@@ -1,20 +1,14 @@
 
 import os
-
+import xacro
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument,AppendEnvironmentVariable
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    urdf_path = os.path.join(
-        get_package_share_directory('model_description'),
-        'urdf',
-        'model.xacro'
-    )
-    
     # Launch configuration variables specific to simulation
     x_pose = LaunchConfiguration('x_pose', default='0.0')
     y_pose = LaunchConfiguration('y_pose', default='0.0')
@@ -33,7 +27,7 @@ def generate_launch_description():
         executable='create',
         arguments=[
             '-name', 'AGV_MODEL',
-            '-file', urdf_path,
+            '-topic', 'robot_description',
             '-x', x_pose,
             '-y', y_pose,
             '-z', '0.01'
@@ -55,13 +49,6 @@ def generate_launch_description():
             '-p',
             f'config_file:={bridge_params}',
         ],
-        output='screen',
-    )
-
-    start_gazebo_ros_image_bridge_cmd = Node(
-        package='ros_gz_image',
-        executable='image_bridge',
-        arguments=['/camera/image_raw'],
         output='screen',
     )
     ld = LaunchDescription()

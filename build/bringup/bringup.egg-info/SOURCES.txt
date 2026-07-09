@@ -8,4 +8,6 @@ bringup.egg-info/dependency_links.txt
 bringup.egg-info/requires.txt
 bringup.egg-info/top_level.txt
 bringup.egg-info/zip-safe
+launch/robot.launch.py
+launch/simulation.launch.py
 resource/bringup

@@ -5,23 +5,22 @@ from launch.actions import AppendEnvironmentVariable, IncludeLaunchDescription
 from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
-
+from launch.actions import SetEnvironmentVariable
+from launch.actions import LogInfo
 
 def generate_launch_description():
     launch_file_dir = os.path.join(get_package_share_directory('model_description'), 'launch')
     ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    x_pose      = LaunchConfiguration('x_pose',      default='-2.0')
-    y_pose      = LaunchConfiguration('y_pose',       default='-0.5')
+    x_pose      = LaunchConfiguration('x_pose',      default='-8.0')
+    y_pose      = LaunchConfiguration('y_pose',       default='0.0')
     headless    = LaunchConfiguration('headless',     default='false')
 
     world = os.path.join(
         get_package_share_directory('model_description'),
-        'world', 'model.sdf'
+        'turtlebot3_world', 'turtlebot3_world.world'
     )
-
-    print("wtf" + world)
 
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -52,7 +51,13 @@ def generate_launch_description():
         launch_arguments={'x_pose': x_pose, 'y_pose': y_pose}.items()
     )
 
+    set_env_vars_resources = AppendEnvironmentVariable(
+        'GZ_SIM_RESOURCE_PATH',
+        get_package_share_directory('model_description')
+    )
+
     ld = LaunchDescription()
+    ld.add_action(set_env_vars_resources)
     ld.add_action(gzserver_cmd)
     ld.add_action(gzclient_cmd)
     ld.add_action(state_publisher_cmd)

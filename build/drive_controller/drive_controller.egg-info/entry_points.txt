@@ -1,0 +1,2 @@
+[console_scripts]
+kinematics_node = drive_controller.kinematics_node:main

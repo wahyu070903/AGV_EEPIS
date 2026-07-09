@@ -9,12 +9,22 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    complete_sim = LaunchConfiguration('headless', default='false')
+    headless_sim = LaunchConfiguration('headless', default='false')
 
-    DeclareLaunchArgument(
-        'headless',
-        default_value='false',
-        description='Headless mode (true/false)'
+    robot_model = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('model_description'), 'launch', 'agv_world.launch.py']
+            )
+        ),
+        launch_arguments={'headless': headless_sim}.items() 
     )
 
-    robot_model = 
+    return LaunchDescription([
+        DeclareLaunchArgument(
+            name='headless',
+            default_value='false',
+            description='Whether to execute gzclient'
+        ),
+        robot_model,
+    ])

@@ -1,4 +1,14 @@
 <?xml version="1.0" ?>
 <robot name="model" xmlns:xacro="http://www.ros.org/wiki/xacro" >
-
+    <gazebo>
+        <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+            <joint_name>l_wheel_joint</joint_name>
+            <joint_name>r_wheel_joint</joint_name>
+            <topic>/robot_model/wheel_cmd_vel</topic>
+        </plugin>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>steering_joint</joint_name>
+            <topic>/robot_model/steer_cmd_pos</topic>
+        </plugin>
+    </gazebo>
 </robot>
