@@ -11,3 +11,4 @@ bringup.egg-info/zip-safe
 launch/robot.launch.py
 launch/simulation.launch.py
 resource/bringup
+rviz/simulation.rviz

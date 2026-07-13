@@ -28,11 +28,11 @@ def generate_launch_description():
         }],
     )
     
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher'
-    )
+    # joint_state_publisher_node = Node(
+    #     package='joint_state_publisher',
+    #     executable='joint_state_publisher',
+    #     name='joint_state_publisher'
+    # )
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -40,5 +40,5 @@ def generate_launch_description():
             default_value='false',
             description='Use simulation (Gazebo) clock if true'),
         robot_state_publisher_node,
-        joint_state_publisher_node,
+        # joint_state_publisher_node,
     ])

@@ -23,16 +23,16 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
-  <collision>
+  <!-- <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-  </collision>
+  </collision> -->
 </link>
 
 <link name="stacker_slider_1">
@@ -44,14 +44,14 @@
   <visual>
     <origin xyz="-0.05 0.256 -1.99" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/stacker_slider_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/stacker_slider_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.05 0.256 -1.99" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/stacker_slider_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/stacker_slider_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -65,14 +65,14 @@
   <visual>
     <origin xyz="-0.125 0.375 -0.49" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/stacker_fork_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/stacker_fork_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.125 0.375 -0.49" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/stacker_fork_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/stacker_fork_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -86,14 +86,14 @@
   <visual>
     <origin xyz="0.265391 0.32 -0.265" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_caster_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_caster_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.265391 0.32 -0.265" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_caster_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_caster_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -107,14 +107,14 @@
   <visual>
     <origin xyz="0.27 -0.32 -0.265" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_caster_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_caster_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.27 -0.32 -0.265" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_caster_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_caster_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -128,14 +128,14 @@
   <visual>
     <origin xyz="0.275391 0.35 -0.08" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.275391 0.35 -0.08" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -149,14 +149,14 @@
   <visual>
     <origin xyz="0.28 -0.29 -0.08" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.28 -0.29 -0.08" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -170,14 +170,14 @@
   <visual>
     <origin xyz="-1.14 0.34 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-1.14 0.34 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -191,14 +191,14 @@
   <visual>
     <origin xyz="-1.14 -0.34 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-1.14 -0.34 -0.027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_static_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -212,16 +212,16 @@
   <visual>
     <origin xyz="0.05 -0.29 -1.035" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/steer_head_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/steer_head_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
-  <collision>
+  <!-- <collision>
     <origin xyz="0.05 -0.29 -1.035" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/steer_head_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/steer_head_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-  </collision>
+  </collision> -->
 </link>
 
 <link name="l_wheel_1">
@@ -233,14 +233,14 @@
   <visual>
     <origin xyz="0.902 0.345 -0.225194" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.902 0.345 -0.225194" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/l_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/l_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -254,14 +254,14 @@
   <visual>
     <origin xyz="0.902 -0.345 -0.225194" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.902 -0.345 -0.225194" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/r_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/r_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -275,16 +275,16 @@
   <visual>
     <origin xyz="0.902 -0.0 -0.533053" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/steering_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/steering_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
-  <collision>
+  <!-- <collision>
     <origin xyz="0.902 -0.0 -0.533053" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="$(find model_description)/meshes/steering_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://model_description/meshes/steering_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-  </collision>
+  </collision> -->
 </link>
 
 <link name="camera_link">
@@ -388,8 +388,9 @@
   <origin xyz="-0.852 -0.29 -0.501947" rpy="0 0 0"/>
   <parent link="steer_head_1"/>
   <child link="steering_1"/>
-  <axis xyz="-0.0 -0.0 1.0"/>
-  <limit upper="-0.7853982" lower="0.7853982" effort="100" velocity="100"/>
+  <axis xyz="0 0 1"/>
+  <limit upper="0.785398163" lower="-0.785398163" effort="100" velocity="3"/>
+  <dynamics damping="0.1"/>
 </joint>
 
 <!-- custom joint for sensors -->

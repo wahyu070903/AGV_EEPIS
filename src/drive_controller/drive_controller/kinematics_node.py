@@ -1,16 +1,26 @@
-#!/usr/bin/env python3
 """
 Bicycle kinematic model node for ROS2.
 
+Odometry source: /joint_states (real/simulated encoder feedback)
+    - steering angle delta  -> position of 'steering_joint'
+    - wheel angular velocity -> velocity of 'l_wheel_joint' (fallback: 'r_wheel_joint')
+      converted to linear speed via v = wheel_radius * wheel_angular_velocity
+
+Control path (unchanged): /cmd_vel is still used to drive the robot
+(publishes /robot_model/wheel_cmd_vel and /robot_model/steer_cmd_pos).
+Odometry, however, no longer trusts the commanded velocity — it integrates
+from what the joints actually report, so it reflects real motion (slip,
+saturation, controller lag, etc. are captured).
+
 Subscribes:
-    /cmd_vel (geometry_msgs/Twist)
-        linear.x  -> forward velocity v [m/s]
-        angular.z -> steering angle delta [rad]  (NOT yaw rate)
+    /cmd_vel      (geometry_msgs/Twist)   -> used only to command the robot
+    /joint_states (sensor_msgs/JointState) -> used to compute odometry
 
 Publishes:
     /odom (nav_msgs/Odometry)
     TF: odom -> base_link
-    /joint_states (optional, for the steering joint) if publish_joint_state:=true
+    /joint_states is only consumed, not republished
+    /robot_model/wheel_cmd_vel, /robot_model/steer_cmd_pos (open-loop control outputs)
 
 Kinematic model (rear-axle reference point):
     x_dot     = v * cos(theta)
@@ -19,13 +29,17 @@ Kinematic model (rear-axle reference point):
 
 Parameters:
     wheelbase (float)            : distance between front and rear axle [m], default 0.3
+    wheel_radius (float)         : rolling radius of the drive wheel [m], default 0.05
     max_steering_angle (float)   : saturation limit for delta [rad], default 0.6
-    max_velocity (float)         : saturation limit for v [m/s], default 2.0
-    publish_rate (float)         : integration/publish rate [Hz], default 50.0
+    max_velocity (float)         : saturation limit for v [m/s], default 6.0
+    steering_joint_name (string) : name of steering joint in /joint_states, default 'steering_joint'
+    wheel_joint_name (string)    : primary wheel joint name in /joint_states, default 'l_wheel_joint'
+    wheel_joint_name_fallback    : used if primary joint is missing, default 'r_wheel_joint'
     odom_frame_id (string)       : default "odom"
-    base_frame_id (string)       : default "base_link"
+    base_frame_id (string)       : default "base_footprint"
     publish_tf (bool)            : default True
-    cmd_timeout (float)          : seconds after which cmd is zeroed if no new msg, default 0.5
+    publish_joint_state (bool)   : default False (republish steering as a JointState)
+    joint_state_timeout (float)  : seconds after which v/delta are zeroed if no /joint_states, default 0.5
 """
 
 import math
@@ -37,7 +51,8 @@ from rclpy.time import Time
 from geometry_msgs.msg import Twist, TransformStamped, Quaternion
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import JointState
-from tf2_ros import TransformBroadcaster
+from std_msgs.msg import Float64
+from tf2_ros import TransformBroadcaster, Buffer, TransformListener
 
 
 def yaw_to_quaternion(yaw: float) -> Quaternion:
@@ -52,107 +67,151 @@ class KinematicsNode(Node):
         super().__init__('kinematics_node')
 
         # ---- Parameters ----
-        self.declare_parameter('wheelbase', 0.3)
-        self.declare_parameter('max_steering_angle', 0.6)
-        self.declare_parameter('max_velocity', 2.0)
-        self.declare_parameter('publish_rate', 50.0)
+        self.declare_parameter('wheelbase', 1.965)
+        self.declare_parameter('wheel_radius', 0.235)
+        self.declare_parameter('max_steering_angle', 0.785398163)
+        self.declare_parameter('max_velocity', 2.2)
         self.declare_parameter('odom_frame_id', 'odom')
-        self.declare_parameter('base_frame_id', 'base_link')
+        self.declare_parameter('base_frame_id', 'base_footprint')
         self.declare_parameter('publish_tf', True)
         self.declare_parameter('publish_joint_state', False)
-        self.declare_parameter('steering_joint_name', 'front_steer_joint')
-        self.declare_parameter('cmd_timeout', 0.5)
+        self.declare_parameter('steering_joint_name', 'steering_joint')
+        self.declare_parameter('wheel_joint_name', 'l_wheel_joint')
+        self.declare_parameter('wheel_joint_name_fallback', 'r_wheel_joint')
+        self.declare_parameter('joint_state_timeout', 0.5)
 
         self.L = self.get_parameter('wheelbase').value
+        self.wheel_radius = self.get_parameter('wheel_radius').value
         self.max_delta = self.get_parameter('max_steering_angle').value
         self.max_v = self.get_parameter('max_velocity').value
-        rate = self.get_parameter('publish_rate').value
         self.odom_frame_id = self.get_parameter('odom_frame_id').value
         self.base_frame_id = self.get_parameter('base_frame_id').value
         self.publish_tf_flag = self.get_parameter('publish_tf').value
         self.publish_joint_state_flag = self.get_parameter('publish_joint_state').value
         self.steering_joint_name = self.get_parameter('steering_joint_name').value
-        self.cmd_timeout = self.get_parameter('cmd_timeout').value
+        self.wheel_joint_name = self.get_parameter('wheel_joint_name').value
+        self.wheel_joint_name_fallback = self.get_parameter('wheel_joint_name_fallback').value
+        self.joint_state_timeout = self.get_parameter('joint_state_timeout').value
 
         # ---- State ----
         self.x = 0.0
         self.y = 0.0
         self.theta = 0.0
-        self.v_cmd = 0.0
-        self.delta_cmd = 0.0
-        self.last_cmd_time = self.get_clock().now()
+
+        # Feedback measured from /joint_states (used for odometry)
+        self.v_meas = 0.0
+        self.delta_meas = 0.0
+        self.last_joint_state_time = None   # rclpy Time from message header
+        self.last_joint_state_wall_time = self.get_clock().now()  # for timeout/staleness check
+
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
 
         # ---- Pub/Sub ----
         self.cmd_sub = self.create_subscription(
             Twist, '/cmd_vel', self.cmd_vel_callback, 10)
+        self.joint_state_sub = self.create_subscription(
+            JointState, '/joint_states', self.joint_state_callback, 10)
+
         self.odom_pub = self.create_publisher(Odometry, '/odom', 10)
+        self.wheel_vel_pub = self.create_publisher(Float64, '/robot_model/wheel_cmd_vel', 10)
+        self.steering_pub = self.create_publisher(Float64, '/robot_model/steer_cmd_pos', 10)
+
         if self.publish_joint_state_flag:
-            self.joint_pub = self.create_publisher(JointState, '/joint_states', 10)
+            self.joint_pub = self.create_publisher(JointState, '/joint_states_echo', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        self.dt = 1.0 / rate
-        self.timer = self.create_timer(self.dt, self.update)
-
-        self.last_time = self.get_clock().now()
-
         self.get_logger().info(
-            f'Bicycle kinematics node started. wheelbase={self.L} m, '
+            f'Bicycle kinematics node started (odometry from /joint_states). '
+            f'wheelbase={self.L} m, wheel_radius={self.wheel_radius} m, '
             f'max_v={self.max_v} m/s, max_delta={self.max_delta} rad')
 
     def cmd_vel_callback(self, msg: Twist):
+        """Open-loop control path: turn cmd_vel straight into wheel/steer commands."""
         v = msg.linear.x
         delta = msg.angular.z
 
-        # Saturate
         v = max(-self.max_v, min(self.max_v, v))
         delta = max(-self.max_delta, min(self.max_delta, delta))
 
-        self.v_cmd = v
-        self.delta_cmd = delta
-        self.last_cmd_time = self.get_clock().now()
+        self.wheel_vel_pub.publish(Float64(data=v))
+        self.steering_pub.publish(Float64(data=delta))
 
-    def update(self):
-        now = self.get_clock().now()
-        dt = (now - self.last_time).nanoseconds * 1e-9
-        self.last_time = now
-        if dt <= 0.0:
+    def joint_state_callback(self, msg: JointState):
+        """Odometry path: integrate bicycle model from actual joint feedback."""
+        try:
+            steer_idx = msg.name.index(self.steering_joint_name)
+            delta = msg.position[steer_idx] * -1.0
+        except (ValueError, IndexError):
+            delta = self.delta_meas  # keep last known value if joint missing
+
+        wheel_omega = None
+        for jname in (self.wheel_joint_name, self.wheel_joint_name_fallback):
+            try:
+                widx = msg.name.index(jname)
+                wheel_omega = msg.velocity[widx]
+                break
+            except (ValueError, IndexError):
+                continue
+
+        if wheel_omega is None:
+            self.get_logger().warn(
+                f'Neither "{self.wheel_joint_name}" nor "{self.wheel_joint_name_fallback}" '
+                f'found in /joint_states; skipping this update.', throttle_duration_sec=5.0)
             return
 
-        # Zero command if stale (safety)
-        elapsed_since_cmd = (now - self.last_cmd_time).nanoseconds * 1e-9
-        v = self.v_cmd
-        delta = self.delta_cmd
-        if elapsed_since_cmd > self.cmd_timeout:
-            v = 0.0
-            delta = 0.0
+        v = wheel_omega * self.wheel_radius * -1.0
+
+        v = max(-self.max_v, min(self.max_v, v))
+        delta = max(-self.max_delta, min(self.max_delta, delta))
+
+        stamp = Time.from_msg(msg.header.stamp) if (
+            msg.header.stamp.sec != 0 or msg.header.stamp.nanosec != 0
+        ) else self.get_clock().now()
+
+        if self.last_joint_state_time is not None:
+            dt = (stamp - self.last_joint_state_time).nanoseconds * 1e-9
+        else:
+            dt = 0.0
+
+        self.last_joint_state_time = stamp
+        self.last_joint_state_wall_time = self.get_clock().now()
+
+        self.v_meas = v
+        self.delta_meas = delta
+
+        if dt <= 0.0:
+            # first message, or non-increasing stamp: just publish current pose, no integration
+            self.publish_odom(stamp, self.v_meas, 0.0)
+            if self.publish_tf_flag:
+                self.publish_tf(stamp)
+            return
 
         # ---- Bicycle kinematic integration (rear-axle model) ----
-        theta_dot = v * math.tan(delta) / self.L
-        self.x += v * math.cos(self.theta) * dt
-        self.y += v * math.sin(self.theta) * dt
+        theta_dot = self.v_meas * math.tan(self.delta_meas) / self.L
+        self.x += self.v_meas * math.cos(self.theta) * dt
+        self.y += self.v_meas * math.sin(self.theta) * dt
         self.theta += theta_dot * dt
         self.theta = math.atan2(math.sin(self.theta), math.cos(self.theta))  # wrap
 
-        self.publish_odom(now, v, theta_dot)
+        self.publish_odom(stamp, self.v_meas, theta_dot)
+
         if self.publish_tf_flag:
-            self.publish_tf(now)
+            self.publish_tf(stamp)
         if self.publish_joint_state_flag:
-            self.publish_joint_state(now, delta)
+            self.publish_joint_state(stamp, self.delta_meas)
 
     def publish_odom(self, stamp, v, theta_dot):
         odom = Odometry()
         odom.header.stamp = stamp.to_msg()
         odom.header.frame_id = self.odom_frame_id
         odom.child_frame_id = self.base_frame_id
-
         odom.pose.pose.position.x = self.x
         odom.pose.pose.position.y = self.y
         odom.pose.pose.position.z = 0.0
         odom.pose.pose.orientation = yaw_to_quaternion(self.theta)
-
         odom.twist.twist.linear.x = v
         odom.twist.twist.angular.z = theta_dot
-
         self.odom_pub.publish(odom)
 
     def publish_tf(self, stamp):
@@ -188,3 +247,8 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+
+
+
+

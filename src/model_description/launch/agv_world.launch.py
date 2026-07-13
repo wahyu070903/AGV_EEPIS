@@ -51,9 +51,17 @@ def generate_launch_description():
         launch_arguments={'x_pose': x_pose, 'y_pose': y_pose}.items()
     )
 
-    set_env_vars_resources = AppendEnvironmentVariable(
-        'GZ_SIM_RESOURCE_PATH',
-        get_package_share_directory('model_description')
+    # set_env_vars_resources = SetEnvironmentVariable(
+    #     'GZ_SIM_RESOURCE_PATH',
+    #     get_package_share_directory('model_description')
+    # )
+
+    pkg_share = get_package_share_directory('model_description')
+    pkg_share_parent = os.path.dirname(pkg_share)
+
+    set_env_vars_resources = SetEnvironmentVariable(
+        name='GZ_SIM_RESOURCE_PATH',
+        value=pkg_share_parent + os.pathsep + pkg_share + os.pathsep + os.environ.get('GZ_SIM_RESOURCE_PATH', '')
     )
 
     ld = LaunchDescription()
