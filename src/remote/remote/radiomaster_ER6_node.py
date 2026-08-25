@@ -14,6 +14,12 @@ class CRSFDecoder:
         self.buffer = bytearray()
 
     @staticmethod
+    def to_percent(value):
+        # -100 ... 0 ... +100
+        calculation = (value - 992) / 819 * 100
+        return int(calculation)   
+        
+    @staticmethod
     def crc8(data):
         crc = 0
         for byte in data:
@@ -29,49 +35,44 @@ class CRSFDecoder:
     def feed(self, data):
         self.buffer.extend(data)
         frames = []
-        while True:
 
+        while True:
             if len(self.buffer) < 4:
                 break
 
             frame_length = self.buffer[1]
-
             total_length = frame_length + 2
 
+            if total_length < 4 or total_length > 64:
+                del self.buffer[0]
+                continue
+
             if len(self.buffer) < total_length:
-                break
+                break 
 
-            frame = bytes(
-                self.buffer[:total_length]
-            )
-
-            del self.buffer[:total_length]
+            frame = bytes(self.buffer[:total_length])
 
             crc_received = frame[-1]
-
-            crc_calculated = self.crc8(
-                frame[2:-1]
-            )
+            crc_calculated = self.crc8(frame[2:-1])
 
             if crc_received != crc_calculated:
+                del self.buffer[0]
                 continue
+
+            del self.buffer[:total_length]
 
             frame_type = frame[2]
 
             if frame_type == self.RC_CHANNELS_PACKED:
-
-                channels = self.decode_channels(
-                    frame[3:-1]
-                )
+                payload = frame[3:-1]
+                channels = self.decode_channels(payload)
 
                 if channels is not None:
                     frames.append(channels)
 
         return frames
 
-    @staticmethod
-    def decode_channels(payload):
-
+    def decode_channels(self, payload):
         if len(payload) != 22:
             return None
 
@@ -86,10 +87,7 @@ class CRSFDecoder:
 
             while bit_count < 11:
 
-                bit_buffer |= (
-                    payload[index]
-                    << bit_count
-                )
+                bit_buffer |= (payload[index] << bit_count)
 
                 bit_count += 8
                 index += 1
@@ -98,8 +96,8 @@ class CRSFDecoder:
 
             bit_buffer >>= 11
             bit_count -= 11
-
-            channels.append(channel)
+            topercent = self.to_percent(channel)
+            channels.append(topercent)
 
         return channels
 
