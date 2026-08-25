@@ -4,6 +4,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import Float32MultiArray
+from geometry_msgs.msg import Twist
 
 
 class CRSFDecoder:
@@ -106,27 +107,17 @@ class RadioReceiver(Node):
 
     def __init__(self):
 
-        super().__init__(
-            'radio_receiver'
-        )
+        super().__init__('radio_receiver')
 
-        self.declare_parameter(
-            'port',
-            '/dev/ttyUSB0'
-        )
+        self.declare_parameter('port', '/dev/ttyUSB0')
+        self.port = self.get_parameter('port').value
 
-        self.declare_parameter(
-            'baudrate',
-            420000
-        )
-
-        self.port = self.get_parameter(
-            'port'
-        ).value
-
-        self.baudrate = self.get_parameter(
-            'baudrate'
-        ).value
+        self.declare_parameter('baudrate', 420000)
+        self.baudrate = self.get_parameter('baudrate').value
+        
+        self.declare_parameter('sim', False)
+        self.sim = self.get_parameter('sim').value
+        print(self.sim)
 
         try:
 
@@ -149,6 +140,12 @@ class RadioReceiver(Node):
         self.publisher = self.create_publisher(
             Float32MultiArray,
             '/radio/channels',
+            10
+        )
+
+        self.simPublisher = self.create_publisher(
+            Twist,
+            '/radio/cmd_vel',
             10
         )
 
@@ -185,6 +182,20 @@ class RadioReceiver(Node):
                 ]
 
                 self.publisher.publish(msg)
+
+                if self.sim is True:
+                    msg_twist = Twist()
+                    throttle = channels[1]
+                    steering = channels[3]
+                    msg_twist.linear.x = float(throttle)
+                    msg_twist.linear.y = 0.0
+                    msg_twist.linear.z = 0.0
+
+                    msg_twist.angular.x = 0.0
+                    msg_twist.angular.y = 0.0
+                    msg_twist.angular.z = float(steering)
+
+                    self.simPublisher.publish(msg_twist)
 
         except serial.SerialException as e:
 

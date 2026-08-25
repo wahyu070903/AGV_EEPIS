@@ -26,12 +26,23 @@ def generate_launch_description():
         launch_arguments={'headless': headless_sim}.items() 
     )
     
+    # remote_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare('remote'), 'launch', 'ps4_remote.launch.py']
+    #         )
+    #     )
+    # )
+
     remote_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
-                [FindPackageShare('remote'), 'launch', 'ps4_remote.launch.py']
+                [FindPackageShare('remote'), 'launch', 'radiomaster_ER6.launch.py']
             )
-        )
+        ),
+        launch_arguments={
+            'sim' : 'true'
+        }.items()
     )
 
     kinematic_launch = IncludeLaunchDescription(

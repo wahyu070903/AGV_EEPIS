@@ -109,7 +109,7 @@ class KinematicsNode(Node):
 
         # ---- Pub/Sub ----
         self.cmd_sub = self.create_subscription(
-            Twist, '/cmd_vel', self.cmd_vel_callback, 10)
+            Twist, '/radio/cmd_vel', self.cmd_vel_callback, 10)
         self.joint_state_sub = self.create_subscription(
             JointState, '/joint_states', self.joint_state_callback, 10)
 

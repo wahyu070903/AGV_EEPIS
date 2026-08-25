@@ -11,3 +11,24 @@ from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
+def generate_launch_description():
+    simulation = LaunchConfiguration('sim')
+    return LaunchDescription([
+        DeclareLaunchArgument(
+            'sim',
+            default_value='false',
+            description='simulation mode',
+        ),
+
+        Node(
+            package='remote',
+            executable='radio_node',
+            name='radio_receiver',
+            parameters=[
+                {
+                    'sim' : simulation,
+                }
+            ],
+            output='screen'
+        )
+    ])
