@@ -1,1 +1,0 @@
-/home/orsted-793/Documents/AGV_EEPIS/src/remote/launch/bringup.launch.py

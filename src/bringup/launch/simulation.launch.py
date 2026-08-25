@@ -29,7 +29,7 @@ def generate_launch_description():
     remote_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
-                [FindPackageShare('remote'), 'launch', 'bringup.launch.py']
+                [FindPackageShare('remote'), 'launch', 'ps4_remote.launch.py']
             )
         )
     )

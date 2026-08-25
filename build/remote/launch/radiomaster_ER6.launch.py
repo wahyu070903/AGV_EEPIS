@@ -1,0 +1,1 @@
+/home/orsted/AGV_EEPIS/src/remote/launch/radiomaster_ER6.launch.py

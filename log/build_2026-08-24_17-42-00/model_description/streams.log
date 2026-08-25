@@ -1,0 +1,15 @@
+[5.212s] Invoking command in '/home/orsted/AGV_EEPIS/build/model_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/model_description/build --no-deps symlink_data
+[6.170s] running develop
+[6.739s] running egg_info
+[6.793s] writing model_description.egg-info/PKG-INFO
+[6.795s] writing dependency_links to model_description.egg-info/dependency_links.txt
+[6.796s] writing requirements to model_description.egg-info/requires.txt
+[6.797s] writing top-level names to model_description.egg-info/top_level.txt
+[6.914s] reading manifest file 'model_description.egg-info/SOURCES.txt'
+[6.917s] writing manifest file 'model_description.egg-info/SOURCES.txt'
+[6.977s] running build_ext
+[6.978s] Creating /home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages/model-description.egg-link (link to .)
+[6.980s] 
+[6.980s] Installed /home/orsted/AGV_EEPIS/build/model_description
+[6.980s] running symlink_data
+[7.171s] Invoked command in '/home/orsted/AGV_EEPIS/build/model_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/model_description/build --no-deps symlink_data

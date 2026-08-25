@@ -1,3 +1,3 @@
 # generated from colcon_core/shell/template/hook_prepend_value.sh.em
 
-_colcon_prepend_unique_value PYTHONPATH "/home/orsted-793/Documents/AGV_EEPIS/build/drive_controller"
+_colcon_prepend_unique_value PYTHONPATH "/home/orsted/AGV_EEPIS/build/drive_controller"

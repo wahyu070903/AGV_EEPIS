@@ -28,6 +28,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'radio_node = remote.radiomaster_ER6_node:main'
         ],
     },
 )

@@ -1,12 +1,15 @@
 package.xml
 setup.cfg
 setup.py
-launch/bringup.launch.py
+launch/ps4_remote.launch.py
+launch/radiomaster_ER6.launch.py
 params/ps4_teleop.yaml
 remote/__init__.py
+remote/radiomaster_ER6_node.py
 remote.egg-info/PKG-INFO
 remote.egg-info/SOURCES.txt
 remote.egg-info/dependency_links.txt
+remote.egg-info/entry_points.txt
 remote.egg-info/requires.txt
 remote.egg-info/top_level.txt
 remote.egg-info/zip-safe
