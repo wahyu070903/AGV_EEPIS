@@ -1,31 +1,6 @@
 """
-Bicycle kinematic model node for ROS2.
-
-Odometry source: /joint_states (real/simulated encoder feedback)
-    - steering angle delta  -> position of 'steering_joint'
-    - wheel angular velocity -> velocity of 'l_wheel_joint' (fallback: 'r_wheel_joint')
-      converted to linear speed via v = wheel_radius * wheel_angular_velocity
-
-Control path (unchanged): /cmd_vel is still used to drive the robot
-(publishes /robot_model/wheel_cmd_vel and /robot_model/steer_cmd_pos).
-Odometry, however, no longer trusts the commanded velocity — it integrates
-from what the joints actually report, so it reflects real motion (slip,
-saturation, controller lag, etc. are captured).
-
-Subscribes:
-    /cmd_vel      (geometry_msgs/Twist)   -> used only to command the robot
-    /joint_states (sensor_msgs/JointState) -> used to compute odometry
-
-Publishes:
-    /odom (nav_msgs/Odometry)
-    TF: odom -> base_link
-    /joint_states is only consumed, not republished
-    /robot_model/wheel_cmd_vel, /robot_model/steer_cmd_pos (open-loop control outputs)
-
-Kinematic model (rear-axle reference point):
-    x_dot     = v * cos(theta)
-    y_dot     = v * sin(theta)
-    theta_dot = v * tan(delta) / L
+This only use for simulation
+for real robot kinematic is preocessed on low level controller
 
 Parameters:
     wheelbase (float)            : distance between front and rear axle [m], default 0.3

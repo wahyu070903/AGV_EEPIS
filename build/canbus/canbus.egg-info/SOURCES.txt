@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+canbus/__init__.py
+canbus/canbus_node.py
+canbus/canbus_rx.py
+canbus/canbus_tx.py
+canbus.egg-info/PKG-INFO
+canbus.egg-info/SOURCES.txt
+canbus.egg-info/dependency_links.txt
+canbus.egg-info/entry_points.txt
+canbus.egg-info/requires.txt
+canbus.egg-info/top_level.txt
+canbus.egg-info/zip-safe
+resource/canbus

@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating ultrasonic.egg-info
+writing ultrasonic.egg-info/PKG-INFO
+writing dependency_links to ultrasonic.egg-info/dependency_links.txt
+writing requirements to ultrasonic.egg-info/requires.txt
+writing top-level names to ultrasonic.egg-info/top_level.txt
+writing manifest file 'ultrasonic.egg-info/SOURCES.txt'
+reading manifest file 'ultrasonic.egg-info/SOURCES.txt'
+writing manifest file 'ultrasonic.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages/ultrasonic.egg-link (link to .)
+
+Installed /home/orsted/AGV_EEPIS/build/ultrasonic
+running symlink_data
+creating /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index
+creating /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index/resource_index
+creating /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index/resource_index/packages
+symbolically linking /home/orsted/AGV_EEPIS/build/ultrasonic/resource/ultrasonic -> /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index/resource_index/packages
+symbolically linking /home/orsted/AGV_EEPIS/build/ultrasonic/package.xml -> /home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic

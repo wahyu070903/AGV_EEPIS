@@ -1,0 +1,9 @@
+source;share/canbus/hook/pythonpath.ps1
+source;share/canbus/hook/pythonpath.dsv
+source;share/canbus/hook/pythonpath.sh
+source;share/canbus/hook/ament_prefix_path.ps1
+source;share/canbus/hook/ament_prefix_path.dsv
+source;share/canbus/hook/ament_prefix_path.sh
+source;../../build/canbus/share/canbus/hook/pythonpath_develop.ps1
+source;../../build/canbus/share/canbus/hook/pythonpath_develop.dsv
+source;../../build/canbus/share/canbus/hook/pythonpath_develop.sh
