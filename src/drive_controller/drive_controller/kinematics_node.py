@@ -102,23 +102,20 @@ class KinematicsNode(Node):
             f'max_v={self.max_v} m/s, max_delta={self.max_delta} rad')
 
     def cmd_vel_callback(self, msg: Twist):
-        """Open-loop control path: turn cmd_vel straight into wheel/steer commands."""
         v = msg.linear.x
         delta = msg.angular.z
-
-        v = max(-self.max_v, min(self.max_v, v))
-        delta = max(-self.max_delta, min(self.max_delta, delta))
+        command_max = 100
+        v = (v / command_max) * self.max_v
+        delta = (delta / command_max) * self.max_delta
 
         self.wheel_vel_pub.publish(Float64(data=v))
         self.steering_pub.publish(Float64(data=delta))
 
     def joint_state_callback(self, msg: JointState):
-        """Odometry path: integrate bicycle model from actual joint feedback."""
-        try:
             steer_idx = msg.name.index(self.steering_joint_name)
             delta = msg.position[steer_idx] * -1.0
         except (ValueError, IndexError):
-            delta = self.delta_meas  # keep last known value if joint missing
+            delta = self.delta_meas 
 
         wheel_omega = None
         for jname in (self.wheel_joint_name, self.wheel_joint_name_fallback):

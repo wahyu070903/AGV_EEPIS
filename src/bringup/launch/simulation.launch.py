@@ -26,6 +26,7 @@ def generate_launch_description():
         launch_arguments={'headless': headless_sim}.items() 
     )
     
+    # Only when using Ps4 for controller
     # remote_launch = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource(
     #         PathJoinSubstitution(

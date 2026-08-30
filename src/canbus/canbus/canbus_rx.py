@@ -1,8 +1,14 @@
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32MultiArray
+
 import can
 import struct 
 
-class CanBusRX():
+class CanBusRX(Node):
     def __init__(self, bus):
+        super().__init__('can_rx')
+
         self.bus = bus
         self.address_table = {
             "ultrasonic_line1": 0x400,
@@ -15,13 +21,20 @@ class CanBusRX():
         }
 
         self.ultrasonic_data = [None, None, None, None]
+        self.ultrasonic_pub = self.create_publisher(
+            Float32MultiArray,
+            '/ultrasonic',
+            10
+        )
 
     def read(self):
-        message = self.bus.recv(timeout=0.0)
-        if message is None:
-            return
-        
-        self.read_ultrasonic(message)
+        while True:
+            message = self.bus.recv(timeout=0.0)
+            if message is None:
+                break
+            self.read_ultrasonic(message)
+            
+        return None
 
     def read_ultrasonic(self, message):
 
@@ -42,4 +55,7 @@ class CanBusRX():
         copy = self.ultrasonic_data
         self.ultrasonic_data = [None, None, None, None]
 
+        pub_data = Float32MultiArray()
+        pub_data.data = copy
+        self.ultrasonic_pub.publish(pub_data)
         return copy

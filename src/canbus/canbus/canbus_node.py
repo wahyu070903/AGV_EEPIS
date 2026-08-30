@@ -18,7 +18,7 @@ class CanBridge(Node):
             0.02,
             self.read_can
         )
-    
+
     def read_can(self):
         self.canbus_rx.read()
 
