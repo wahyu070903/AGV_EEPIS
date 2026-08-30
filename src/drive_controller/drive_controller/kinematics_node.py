@@ -123,9 +123,9 @@ class KinematicsNode(Node):
         # Open loop control
         v = msg.linear.x
         delta = msg.angular.z
-
-        v = max(-self.max_v, min(self.max_v, v))
-        delta = max(-self.max_delta, min(self.max_delta, delta))
+        command_max = 100
+        v = (v / command_max) * self.max_v
+        delta = (delta / command_max) * self.max_delta
 
         self.wheel_vel_pub.publish(Float64(data=v))
         self.steering_pub.publish(Float64(data=delta))

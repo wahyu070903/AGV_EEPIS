@@ -1,0 +1,15 @@
+[7.816s] Invoking command in '/home/orsted/AGV_EEPIS/build/bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/bringup/build --no-deps symlink_data
+[8.823s] running develop
+[9.450s] running egg_info
+[9.513s] writing bringup.egg-info/PKG-INFO
+[9.514s] writing dependency_links to bringup.egg-info/dependency_links.txt
+[9.516s] writing requirements to bringup.egg-info/requires.txt
+[9.519s] writing top-level names to bringup.egg-info/top_level.txt
+[9.657s] reading manifest file 'bringup.egg-info/SOURCES.txt'
+[9.662s] writing manifest file 'bringup.egg-info/SOURCES.txt'
+[9.734s] running build_ext
+[9.735s] Creating /home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages/bringup.egg-link (link to .)
+[9.735s] 
+[9.735s] Installed /home/orsted/AGV_EEPIS/build/bringup
+[9.736s] running symlink_data
+[9.976s] Invoked command in '/home/orsted/AGV_EEPIS/build/bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/bringup/build --no-deps symlink_data

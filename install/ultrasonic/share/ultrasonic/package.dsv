@@ -1,0 +1,9 @@
+source;share/ultrasonic/hook/pythonpath.ps1
+source;share/ultrasonic/hook/pythonpath.dsv
+source;share/ultrasonic/hook/pythonpath.sh
+source;share/ultrasonic/hook/ament_prefix_path.ps1
+source;share/ultrasonic/hook/ament_prefix_path.dsv
+source;share/ultrasonic/hook/ament_prefix_path.sh
+source;../../build/ultrasonic/share/ultrasonic/hook/pythonpath_develop.ps1
+source;../../build/ultrasonic/share/ultrasonic/hook/pythonpath_develop.dsv
+source;../../build/ultrasonic/share/ultrasonic/hook/pythonpath_develop.sh

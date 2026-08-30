@@ -1,0 +1,17 @@
+[7.767s] Invoking command in '/home/orsted/AGV_EEPIS/build/remote': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/remote/build --no-deps symlink_data
+[9.614s] running develop
+[9.615s] running egg_info
+[9.617s] writing remote.egg-info/PKG-INFO
+[9.618s] writing dependency_links to remote.egg-info/dependency_links.txt
+[9.618s] writing entry points to remote.egg-info/entry_points.txt
+[9.619s] writing requirements to remote.egg-info/requires.txt
+[9.621s] writing top-level names to remote.egg-info/top_level.txt
+[9.681s] reading manifest file 'remote.egg-info/SOURCES.txt'
+[9.681s] writing manifest file 'remote.egg-info/SOURCES.txt'
+[9.747s] running build_ext
+[9.748s] Creating /home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages/remote.egg-link (link to .)
+[9.750s] Installing radio_node script to /home/orsted/AGV_EEPIS/install/remote/lib/remote
+[9.752s] 
+[9.752s] Installed /home/orsted/AGV_EEPIS/build/remote
+[9.753s] running symlink_data
+[9.972s] Invoked command in '/home/orsted/AGV_EEPIS/build/remote' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/remote/build --no-deps symlink_data

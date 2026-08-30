@@ -1,0 +1,2 @@
+[console_scripts]
+canbus_node = canbus.canbus_node:main
