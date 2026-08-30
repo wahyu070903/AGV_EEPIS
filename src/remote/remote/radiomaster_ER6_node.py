@@ -112,7 +112,7 @@ class RadioReceiver(Node):
         self.declare_parameter('port', '/dev/ttyUSB0')
         self.port = self.get_parameter('port').value
 
-        self.declare_parameter('baudrate', 400000)
+        self.declare_parameter('baudrate', 420000)
         self.baudrate = self.get_parameter('baudrate').value
         
         self.declare_parameter('sim', False)
@@ -161,11 +161,8 @@ class RadioReceiver(Node):
         )
 
     def read_serial(self):
-
         try:
-            data = self.serial.read(
-                self.serial.in_waiting
-            )
+            data = self.serial.read(self.serial.in_waiting)
 
             if not data:
                 now = time.time()
@@ -189,7 +186,6 @@ class RadioReceiver(Node):
                     )
 
             frames = self.decoder.feed(data)
-
             for channels in frames:
 
                 msg = Float32MultiArray()
