@@ -121,10 +121,10 @@ class KinematicsNode(Node):
             self.joint_pub = self.create_publisher(JointState, '/joint_states_echo', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        self.get_logger().info(
-            f'Bicycle kinematics node started (odometry from /joint_states). '
-            f'wheelbase={self.L} m, wheel_radius={self.wheel_radius} m, '
-            f'max_v={self.max_v} m/s, max_delta={self.max_delta} rad')
+        # self.get_logger().info(
+        #     f'Bicycle kinematics node started (odometry from /joint_states). '
+        #     f'wheelbase={self.L} m, wheel_radius={self.wheel_radius} m, '
+        #     f'max_v={self.max_v} m/s, max_delta={self.max_delta} rad')
 
     def cmd_vel_callback(self, msg: Twist):
         """Open-loop control path: turn cmd_vel straight into wheel/steer commands."""
@@ -155,9 +155,9 @@ class KinematicsNode(Node):
                 continue
 
         if wheel_omega is None:
-            self.get_logger().warn(
-                f'Neither "{self.wheel_joint_name}" nor "{self.wheel_joint_name_fallback}" '
-                f'found in /joint_states; skipping this update.', throttle_duration_sec=5.0)
+            # self.get_logger().warn(
+            #     f'Neither "{self.wheel_joint_name}" nor "{self.wheel_joint_name_fallback}" '
+            #     f'found in /joint_states; skipping this update.', throttle_duration_sec=5.0)
             return
 
         v = wheel_omega * self.wheel_radius * -1.0
