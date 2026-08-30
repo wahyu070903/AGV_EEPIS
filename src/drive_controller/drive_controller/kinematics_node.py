@@ -1,46 +1,44 @@
-"""
-Bicycle kinematic model node for ROS2.
+# Bicycle kinematic model node for ROS2.
 
-Odometry source: /joint_states (real/simulated encoder feedback)
-    - steering angle delta  -> position of 'steering_joint'
-    - wheel angular velocity -> velocity of 'l_wheel_joint' (fallback: 'r_wheel_joint')
-      converted to linear speed via v = wheel_radius * wheel_angular_velocity
+# Odometry source: /joint_states (real/simulated encoder feedback)
+#     - steering angle delta  -> position of 'steering_joint'
+#     - wheel angular velocity -> velocity of 'l_wheel_joint' (fallback: 'r_wheel_joint')
+#       converted to linear speed via v = wheel_radius * wheel_angular_velocity
 
-Control path (unchanged): /cmd_vel is still used to drive the robot
-(publishes /robot_model/wheel_cmd_vel and /robot_model/steer_cmd_pos).
-Odometry, however, no longer trusts the commanded velocity — it integrates
-from what the joints actually report, so it reflects real motion (slip,
-saturation, controller lag, etc. are captured).
+# Control path (unchanged): /cmd_vel is still used to drive the robot
+# (publishes /robot_model/wheel_cmd_vel and /robot_model/steer_cmd_pos).
+# Odometry, however, no longer trusts the commanded velocity — it integrates
+# from what the joints actually report, so it reflects real motion (slip,
+# saturation, controller lag, etc. are captured).
 
-Subscribes:
-    /cmd_vel      (geometry_msgs/Twist)   -> used only to command the robot
-    /joint_states (sensor_msgs/JointState) -> used to compute odometry
+# Subscribes:
+#     /cmd_vel      (geometry_msgs/Twist)   -> used only to command the robot
+#     /joint_states (sensor_msgs/JointState) -> used to compute odometry
 
-Publishes:
-    /odom (nav_msgs/Odometry)
-    TF: odom -> base_link
-    /joint_states is only consumed, not republished
-    /robot_model/wheel_cmd_vel, /robot_model/steer_cmd_pos (open-loop control outputs)
+# Publishes:
+#     /odom (nav_msgs/Odometry)
+#     TF: odom -> base_link
+#     /joint_states is only consumed, not republished
+#     /robot_model/wheel_cmd_vel, /robot_model/steer_cmd_pos (open-loop control outputs)
 
-Kinematic model (rear-axle reference point):
-    x_dot     = v * cos(theta)
-    y_dot     = v * sin(theta)
-    theta_dot = v * tan(delta) / L
+# Kinematic model (rear-axle reference point):
+#     x_dot     = v * cos(theta)
+#     y_dot     = v * sin(theta)
+#     theta_dot = v * tan(delta) / L
 
-Parameters:
-    wheelbase (float)            : distance between front and rear axle [m], default 0.3
-    wheel_radius (float)         : rolling radius of the drive wheel [m], default 0.05
-    max_steering_angle (float)   : saturation limit for delta [rad], default 0.6
-    max_velocity (float)         : saturation limit for v [m/s], default 6.0
-    steering_joint_name (string) : name of steering joint in /joint_states, default 'steering_joint'
-    wheel_joint_name (string)    : primary wheel joint name in /joint_states, default 'l_wheel_joint'
-    wheel_joint_name_fallback    : used if primary joint is missing, default 'r_wheel_joint'
-    odom_frame_id (string)       : default "odom"
-    base_frame_id (string)       : default "base_footprint"
-    publish_tf (bool)            : default True
-    publish_joint_state (bool)   : default False (republish steering as a JointState)
-    joint_state_timeout (float)  : seconds after which v/delta are zeroed if no /joint_states, default 0.5
-"""
+# Parameters:
+#     wheelbase (float)            : distance between front and rear axle [m], default 0.3
+#     wheel_radius (float)         : rolling radius of the drive wheel [m], default 0.05
+#     max_steering_angle (float)   : saturation limit for delta [rad], default 0.6
+#     max_velocity (float)         : saturation limit for v [m/s], default 6.0
+#     steering_joint_name (string) : name of steering joint in /joint_states, default 'steering_joint'
+#     wheel_joint_name (string)    : primary wheel joint name in /joint_states, default 'l_wheel_joint'
+#     wheel_joint_name_fallback    : used if primary joint is missing, default 'r_wheel_joint'
+#     odom_frame_id (string)       : default "odom"
+#     base_frame_id (string)       : default "base_footprint"
+#     publish_tf (bool)            : default True
+#     publish_joint_state (bool)   : default False (republish steering as a JointState)
+#     joint_state_timeout (float)  : seconds after which v/delta are zeroed if no /joint_states, default 0.5
 
 import math
 
@@ -121,13 +119,8 @@ class KinematicsNode(Node):
             self.joint_pub = self.create_publisher(JointState, '/joint_states_echo', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        # self.get_logger().info(
-        #     f'Bicycle kinematics node started (odometry from /joint_states). '
-        #     f'wheelbase={self.L} m, wheel_radius={self.wheel_radius} m, '
-        #     f'max_v={self.max_v} m/s, max_delta={self.max_delta} rad')
-
     def cmd_vel_callback(self, msg: Twist):
-        """Open-loop control path: turn cmd_vel straight into wheel/steer commands."""
+        # Open loop control
         v = msg.linear.x
         delta = msg.angular.z
 
@@ -138,15 +131,18 @@ class KinematicsNode(Node):
         self.steering_pub.publish(Float64(data=delta))
 
     def joint_state_callback(self, msg: JointState):
-        """Odometry path: integrate bicycle model from actual joint feedback."""
         try:
             steer_idx = msg.name.index(self.steering_joint_name)
             delta = msg.position[steer_idx] * -1.0
         except (ValueError, IndexError):
-            delta = self.delta_meas  # keep last known value if joint missing
+            delta = self.delta_meas
 
         wheel_omega = None
-        for jname in (self.wheel_joint_name, self.wheel_joint_name_fallback):
+
+        for jname in (
+            self.wheel_joint_name,
+            self.wheel_joint_name_fallback
+        ):
             try:
                 widx = msg.name.index(jname)
                 wheel_omega = msg.velocity[widx]
@@ -155,9 +151,6 @@ class KinematicsNode(Node):
                 continue
 
         if wheel_omega is None:
-            # self.get_logger().warn(
-            #     f'Neither "{self.wheel_joint_name}" nor "{self.wheel_joint_name_fallback}" '
-            #     f'found in /joint_states; skipping this update.', throttle_duration_sec=5.0)
             return
 
         v = wheel_omega * self.wheel_radius * -1.0
@@ -165,42 +158,68 @@ class KinematicsNode(Node):
         v = max(-self.max_v, min(self.max_v, v))
         delta = max(-self.max_delta, min(self.max_delta, delta))
 
-        stamp = Time.from_msg(msg.header.stamp) if (
-            msg.header.stamp.sec != 0 or msg.header.stamp.nanosec != 0
-        ) else self.get_clock().now()
+        now = self.get_clock().now()
 
         if self.last_joint_state_time is not None:
-            dt = (stamp - self.last_joint_state_time).nanoseconds * 1e-9
+            dt = (
+                now - self.last_joint_state_time
+            ).nanoseconds * 1e-9
         else:
             dt = 0.0
 
-        self.last_joint_state_time = stamp
-        self.last_joint_state_wall_time = self.get_clock().now()
+        self.last_joint_state_time = now
 
         self.v_meas = v
         self.delta_meas = delta
 
         if dt <= 0.0:
-            # first message, or non-increasing stamp: just publish current pose, no integration
-            self.publish_odom(stamp, self.v_meas, 0.0)
+            self.publish_odom(now, self.v_meas, 0.0)
+
             if self.publish_tf_flag:
-                self.publish_tf(stamp)
+                self.publish_tf(now)
+
             return
 
-        # ---- Bicycle kinematic integration (rear-axle model) ----
-        theta_dot = self.v_meas * math.tan(self.delta_meas) / self.L
-        self.x += self.v_meas * math.cos(self.theta) * dt
-        self.y += self.v_meas * math.sin(self.theta) * dt
-        self.theta += theta_dot * dt
-        self.theta = math.atan2(math.sin(self.theta), math.cos(self.theta))  # wrap
+        theta_dot = (
+            self.v_meas
+            * math.tan(self.delta_meas)
+            / self.L
+        )
 
-        self.publish_odom(stamp, self.v_meas, theta_dot)
+        self.x += (
+            self.v_meas
+            * math.cos(self.theta)
+            * dt
+        )
+
+        self.y += (
+            self.v_meas
+            * math.sin(self.theta)
+            * dt
+        )
+
+        self.theta += theta_dot * dt
+
+        self.theta = math.atan2(
+            math.sin(self.theta),
+            math.cos(self.theta)
+        )
+
+        self.publish_odom(
+            now,
+            self.v_meas,
+            theta_dot
+        )
 
         if self.publish_tf_flag:
-            self.publish_tf(stamp)
-        if self.publish_joint_state_flag:
-            self.publish_joint_state(stamp, self.delta_meas)
+            self.publish_tf(now)
 
+        if self.publish_joint_state_flag:
+            self.publish_joint_state(
+                now,
+                self.delta_meas
+            )
+            
     def publish_odom(self, stamp, v, theta_dot):
         odom = Odometry()
         odom.header.stamp = stamp.to_msg()
