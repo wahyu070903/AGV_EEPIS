@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing canbus.egg-info/PKG-INFO
+writing dependency_links to canbus.egg-info/dependency_links.txt
+writing entry points to canbus.egg-info/entry_points.txt
+writing requirements to canbus.egg-info/requires.txt
+writing top-level names to canbus.egg-info/top_level.txt
+reading manifest file 'canbus.egg-info/SOURCES.txt'
+writing manifest file 'canbus.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages/canbus.egg-link (link to .)
+Installing canbus_node script to /home/orsted/AGV_EEPIS/install/canbus/lib/canbus
+
+Installed /home/orsted/AGV_EEPIS/build/canbus
+running symlink_data
+creating /home/orsted/AGV_EEPIS/install/canbus/share/canbus/launch
+symbolically linking /home/orsted/AGV_EEPIS/build/canbus/launch/canbus.launch.py -> /home/orsted/AGV_EEPIS/install/canbus/share/canbus/launch

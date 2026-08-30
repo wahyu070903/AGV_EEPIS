@@ -1,0 +1,19 @@
+[10.983s] Invoking command in '/home/orsted/AGV_EEPIS/build/canbus': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/canbus/build --no-deps symlink_data
+[13.001s] running develop
+[14.014s] running egg_info
+[14.080s] writing canbus.egg-info/PKG-INFO
+[14.089s] writing dependency_links to canbus.egg-info/dependency_links.txt
+[14.089s] writing entry points to canbus.egg-info/entry_points.txt
+[14.091s] writing requirements to canbus.egg-info/requires.txt
+[14.098s] writing top-level names to canbus.egg-info/top_level.txt
+[14.263s] reading manifest file 'canbus.egg-info/SOURCES.txt'
+[14.263s] writing manifest file 'canbus.egg-info/SOURCES.txt'
+[14.362s] running build_ext
+[14.362s] Creating /home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages/canbus.egg-link (link to .)
+[14.368s] Installing canbus_node script to /home/orsted/AGV_EEPIS/install/canbus/lib/canbus
+[14.368s] 
+[14.368s] Installed /home/orsted/AGV_EEPIS/build/canbus
+[14.368s] running symlink_data
+[14.369s] creating /home/orsted/AGV_EEPIS/install/canbus/share/canbus/launch
+[14.371s] symbolically linking /home/orsted/AGV_EEPIS/build/canbus/launch/canbus.launch.py -> /home/orsted/AGV_EEPIS/install/canbus/share/canbus/launch
+[14.679s] Invoked command in '/home/orsted/AGV_EEPIS/build/canbus' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/canbus/build --no-deps symlink_data

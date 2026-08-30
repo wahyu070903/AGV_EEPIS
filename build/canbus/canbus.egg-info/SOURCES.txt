@@ -12,4 +12,5 @@ canbus.egg-info/entry_points.txt
 canbus.egg-info/requires.txt
 canbus.egg-info/top_level.txt
 canbus.egg-info/zip-safe
+launch/canbus.launch.py
 resource/canbus
