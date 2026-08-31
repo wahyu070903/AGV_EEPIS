@@ -1,0 +1,1 @@
+/home/orsted/AGV_EEPIS/src/ascamera/launch/hp60c.launch.py

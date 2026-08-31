@@ -14,6 +14,7 @@ def generate_launch_description():
     # nav = navigation
     # map = mapping
     # free = freedrive
+    
     mode = LaunchConfiguration('mode', default='map')
 
     remote_launch = IncludeLaunchDescription(
@@ -35,4 +36,12 @@ def generate_launch_description():
         )
     )
 
-    
+    camera_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('ascamera'), 'launch', 'ascamera.launch.py']
+            )
+        )
+    )
+
+

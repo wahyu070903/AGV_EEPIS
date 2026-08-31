@@ -1,0 +1,29 @@
+[6.592s] Invoking command in '/home/orsted/AGV_EEPIS/build/remote': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/remote/build --no-deps symlink_data
+[8.605s] running develop
+[8.605s] running egg_info
+[8.605s] creating remote.egg-info
+[8.606s] writing remote.egg-info/PKG-INFO
+[8.606s] writing dependency_links to remote.egg-info/dependency_links.txt
+[8.611s] writing entry points to remote.egg-info/entry_points.txt
+[8.611s] writing requirements to remote.egg-info/requires.txt
+[8.612s] writing top-level names to remote.egg-info/top_level.txt
+[8.612s] writing manifest file 'remote.egg-info/SOURCES.txt'
+[8.613s] reading manifest file 'remote.egg-info/SOURCES.txt'
+[8.613s] writing manifest file 'remote.egg-info/SOURCES.txt'
+[8.613s] running build_ext
+[8.613s] Creating /home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages/remote.egg-link (link to .)
+[8.613s] Installing radio_node script to /home/orsted/AGV_EEPIS/install/remote/lib/remote
+[8.615s] 
+[8.615s] Installed /home/orsted/AGV_EEPIS/build/remote
+[8.615s] running symlink_data
+[8.615s] creating /home/orsted/AGV_EEPIS/install/remote/share/ament_index
+[8.615s] creating /home/orsted/AGV_EEPIS/install/remote/share/ament_index/resource_index
+[8.615s] creating /home/orsted/AGV_EEPIS/install/remote/share/ament_index/resource_index/packages
+[8.616s] symbolically linking /home/orsted/AGV_EEPIS/build/remote/resource/remote -> /home/orsted/AGV_EEPIS/install/remote/share/ament_index/resource_index/packages
+[8.616s] symbolically linking /home/orsted/AGV_EEPIS/build/remote/package.xml -> /home/orsted/AGV_EEPIS/install/remote/share/remote
+[8.616s] creating /home/orsted/AGV_EEPIS/install/remote/share/remote/launch
+[8.616s] symbolically linking /home/orsted/AGV_EEPIS/build/remote/launch/ps4_remote.launch.py -> /home/orsted/AGV_EEPIS/install/remote/share/remote/launch
+[8.616s] symbolically linking /home/orsted/AGV_EEPIS/build/remote/launch/radiomaster_ER6.launch.py -> /home/orsted/AGV_EEPIS/install/remote/share/remote/launch
+[8.616s] creating /home/orsted/AGV_EEPIS/install/remote/share/remote/params
+[8.616s] symbolically linking /home/orsted/AGV_EEPIS/build/remote/params/ps4_teleop.yaml -> /home/orsted/AGV_EEPIS/install/remote/share/remote/params
+[9.387s] Invoked command in '/home/orsted/AGV_EEPIS/build/remote' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/remote/build --no-deps symlink_data

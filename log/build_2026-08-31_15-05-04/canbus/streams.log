@@ -1,0 +1,26 @@
+[6.601s] Invoking command in '/home/orsted/AGV_EEPIS/build/canbus': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/canbus/build --no-deps symlink_data
+[7.615s] running develop
+[8.218s] running egg_info
+[8.219s] creating canbus.egg-info
+[8.284s] writing canbus.egg-info/PKG-INFO
+[8.285s] writing dependency_links to canbus.egg-info/dependency_links.txt
+[8.287s] writing entry points to canbus.egg-info/entry_points.txt
+[8.288s] writing requirements to canbus.egg-info/requires.txt
+[8.289s] writing top-level names to canbus.egg-info/top_level.txt
+[8.289s] writing manifest file 'canbus.egg-info/SOURCES.txt'
+[8.437s] reading manifest file 'canbus.egg-info/SOURCES.txt'
+[8.437s] writing manifest file 'canbus.egg-info/SOURCES.txt'
+[8.495s] running build_ext
+[8.495s] Creating /home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages/canbus.egg-link (link to .)
+[8.503s] Installing canbus_node script to /home/orsted/AGV_EEPIS/install/canbus/lib/canbus
+[8.503s] 
+[8.504s] Installed /home/orsted/AGV_EEPIS/build/canbus
+[8.504s] running symlink_data
+[8.504s] creating /home/orsted/AGV_EEPIS/install/canbus/share/ament_index
+[8.504s] creating /home/orsted/AGV_EEPIS/install/canbus/share/ament_index/resource_index
+[8.505s] creating /home/orsted/AGV_EEPIS/install/canbus/share/ament_index/resource_index/packages
+[8.505s] symbolically linking /home/orsted/AGV_EEPIS/build/canbus/resource/canbus -> /home/orsted/AGV_EEPIS/install/canbus/share/ament_index/resource_index/packages
+[8.506s] symbolically linking /home/orsted/AGV_EEPIS/build/canbus/package.xml -> /home/orsted/AGV_EEPIS/install/canbus/share/canbus
+[8.506s] creating /home/orsted/AGV_EEPIS/install/canbus/share/canbus/launch
+[8.511s] symbolically linking /home/orsted/AGV_EEPIS/build/canbus/launch/canbus.launch.py -> /home/orsted/AGV_EEPIS/install/canbus/share/canbus/launch
+[9.389s] Invoked command in '/home/orsted/AGV_EEPIS/build/canbus' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/canbus/build --no-deps symlink_data

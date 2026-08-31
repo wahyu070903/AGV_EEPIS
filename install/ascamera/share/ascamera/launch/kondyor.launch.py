@@ -1,0 +1,1 @@
+/home/orsted/AGV_EEPIS/src/ascamera/launch/kondyor.launch.py
