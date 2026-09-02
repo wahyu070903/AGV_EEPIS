@@ -1,0 +1,770 @@
+[0.000000] (-) TimerEvent: {}
+[0.000600] (ascamera) JobQueued: {'identifier': 'ascamera', 'dependencies': OrderedDict()}
+[0.000949] (bringup) JobQueued: {'identifier': 'bringup', 'dependencies': OrderedDict()}
+[0.001121] (canbus) JobQueued: {'identifier': 'canbus', 'dependencies': OrderedDict()}
+[0.001713] (drive_controller) JobQueued: {'identifier': 'drive_controller', 'dependencies': OrderedDict()}
+[0.001758] (model_description) JobQueued: {'identifier': 'model_description', 'dependencies': OrderedDict()}
+[0.002053] (remote) JobQueued: {'identifier': 'remote', 'dependencies': OrderedDict()}
+[0.002386] (slam) JobQueued: {'identifier': 'slam', 'dependencies': OrderedDict()}
+[0.002477] (ultrasonic) JobQueued: {'identifier': 'ultrasonic', 'dependencies': OrderedDict()}
+[0.002624] (ascamera) JobStarted: {'identifier': 'ascamera'}
+[0.019490] (bringup) JobStarted: {'identifier': 'bringup'}
+[0.033509] (canbus) JobStarted: {'identifier': 'canbus'}
+[0.046771] (drive_controller) JobStarted: {'identifier': 'drive_controller'}
+[0.059985] (model_description) JobStarted: {'identifier': 'model_description'}
+[0.071393] (remote) JobStarted: {'identifier': 'remote'}
+[0.087935] (ascamera) JobProgress: {'identifier': 'ascamera', 'progress': 'cmake'}
+[0.090490] (ascamera) JobProgress: {'identifier': 'ascamera', 'progress': 'build'}
+[0.092319] (ascamera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orsted/AGV_EEPIS/build/ascamera', '--', '-j6', '-l6'], 'cwd': '/home/orsted/AGV_EEPIS/build/ascamera', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/ascamera', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/opt/ros/jazzy'}), 'shell': False}
+[0.099593] (-) TimerEvent: {}
+[0.200656] (-) TimerEvent: {}
+[0.301560] (-) TimerEvent: {}
+[0.402418] (-) TimerEvent: {}
+[0.503111] (-) TimerEvent: {}
+[0.603657] (-) TimerEvent: {}
+[0.704102] (-) TimerEvent: {}
+[0.804749] (-) TimerEvent: {}
+[0.905653] (-) TimerEvent: {}
+[1.006544] (-) TimerEvent: {}
+[1.107518] (-) TimerEvent: {}
+[1.208481] (-) TimerEvent: {}
+[1.309461] (-) TimerEvent: {}
+[1.410492] (-) TimerEvent: {}
+[1.511626] (-) TimerEvent: {}
+[1.612620] (-) TimerEvent: {}
+[1.713574] (-) TimerEvent: {}
+[1.814590] (-) TimerEvent: {}
+[1.915532] (-) TimerEvent: {}
+[2.016496] (-) TimerEvent: {}
+[2.117851] (-) TimerEvent: {}
+[2.218845] (-) TimerEvent: {}
+[2.319904] (-) TimerEvent: {}
+[2.421132] (-) TimerEvent: {}
+[2.522103] (-) TimerEvent: {}
+[2.623399] (-) TimerEvent: {}
+[2.724286] (-) TimerEvent: {}
+[2.743265] (ascamera) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/ascamera_node.dir/src/CameraPublisher.cpp.o\x1b[0m\n'}
+[2.824548] (-) TimerEvent: {}
+[2.925472] (-) TimerEvent: {}
+[3.026423] (-) TimerEvent: {}
+[3.127373] (-) TimerEvent: {}
+[3.228292] (-) TimerEvent: {}
+[3.329257] (-) TimerEvent: {}
+[3.430212] (-) TimerEvent: {}
+[3.534139] (-) TimerEvent: {}
+[3.635162] (-) TimerEvent: {}
+[3.736178] (-) TimerEvent: {}
+[3.838333] (-) TimerEvent: {}
+[3.942306] (-) TimerEvent: {}
+[4.043225] (-) TimerEvent: {}
+[4.144256] (-) TimerEvent: {}
+[4.245217] (-) TimerEvent: {}
+[4.349726] (-) TimerEvent: {}
+[4.450647] (-) TimerEvent: {}
+[4.552131] (-) TimerEvent: {}
+[4.654369] (-) TimerEvent: {}
+[4.758469] (-) TimerEvent: {}
+[4.859925] (-) TimerEvent: {}
+[4.962744] (-) TimerEvent: {}
+[5.066344] (-) TimerEvent: {}
+[5.170245] (-) TimerEvent: {}
+[5.271478] (-) TimerEvent: {}
+[5.377612] (-) TimerEvent: {}
+[5.478760] (-) TimerEvent: {}
+[5.580185] (-) TimerEvent: {}
+[5.682779] (-) TimerEvent: {}
+[5.786811] (-) TimerEvent: {}
+[5.888159] (-) TimerEvent: {}
+[5.990405] (-) TimerEvent: {}
+[6.094815] (-) TimerEvent: {}
+[6.196492] (-) TimerEvent: {}
+[6.302787] (-) TimerEvent: {}
+[6.404247] (-) TimerEvent: {}
+[6.510114] (-) TimerEvent: {}
+[6.567594] (canbus) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/canbus/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/canbus', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/canbus', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.614133] (-) TimerEvent: {}
+[6.626895] (remote) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/remote/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/remote', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/remote', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.718170] (-) TimerEvent: {}
+[6.744149] (bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/bringup', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.757176] (model_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/model_description/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/model_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/model_description', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.822160] (-) TimerEvent: {}
+[6.903905] (drive_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/drive_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/drive_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/drive_controller', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.926137] (-) TimerEvent: {}
+[7.027110] (-) TimerEvent: {}
+[7.130597] (-) TimerEvent: {}
+[7.234445] (-) TimerEvent: {}
+[7.337829] (-) TimerEvent: {}
+[7.446137] (-) TimerEvent: {}
+[7.547290] (-) TimerEvent: {}
+[7.654267] (-) TimerEvent: {}
+[7.661690] (canbus) StdoutLine: {'line': b'running develop\n'}
+[7.753798] (remote) StdoutLine: {'line': b'running develop\n'}
+[7.754794] (-) TimerEvent: {}
+[7.858112] (-) TimerEvent: {}
+[7.904486] (model_description) StdoutLine: {'line': b'running develop\n'}
+[7.934232] (bringup) StdoutLine: {'line': b'running develop\n'}
+[7.962142] (-) TimerEvent: {}
+[8.063210] (-) TimerEvent: {}
+[8.170227] (-) TimerEvent: {}
+[8.271395] (-) TimerEvent: {}
+[8.272471] (canbus) StdoutLine: {'line': b'running egg_info\n'}
+[8.331384] (canbus) StdoutLine: {'line': b'writing canbus.egg-info/PKG-INFO\n'}
+[8.337767] (canbus) StdoutLine: {'line': b'writing dependency_links to canbus.egg-info/dependency_links.txt\n'}
+[8.338859] (canbus) StdoutLine: {'line': b'writing entry points to canbus.egg-info/entry_points.txt\n'}
+[8.342002] (canbus) StdoutLine: {'line': b'writing requirements to canbus.egg-info/requires.txt\n'}
+[8.343852] (canbus) StdoutLine: {'line': b'writing top-level names to canbus.egg-info/top_level.txt\n'}
+[8.373469] (remote) StdoutLine: {'line': b'running egg_info\n'}
+[8.374176] (-) TimerEvent: {}
+[8.435669] (remote) StdoutLine: {'line': b'writing remote.egg-info/PKG-INFO\n'}
+[8.438270] (remote) StdoutLine: {'line': b'writing dependency_links to remote.egg-info/dependency_links.txt\n'}
+[8.443813] (remote) StdoutLine: {'line': b'writing entry points to remote.egg-info/entry_points.txt\n'}
+[8.445484] (remote) StdoutLine: {'line': b'writing requirements to remote.egg-info/requires.txt\n'}
+[8.445971] (remote) StdoutLine: {'line': b'writing top-level names to remote.egg-info/top_level.txt\n'}
+[8.478136] (-) TimerEvent: {}
+[8.490926] (canbus) StdoutLine: {'line': b"reading manifest file 'canbus.egg-info/SOURCES.txt'\n"}
+[8.493202] (canbus) StdoutLine: {'line': b"writing manifest file 'canbus.egg-info/SOURCES.txt'\n"}
+[8.556499] (canbus) StdoutLine: {'line': b'running build_ext\n'}
+[8.557613] (bringup) StdoutLine: {'line': b'running egg_info\n'}
+[8.558053] (canbus) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages/canbus.egg-link (link to .)\n'}
+[8.566069] (canbus) StdoutLine: {'line': b'Installing canbus_node script to /home/orsted/AGV_EEPIS/install/canbus/lib/canbus\n'}
+[8.566773] (canbus) StdoutLine: {'line': b'\n'}
+[8.567066] (canbus) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/canbus\n'}
+[8.567254] (canbus) StdoutLine: {'line': b'running symlink_data\n'}
+[8.569585] (model_description) StdoutLine: {'line': b'running egg_info\n'}
+[8.578305] (-) TimerEvent: {}
+[8.590230] (remote) StdoutLine: {'line': b"reading manifest file 'remote.egg-info/SOURCES.txt'\n"}
+[8.590897] (remote) StdoutLine: {'line': b"writing manifest file 'remote.egg-info/SOURCES.txt'\n"}
+[8.622532] (bringup) StdoutLine: {'line': b'writing bringup.egg-info/PKG-INFO\n'}
+[8.624325] (bringup) StdoutLine: {'line': b'writing dependency_links to bringup.egg-info/dependency_links.txt\n'}
+[8.626101] (bringup) StdoutLine: {'line': b'writing requirements to bringup.egg-info/requires.txt\n'}
+[8.626999] (bringup) StdoutLine: {'line': b'writing top-level names to bringup.egg-info/top_level.txt\n'}
+[8.648930] (model_description) StdoutLine: {'line': b'writing model_description.egg-info/PKG-INFO\n'}
+[8.651052] (model_description) StdoutLine: {'line': b'writing dependency_links to model_description.egg-info/dependency_links.txt\n'}
+[8.652334] (remote) StdoutLine: {'line': b'running build_ext\n'}
+[8.652649] (remote) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages/remote.egg-link (link to .)\n'}
+[8.652860] (model_description) StdoutLine: {'line': b'writing requirements to model_description.egg-info/requires.txt\n'}
+[8.655665] (remote) StdoutLine: {'line': b'Installing radio_node script to /home/orsted/AGV_EEPIS/install/remote/lib/remote\n'}
+[8.656157] (model_description) StdoutLine: {'line': b'writing top-level names to model_description.egg-info/top_level.txt\n'}
+[8.656406] (remote) StdoutLine: {'line': b'\n'}
+[8.656597] (remote) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/remote\n'}
+[8.656768] (remote) StdoutLine: {'line': b'running symlink_data\n'}
+[8.682121] (-) TimerEvent: {}
+[8.758802] (bringup) StdoutLine: {'line': b"reading manifest file 'bringup.egg-info/SOURCES.txt'\n"}
+[8.761568] (bringup) StdoutLine: {'line': b"writing manifest file 'bringup.egg-info/SOURCES.txt'\n"}
+[8.786113] (-) TimerEvent: {}
+[8.796773] (model_description) StdoutLine: {'line': b"reading manifest file 'model_description.egg-info/SOURCES.txt'\n"}
+[8.800912] (model_description) StdoutLine: {'line': b"writing manifest file 'model_description.egg-info/SOURCES.txt'\n"}
+[8.841281] (drive_controller) StdoutLine: {'line': b'running develop\n'}
+[8.842389] (drive_controller) StdoutLine: {'line': b'running egg_info\n'}
+[8.844955] (bringup) StdoutLine: {'line': b'running build_ext\n'}
+[8.850471] (bringup) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages/bringup.egg-link (link to .)\n'}
+[8.854597] (canbus) CommandEnded: {'returncode': 0}
+[8.857441] (bringup) StdoutLine: {'line': b'\n'}
+[8.865739] (bringup) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/bringup\n'}
+[8.869207] (bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[8.871569] (drive_controller) StdoutLine: {'line': b'writing drive_controller.egg-info/PKG-INFO\n'}
+[8.871921] (drive_controller) StdoutLine: {'line': b'writing dependency_links to drive_controller.egg-info/dependency_links.txt\n'}
+[8.872130] (drive_controller) StdoutLine: {'line': b'writing entry points to drive_controller.egg-info/entry_points.txt\n'}
+[8.873511] (drive_controller) StdoutLine: {'line': b'writing requirements to drive_controller.egg-info/requires.txt\n'}
+[8.873744] (drive_controller) StdoutLine: {'line': b'writing top-level names to drive_controller.egg-info/top_level.txt\n'}
+[8.886280] (-) TimerEvent: {}
+[8.889856] (model_description) StdoutLine: {'line': b'running build_ext\n'}
+[8.890462] (model_description) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages/model-description.egg-link (link to .)\n'}
+[8.893418] (model_description) StdoutLine: {'line': b'\n'}
+[8.896154] (model_description) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/model_description\n'}
+[8.898836] (model_description) StdoutLine: {'line': b'running symlink_data\n'}
+[8.918971] (canbus) JobEnded: {'identifier': 'canbus', 'rc': 0}
+[8.927001] (slam) JobStarted: {'identifier': 'slam'}
+[8.944809] (remote) CommandEnded: {'returncode': 0}
+[8.970847] (remote) JobEnded: {'identifier': 'remote', 'rc': 0}
+[8.978152] (ultrasonic) JobStarted: {'identifier': 'ultrasonic'}
+[8.986672] (-) TimerEvent: {}
+[9.010639] (drive_controller) StdoutLine: {'line': b"reading manifest file 'drive_controller.egg-info/SOURCES.txt'\n"}
+[9.013568] (drive_controller) StdoutLine: {'line': b"writing manifest file 'drive_controller.egg-info/SOURCES.txt'\n"}
+[9.082796] (drive_controller) StdoutLine: {'line': b'running build_ext\n'}
+[9.084412] (drive_controller) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages/drive-controller.egg-link (link to .)\n'}
+[9.086802] (-) TimerEvent: {}
+[9.088249] (drive_controller) StdoutLine: {'line': b'Installing kinematics_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller\n'}
+[9.089541] (drive_controller) StdoutLine: {'line': b'\n'}
+[9.090169] (drive_controller) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/drive_controller\n'}
+[9.090968] (drive_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[9.187040] (-) TimerEvent: {}
+[9.288313] (-) TimerEvent: {}
+[9.389635] (-) TimerEvent: {}
+[9.490560] (-) TimerEvent: {}
+[9.591444] (-) TimerEvent: {}
+[9.692416] (-) TimerEvent: {}
+[9.723882] (bringup) CommandEnded: {'returncode': 0}
+[9.755273] (bringup) JobEnded: {'identifier': 'bringup', 'rc': 0}
+[9.792609] (-) TimerEvent: {}
+[9.893475] (-) TimerEvent: {}
+[9.994377] (-) TimerEvent: {}
+[10.095260] (-) TimerEvent: {}
+[10.196147] (-) TimerEvent: {}
+[10.297035] (-) TimerEvent: {}
+[10.398024] (-) TimerEvent: {}
+[10.430607] (model_description) CommandEnded: {'returncode': 0}
+[10.472038] (model_description) JobEnded: {'identifier': 'model_description', 'rc': 0}
+[10.475397] (drive_controller) CommandEnded: {'returncode': 0}
+[10.498311] (-) TimerEvent: {}
+[10.504305] (drive_controller) JobEnded: {'identifier': 'drive_controller', 'rc': 0}
+[10.598525] (-) TimerEvent: {}
+[10.699452] (-) TimerEvent: {}
+[10.800351] (-) TimerEvent: {}
+[10.901262] (-) TimerEvent: {}
+[11.002186] (-) TimerEvent: {}
+[11.103075] (-) TimerEvent: {}
+[11.203961] (-) TimerEvent: {}
+[11.304825] (-) TimerEvent: {}
+[11.405713] (-) TimerEvent: {}
+[11.506623] (-) TimerEvent: {}
+[11.607504] (-) TimerEvent: {}
+[11.708433] (-) TimerEvent: {}
+[11.809319] (-) TimerEvent: {}
+[11.910203] (-) TimerEvent: {}
+[12.011073] (-) TimerEvent: {}
+[12.111949] (-) TimerEvent: {}
+[12.212881] (-) TimerEvent: {}
+[12.313992] (-) TimerEvent: {}
+[12.415055] (-) TimerEvent: {}
+[12.516018] (-) TimerEvent: {}
+[12.616935] (-) TimerEvent: {}
+[12.717816] (-) TimerEvent: {}
+[12.818725] (-) TimerEvent: {}
+[12.919567] (-) TimerEvent: {}
+[13.020440] (-) TimerEvent: {}
+[13.121306] (-) TimerEvent: {}
+[13.222213] (-) TimerEvent: {}
+[13.323104] (-) TimerEvent: {}
+[13.424042] (-) TimerEvent: {}
+[13.516017] (slam) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/slam/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/slam', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/slam', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[13.524567] (-) TimerEvent: {}
+[13.576708] (ultrasonic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/orsted/AGV_EEPIS/build/ultrasonic/build', '--no-deps', 'symlink_data'], 'cwd': '/home/orsted/AGV_EEPIS/build/ultrasonic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/ultrasonic', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[13.624800] (-) TimerEvent: {}
+[13.725699] (-) TimerEvent: {}
+[13.826603] (-) TimerEvent: {}
+[13.927542] (-) TimerEvent: {}
+[14.028435] (-) TimerEvent: {}
+[14.129349] (-) TimerEvent: {}
+[14.230275] (-) TimerEvent: {}
+[14.331149] (-) TimerEvent: {}
+[14.432029] (-) TimerEvent: {}
+[14.530742] (slam) StdoutLine: {'line': b'running develop\n'}
+[14.532095] (-) TimerEvent: {}
+[14.547226] (ultrasonic) StdoutLine: {'line': b'running develop\n'}
+[14.632355] (-) TimerEvent: {}
+[14.734050] (-) TimerEvent: {}
+[14.835764] (-) TimerEvent: {}
+[14.937436] (-) TimerEvent: {}
+[15.038890] (-) TimerEvent: {}
+[15.129767] (ultrasonic) StdoutLine: {'line': b'running egg_info\n'}
+[15.130674] (slam) StdoutLine: {'line': b'running egg_info\n'}
+[15.138977] (-) TimerEvent: {}
+[15.188335] (ultrasonic) StdoutLine: {'line': b'writing ultrasonic.egg-info/PKG-INFO\n'}
+[15.189206] (slam) StdoutLine: {'line': b'writing slam.egg-info/PKG-INFO\n'}
+[15.189775] (slam) StdoutLine: {'line': b'writing dependency_links to slam.egg-info/dependency_links.txt\n'}
+[15.190274] (ultrasonic) StdoutLine: {'line': b'writing dependency_links to ultrasonic.egg-info/dependency_links.txt\n'}
+[15.190709] (ultrasonic) StdoutLine: {'line': b'writing requirements to ultrasonic.egg-info/requires.txt\n'}
+[15.191000] (ultrasonic) StdoutLine: {'line': b'writing top-level names to ultrasonic.egg-info/top_level.txt\n'}
+[15.192199] (slam) StdoutLine: {'line': b'writing requirements to slam.egg-info/requires.txt\n'}
+[15.192637] (slam) StdoutLine: {'line': b'writing top-level names to slam.egg-info/top_level.txt\n'}
+[15.239213] (-) TimerEvent: {}
+[15.305854] (ultrasonic) StdoutLine: {'line': b"reading manifest file 'ultrasonic.egg-info/SOURCES.txt'\n"}
+[15.307163] (ultrasonic) StdoutLine: {'line': b"writing manifest file 'ultrasonic.egg-info/SOURCES.txt'\n"}
+[15.310573] (slam) StdoutLine: {'line': b"reading manifest file 'slam.egg-info/SOURCES.txt'\n"}
+[15.312452] (slam) StdoutLine: {'line': b"writing manifest file 'slam.egg-info/SOURCES.txt'\n"}
+[15.339330] (-) TimerEvent: {}
+[15.369525] (ultrasonic) StdoutLine: {'line': b'running build_ext\n'}
+[15.370261] (ultrasonic) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages/ultrasonic.egg-link (link to .)\n'}
+[15.371701] (ultrasonic) StdoutLine: {'line': b'\n'}
+[15.371976] (ultrasonic) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/ultrasonic\n'}
+[15.372260] (ultrasonic) StdoutLine: {'line': b'running symlink_data\n'}
+[15.375268] (slam) StdoutLine: {'line': b'running build_ext\n'}
+[15.375878] (slam) StdoutLine: {'line': b'Creating /home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages/slam.egg-link (link to .)\n'}
+[15.378002] (slam) StdoutLine: {'line': b'\n'}
+[15.378550] (slam) StdoutLine: {'line': b'Installed /home/orsted/AGV_EEPIS/build/slam\n'}
+[15.378759] (slam) StdoutLine: {'line': b'running symlink_data\n'}
+[15.439646] (-) TimerEvent: {}
+[15.540790] (-) TimerEvent: {}
+[15.553139] (ultrasonic) CommandEnded: {'returncode': 0}
+[15.579945] (ultrasonic) JobEnded: {'identifier': 'ultrasonic', 'rc': 0}
+[15.592130] (slam) CommandEnded: {'returncode': 0}
+[15.619239] (slam) JobEnded: {'identifier': 'slam', 'rc': 0}
+[15.640977] (-) TimerEvent: {}
+[15.741843] (-) TimerEvent: {}
+[15.842785] (-) TimerEvent: {}
+[15.943741] (-) TimerEvent: {}
+[16.044670] (-) TimerEvent: {}
+[16.145621] (-) TimerEvent: {}
+[16.246606] (-) TimerEvent: {}
+[16.347538] (-) TimerEvent: {}
+[16.448452] (-) TimerEvent: {}
+[16.549347] (-) TimerEvent: {}
+[16.650337] (-) TimerEvent: {}
+[16.751312] (-) TimerEvent: {}
+[16.852326] (-) TimerEvent: {}
+[16.953296] (-) TimerEvent: {}
+[17.054291] (-) TimerEvent: {}
+[17.155258] (-) TimerEvent: {}
+[17.256232] (-) TimerEvent: {}
+[17.357183] (-) TimerEvent: {}
+[17.458138] (-) TimerEvent: {}
+[17.559067] (-) TimerEvent: {}
+[17.660092] (-) TimerEvent: {}
+[17.722268] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CameraPublisher::\x1b[01;32m\x1b[KirInfoPublisher\x1b[m\x1b[K(AS_CAM_PTR, const AS_SDK_Data_s*, AS_CAM_Parameter_s&, builtin_interfaces::msg::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.723142] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1000:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.723405] (ascamera) StderrLine: {'line': b' 1000 | \x1b[01;35m\x1b[Kltin_interfaces::msg::Time time\x1b[m\x1b[K)\n'}
+[17.723604] (ascamera) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[17.723785] (ascamera) StderrLine: {'line': b'\n'}
+[17.728773] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CameraPublisher::\x1b[01;32m\x1b[KpeakInfoPublisher\x1b[m\x1b[K(AS_CAM_PTR, const AS_SDK_Data_s*, AS_CAM_Parameter_s&, builtin_interfaces::msg::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.729308] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1033:104:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.729524] (ascamera) StderrLine: {'line': b' 1033 | \x1b[01;35m\x1b[Kltin_interfaces::msg::Time time\x1b[m\x1b[K)\n'}
+[17.729751] (ascamera) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[17.729950] (ascamera) StderrLine: {'line': b'\n'}
+[17.732768] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CameraPublisher::\x1b[01;32m\x1b[KdepthMergeInfoPublisher\x1b[m\x1b[K(AS_CAM_PTR, const AS_SDK_MERGE_s*, AS_CAM_Parameter_s&, builtin_interfaces::msg::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.733047] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1081:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KstParameter\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.733245] (ascamera) StderrLine: {'line': b' 1081 |  \x1b[01;35m\x1b[KAS_CAM_Parameter_s &stParameter\x1b[m\x1b[K, builtin_interfaces::msg::Time time)\n'}
+[17.733421] (ascamera) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.733591] (ascamera) StderrLine: {'line': b'\n'}
+[17.737417] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CameraPublisher::\x1b[01;32m\x1b[KpointcloudMergePublisher\x1b[m\x1b[K(AS_CAM_PTR, const AS_SDK_MERGE_s*, AS_CAM_Parameter_s&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.737696] (ascamera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1119:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KstParameter\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.737881] (ascamera) StderrLine: {'line': b' 1119 |  \x1b[01;35m\x1b[KAS_CAM_Parameter_s &stParameter\x1b[m\x1b[K)\n'}
+[17.738102] (ascamera) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.738271] (ascamera) StderrLine: {'line': b'\n'}
+[17.760152] (-) TimerEvent: {}
+[17.860900] (-) TimerEvent: {}
+[17.961837] (-) TimerEvent: {}
+[18.062837] (-) TimerEvent: {}
+[18.163820] (-) TimerEvent: {}
+[18.264789] (-) TimerEvent: {}
+[18.365761] (-) TimerEvent: {}
+[18.466765] (-) TimerEvent: {}
+[18.567728] (-) TimerEvent: {}
+[18.668746] (-) TimerEvent: {}
+[18.769700] (-) TimerEvent: {}
+[18.870683] (-) TimerEvent: {}
+[18.971672] (-) TimerEvent: {}
+[19.072618] (-) TimerEvent: {}
+[19.173549] (-) TimerEvent: {}
+[19.274546] (-) TimerEvent: {}
+[19.375502] (-) TimerEvent: {}
+[19.476449] (-) TimerEvent: {}
+[19.577384] (-) TimerEvent: {}
+[19.678359] (-) TimerEvent: {}
+[19.779295] (-) TimerEvent: {}
+[19.880270] (-) TimerEvent: {}
+[19.981272] (-) TimerEvent: {}
+[20.082253] (-) TimerEvent: {}
+[20.183196] (-) TimerEvent: {}
+[20.284147] (-) TimerEvent: {}
+[20.385090] (-) TimerEvent: {}
+[20.486073] (-) TimerEvent: {}
+[20.587044] (-) TimerEvent: {}
+[20.687986] (-) TimerEvent: {}
+[20.788920] (-) TimerEvent: {}
+[20.889872] (-) TimerEvent: {}
+[20.990896] (-) TimerEvent: {}
+[21.091880] (-) TimerEvent: {}
+[21.192834] (-) TimerEvent: {}
+[21.293793] (-) TimerEvent: {}
+[21.394809] (-) TimerEvent: {}
+[21.495744] (-) TimerEvent: {}
+[21.596687] (-) TimerEvent: {}
+[21.697659] (-) TimerEvent: {}
+[21.798642] (-) TimerEvent: {}
+[21.899569] (-) TimerEvent: {}
+[22.000510] (-) TimerEvent: {}
+[22.101433] (-) TimerEvent: {}
+[22.202408] (-) TimerEvent: {}
+[22.303379] (-) TimerEvent: {}
+[22.404357] (-) TimerEvent: {}
+[22.505317] (-) TimerEvent: {}
+[22.606337] (-) TimerEvent: {}
+[22.707262] (-) TimerEvent: {}
+[22.808207] (-) TimerEvent: {}
+[22.909148] (-) TimerEvent: {}
+[23.010147] (-) TimerEvent: {}
+[23.111161] (-) TimerEvent: {}
+[23.212177] (-) TimerEvent: {}
+[23.313124] (-) TimerEvent: {}
+[23.414119] (-) TimerEvent: {}
+[23.515079] (-) TimerEvent: {}
+[23.616080] (-) TimerEvent: {}
+[23.717064] (-) TimerEvent: {}
+[23.818028] (-) TimerEvent: {}
+[23.918981] (-) TimerEvent: {}
+[24.019960] (-) TimerEvent: {}
+[24.120957] (-) TimerEvent: {}
+[24.221947] (-) TimerEvent: {}
+[24.322922] (-) TimerEvent: {}
+[24.423878] (-) TimerEvent: {}
+[24.524843] (-) TimerEvent: {}
+[24.625772] (-) TimerEvent: {}
+[24.726705] (-) TimerEvent: {}
+[24.827620] (-) TimerEvent: {}
+[24.928567] (-) TimerEvent: {}
+[25.029555] (-) TimerEvent: {}
+[25.130585] (-) TimerEvent: {}
+[25.231538] (-) TimerEvent: {}
+[25.332490] (-) TimerEvent: {}
+[25.433442] (-) TimerEvent: {}
+[25.534417] (-) TimerEvent: {}
+[25.635390] (-) TimerEvent: {}
+[25.736326] (-) TimerEvent: {}
+[25.837247] (-) TimerEvent: {}
+[25.938219] (-) TimerEvent: {}
+[26.039233] (-) TimerEvent: {}
+[26.140249] (-) TimerEvent: {}
+[26.241257] (-) TimerEvent: {}
+[26.342263] (-) TimerEvent: {}
+[26.443251] (-) TimerEvent: {}
+[26.544234] (-) TimerEvent: {}
+[26.645193] (-) TimerEvent: {}
+[26.746100] (-) TimerEvent: {}
+[26.847025] (-) TimerEvent: {}
+[26.948011] (-) TimerEvent: {}
+[27.048967] (-) TimerEvent: {}
+[27.149969] (-) TimerEvent: {}
+[27.250922] (-) TimerEvent: {}
+[27.351896] (-) TimerEvent: {}
+[27.452796] (-) TimerEvent: {}
+[27.553732] (-) TimerEvent: {}
+[27.654796] (-) TimerEvent: {}
+[27.755760] (-) TimerEvent: {}
+[27.856705] (-) TimerEvent: {}
+[27.957672] (-) TimerEvent: {}
+[28.058671] (-) TimerEvent: {}
+[28.159662] (-) TimerEvent: {}
+[28.260667] (-) TimerEvent: {}
+[28.361653] (-) TimerEvent: {}
+[28.462673] (-) TimerEvent: {}
+[28.563657] (-) TimerEvent: {}
+[28.664683] (-) TimerEvent: {}
+[28.765714] (-) TimerEvent: {}
+[28.866713] (-) TimerEvent: {}
+[28.967693] (-) TimerEvent: {}
+[29.068668] (-) TimerEvent: {}
+[29.169702] (-) TimerEvent: {}
+[29.270746] (-) TimerEvent: {}
+[29.371747] (-) TimerEvent: {}
+[29.472740] (-) TimerEvent: {}
+[29.573756] (-) TimerEvent: {}
+[29.674781] (-) TimerEvent: {}
+[29.775772] (-) TimerEvent: {}
+[29.876689] (-) TimerEvent: {}
+[29.977654] (-) TimerEvent: {}
+[30.078653] (-) TimerEvent: {}
+[30.179619] (-) TimerEvent: {}
+[30.280586] (-) TimerEvent: {}
+[30.381524] (-) TimerEvent: {}
+[30.482545] (-) TimerEvent: {}
+[30.583528] (-) TimerEvent: {}
+[30.684516] (-) TimerEvent: {}
+[30.785544] (-) TimerEvent: {}
+[30.886554] (-) TimerEvent: {}
+[30.987528] (-) TimerEvent: {}
+[31.088513] (-) TimerEvent: {}
+[31.189468] (-) TimerEvent: {}
+[31.290500] (-) TimerEvent: {}
+[31.391479] (-) TimerEvent: {}
+[31.492485] (-) TimerEvent: {}
+[31.593461] (-) TimerEvent: {}
+[31.694474] (-) TimerEvent: {}
+[31.795462] (-) TimerEvent: {}
+[31.896421] (-) TimerEvent: {}
+[31.997389] (-) TimerEvent: {}
+[32.098410] (-) TimerEvent: {}
+[32.199371] (-) TimerEvent: {}
+[32.300375] (-) TimerEvent: {}
+[32.401341] (-) TimerEvent: {}
+[32.502412] (-) TimerEvent: {}
+[32.603427] (-) TimerEvent: {}
+[32.704413] (-) TimerEvent: {}
+[32.805381] (-) TimerEvent: {}
+[32.906343] (-) TimerEvent: {}
+[33.007290] (-) TimerEvent: {}
+[33.108249] (-) TimerEvent: {}
+[33.209211] (-) TimerEvent: {}
+[33.310214] (-) TimerEvent: {}
+[33.411176] (-) TimerEvent: {}
+[33.512177] (-) TimerEvent: {}
+[33.613181] (-) TimerEvent: {}
+[33.714174] (-) TimerEvent: {}
+[33.815161] (-) TimerEvent: {}
+[33.916176] (-) TimerEvent: {}
+[34.017158] (-) TimerEvent: {}
+[34.118150] (-) TimerEvent: {}
+[34.219079] (-) TimerEvent: {}
+[34.320001] (-) TimerEvent: {}
+[34.420916] (-) TimerEvent: {}
+[34.521861] (-) TimerEvent: {}
+[34.622843] (-) TimerEvent: {}
+[34.723769] (-) TimerEvent: {}
+[34.824706] (-) TimerEvent: {}
+[34.925631] (-) TimerEvent: {}
+[35.026606] (-) TimerEvent: {}
+[35.127558] (-) TimerEvent: {}
+[35.228472] (-) TimerEvent: {}
+[35.329443] (-) TimerEvent: {}
+[35.430431] (-) TimerEvent: {}
+[35.531371] (-) TimerEvent: {}
+[35.632326] (-) TimerEvent: {}
+[35.733269] (-) TimerEvent: {}
+[35.834286] (-) TimerEvent: {}
+[35.935275] (-) TimerEvent: {}
+[36.036185] (-) TimerEvent: {}
+[36.137132] (-) TimerEvent: {}
+[36.238110] (-) TimerEvent: {}
+[36.339061] (-) TimerEvent: {}
+[36.440046] (-) TimerEvent: {}
+[36.541046] (-) TimerEvent: {}
+[36.642024] (-) TimerEvent: {}
+[36.742919] (-) TimerEvent: {}
+[36.843836] (-) TimerEvent: {}
+[36.944742] (-) TimerEvent: {}
+[37.045676] (-) TimerEvent: {}
+[37.146664] (-) TimerEvent: {}
+[37.247616] (-) TimerEvent: {}
+[37.348536] (-) TimerEvent: {}
+[37.449444] (-) TimerEvent: {}
+[37.550441] (-) TimerEvent: {}
+[37.651403] (-) TimerEvent: {}
+[37.752262] (-) TimerEvent: {}
+[37.853173] (-) TimerEvent: {}
+[37.954136] (-) TimerEvent: {}
+[38.055049] (-) TimerEvent: {}
+[38.156002] (-) TimerEvent: {}
+[38.256963] (-) TimerEvent: {}
+[38.357944] (-) TimerEvent: {}
+[38.458898] (-) TimerEvent: {}
+[38.559848] (-) TimerEvent: {}
+[38.660852] (-) TimerEvent: {}
+[38.761819] (-) TimerEvent: {}
+[38.862832] (-) TimerEvent: {}
+[38.963829] (-) TimerEvent: {}
+[39.064778] (-) TimerEvent: {}
+[39.165737] (-) TimerEvent: {}
+[39.266803] (-) TimerEvent: {}
+[39.367772] (-) TimerEvent: {}
+[39.468773] (-) TimerEvent: {}
+[39.569791] (-) TimerEvent: {}
+[39.670835] (-) TimerEvent: {}
+[39.771843] (-) TimerEvent: {}
+[39.872841] (-) TimerEvent: {}
+[39.973811] (-) TimerEvent: {}
+[40.074804] (-) TimerEvent: {}
+[40.175793] (-) TimerEvent: {}
+[40.276762] (-) TimerEvent: {}
+[40.377691] (-) TimerEvent: {}
+[40.478665] (-) TimerEvent: {}
+[40.579617] (-) TimerEvent: {}
+[40.680575] (-) TimerEvent: {}
+[40.781537] (-) TimerEvent: {}
+[40.882576] (-) TimerEvent: {}
+[40.983562] (-) TimerEvent: {}
+[41.084543] (-) TimerEvent: {}
+[41.185523] (-) TimerEvent: {}
+[41.286540] (-) TimerEvent: {}
+[41.387517] (-) TimerEvent: {}
+[41.488884] (-) TimerEvent: {}
+[41.589969] (-) TimerEvent: {}
+[41.690945] (-) TimerEvent: {}
+[41.791879] (-) TimerEvent: {}
+[41.892803] (-) TimerEvent: {}
+[41.993776] (-) TimerEvent: {}
+[42.094857] (-) TimerEvent: {}
+[42.195826] (-) TimerEvent: {}
+[42.296771] (-) TimerEvent: {}
+[42.397732] (-) TimerEvent: {}
+[42.498752] (-) TimerEvent: {}
+[42.599782] (-) TimerEvent: {}
+[42.700758] (-) TimerEvent: {}
+[42.801922] (-) TimerEvent: {}
+[42.902893] (-) TimerEvent: {}
+[43.003865] (-) TimerEvent: {}
+[43.104833] (-) TimerEvent: {}
+[43.205799] (-) TimerEvent: {}
+[43.306859] (-) TimerEvent: {}
+[43.407875] (-) TimerEvent: {}
+[43.508870] (-) TimerEvent: {}
+[43.609940] (-) TimerEvent: {}
+[43.710967] (-) TimerEvent: {}
+[43.811967] (-) TimerEvent: {}
+[43.913004] (-) TimerEvent: {}
+[44.014131] (-) TimerEvent: {}
+[44.115094] (-) TimerEvent: {}
+[44.215947] (-) TimerEvent: {}
+[44.316781] (-) TimerEvent: {}
+[44.417814] (-) TimerEvent: {}
+[44.518889] (-) TimerEvent: {}
+[44.619933] (-) TimerEvent: {}
+[44.720917] (-) TimerEvent: {}
+[44.822038] (-) TimerEvent: {}
+[44.923041] (-) TimerEvent: {}
+[45.023992] (-) TimerEvent: {}
+[45.124981] (-) TimerEvent: {}
+[45.225949] (-) TimerEvent: {}
+[45.326933] (-) TimerEvent: {}
+[45.427932] (-) TimerEvent: {}
+[45.528873] (-) TimerEvent: {}
+[45.629761] (-) TimerEvent: {}
+[45.730687] (-) TimerEvent: {}
+[45.831657] (-) TimerEvent: {}
+[45.932651] (-) TimerEvent: {}
+[46.033612] (-) TimerEvent: {}
+[46.134594] (-) TimerEvent: {}
+[46.235540] (-) TimerEvent: {}
+[46.336501] (-) TimerEvent: {}
+[46.437431] (-) TimerEvent: {}
+[46.538383] (-) TimerEvent: {}
+[46.639281] (-) TimerEvent: {}
+[46.740243] (-) TimerEvent: {}
+[46.841177] (-) TimerEvent: {}
+[46.942144] (-) TimerEvent: {}
+[47.043089] (-) TimerEvent: {}
+[47.144064] (-) TimerEvent: {}
+[47.245007] (-) TimerEvent: {}
+[47.346014] (-) TimerEvent: {}
+[47.446948] (-) TimerEvent: {}
+[47.547951] (-) TimerEvent: {}
+[47.648959] (-) TimerEvent: {}
+[47.750026] (-) TimerEvent: {}
+[47.851029] (-) TimerEvent: {}
+[47.952008] (-) TimerEvent: {}
+[48.052983] (-) TimerEvent: {}
+[48.153988] (-) TimerEvent: {}
+[48.254930] (-) TimerEvent: {}
+[48.355886] (-) TimerEvent: {}
+[48.456852] (-) TimerEvent: {}
+[48.557828] (-) TimerEvent: {}
+[48.658812] (-) TimerEvent: {}
+[48.759746] (-) TimerEvent: {}
+[48.860707] (-) TimerEvent: {}
+[48.961694] (-) TimerEvent: {}
+[49.062683] (-) TimerEvent: {}
+[49.163619] (-) TimerEvent: {}
+[49.264589] (-) TimerEvent: {}
+[49.365544] (-) TimerEvent: {}
+[49.466450] (-) TimerEvent: {}
+[49.567391] (-) TimerEvent: {}
+[49.668341] (-) TimerEvent: {}
+[49.769276] (-) TimerEvent: {}
+[49.870280] (-) TimerEvent: {}
+[49.971299] (-) TimerEvent: {}
+[50.072254] (-) TimerEvent: {}
+[50.173226] (-) TimerEvent: {}
+[50.274145] (-) TimerEvent: {}
+[50.375117] (-) TimerEvent: {}
+[50.476018] (-) TimerEvent: {}
+[50.576948] (-) TimerEvent: {}
+[50.677961] (-) TimerEvent: {}
+[50.778954] (-) TimerEvent: {}
+[50.879905] (-) TimerEvent: {}
+[50.980809] (-) TimerEvent: {}
+[51.081745] (-) TimerEvent: {}
+[51.182749] (-) TimerEvent: {}
+[51.283732] (-) TimerEvent: {}
+[51.384687] (-) TimerEvent: {}
+[51.485609] (-) TimerEvent: {}
+[51.586593] (-) TimerEvent: {}
+[51.687547] (-) TimerEvent: {}
+[51.788491] (-) TimerEvent: {}
+[51.889438] (-) TimerEvent: {}
+[51.990436] (-) TimerEvent: {}
+[52.091406] (-) TimerEvent: {}
+[52.192352] (-) TimerEvent: {}
+[52.293306] (-) TimerEvent: {}
+[52.394354] (-) TimerEvent: {}
+[52.495336] (-) TimerEvent: {}
+[52.596324] (-) TimerEvent: {}
+[52.697305] (-) TimerEvent: {}
+[52.798299] (-) TimerEvent: {}
+[52.899240] (-) TimerEvent: {}
+[53.000156] (-) TimerEvent: {}
+[53.101118] (-) TimerEvent: {}
+[53.202110] (-) TimerEvent: {}
+[53.303061] (-) TimerEvent: {}
+[53.404010] (-) TimerEvent: {}
+[53.504944] (-) TimerEvent: {}
+[53.605934] (-) TimerEvent: {}
+[53.706860] (-) TimerEvent: {}
+[53.807808] (-) TimerEvent: {}
+[53.908781] (-) TimerEvent: {}
+[54.009808] (-) TimerEvent: {}
+[54.110849] (-) TimerEvent: {}
+[54.211819] (-) TimerEvent: {}
+[54.312774] (-) TimerEvent: {}
+[54.413720] (-) TimerEvent: {}
+[54.514722] (-) TimerEvent: {}
+[54.615676] (-) TimerEvent: {}
+[54.716662] (-) TimerEvent: {}
+[54.817800] (-) TimerEvent: {}
+[54.918853] (-) TimerEvent: {}
+[55.019800] (-) TimerEvent: {}
+[55.120741] (-) TimerEvent: {}
+[55.221713] (-) TimerEvent: {}
+[55.322695] (-) TimerEvent: {}
+[55.423624] (-) TimerEvent: {}
+[55.524560] (-) TimerEvent: {}
+[55.625499] (-) TimerEvent: {}
+[55.726479] (-) TimerEvent: {}
+[55.827408] (-) TimerEvent: {}
+[55.928277] (-) TimerEvent: {}
+[56.029268] (-) TimerEvent: {}
+[56.130304] (-) TimerEvent: {}
+[56.231212] (-) TimerEvent: {}
+[56.332142] (-) TimerEvent: {}
+[56.433076] (-) TimerEvent: {}
+[56.517246] (ascamera) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX executable ascamera_node\x1b[0m\n'}
+[56.533204] (-) TimerEvent: {}
+[56.634092] (-) TimerEvent: {}
+[56.735070] (-) TimerEvent: {}
+[56.836067] (-) TimerEvent: {}
+[56.937043] (-) TimerEvent: {}
+[57.038116] (-) TimerEvent: {}
+[57.139115] (-) TimerEvent: {}
+[57.240196] (-) TimerEvent: {}
+[57.341201] (-) TimerEvent: {}
+[57.442260] (-) TimerEvent: {}
+[57.543261] (-) TimerEvent: {}
+[57.644271] (-) TimerEvent: {}
+[57.745241] (-) TimerEvent: {}
+[57.846375] (-) TimerEvent: {}
+[57.947380] (-) TimerEvent: {}
+[58.048413] (-) TimerEvent: {}
+[58.107489] (ascamera) StdoutLine: {'line': b'[100%] Built target ascamera_node\n'}
+[58.141689] (ascamera) CommandEnded: {'returncode': 0}
+[58.144328] (ascamera) JobProgress: {'identifier': 'ascamera', 'progress': 'install'}
+[58.148447] (-) TimerEvent: {}
+[58.172446] (ascamera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orsted/AGV_EEPIS/build/ascamera'], 'cwd': '/home/orsted/AGV_EEPIS/build/ascamera', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'orsted', 'SSH_CLIENT': '192.168.137.1 64590 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-13.2/lib64:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.2/lib64:', 'BROWSER': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/helpers/browser.sh', 'HOME': '/home/orsted', 'OLDPWD': '/home/orsted/AGV_EEPIS/src', 'TERM_PROGRAM_VERSION': '1.135.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-105023bc-44c2-4d23-945b-b8eefda809be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orsted', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/usr/local/cuda-13.2/bin:/home/orsted/.vscode-server/cli/servers/Stable-08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f13100ddb5.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_ALLL': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orsted/AGV_EEPIS/build/ascamera', 'SSH_CONNECTION': '192.168.137.1 64590 192.168.137.60 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/orsted/AGV_EEPIS/build/ultrasonic:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/slam:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/remote:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/model_description:/home/orsted/AGV_EEPIS/install/model_description/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/drive_controller:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/canbus:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:/home/orsted/AGV_EEPIS/build/bringup:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orsted/AGV_EEPIS/install/ascamera:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/model_description:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/opt/ros/jazzy'}), 'shell': False}
+[58.198564] (ascamera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[58.199761] (ascamera) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[58.200524] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/lib/ascamera/ascamera_node\n'}
+[58.201448] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/ascamera.launch.py\n'}
+[58.201677] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/changA.launch.py\n'}
+[58.202004] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60c.launch.py\n'}
+[58.202290] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60cn.launch.py\n'}
+[58.202521] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kondyor.launch.py\n'}
+[58.202738] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_a.launch.py\n'}
+[58.202958] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_c.launch.py\n'}
+[58.203145] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/nuwa.launch.py\n'}
+[58.203364] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/runCamera.launch.py\n'}
+[58.203603] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/package_run_dependencies/ascamera\n'}
+[58.203798] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/parent_prefix_path/ascamera\n'}
+[58.204051] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.sh\n'}
+[58.204259] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.dsv\n'}
+[58.204524] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.sh\n'}
+[58.204834] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.dsv\n'}
+[58.205132] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.bash\n'}
+[58.205429] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.sh\n'}
+[58.205723] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.zsh\n'}
+[58.206056] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.dsv\n'}
+[58.206303] (ascamera) StdoutLine: {'line': b'-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.dsv\n'}
+[58.232851] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/packages/ascamera\n'}
+[58.233750] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig.cmake\n'}
+[58.234116] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig-version.cmake\n'}
+[58.234327] (ascamera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.xml\n'}
+[58.238560] (ascamera) CommandEnded: {'returncode': 0}
+[58.248785] (-) TimerEvent: {}
+[58.293091] (ascamera) JobEnded: {'identifier': 'ascamera', 'rc': 0}
+[58.296929] (-) EventReactorShutdown: {}

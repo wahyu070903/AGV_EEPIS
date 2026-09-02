@@ -1,0 +1,15 @@
+[4.593s] Invoking command in '/home/orsted/AGV_EEPIS/build/slam': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/slam/build --no-deps symlink_data
+[5.604s] running develop
+[6.204s] running egg_info
+[6.262s] writing slam.egg-info/PKG-INFO
+[6.263s] writing dependency_links to slam.egg-info/dependency_links.txt
+[6.265s] writing requirements to slam.egg-info/requires.txt
+[6.266s] writing top-level names to slam.egg-info/top_level.txt
+[6.384s] reading manifest file 'slam.egg-info/SOURCES.txt'
+[6.385s] writing manifest file 'slam.egg-info/SOURCES.txt'
+[6.449s] running build_ext
+[6.449s] Creating /home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages/slam.egg-link (link to .)
+[6.451s] 
+[6.452s] Installed /home/orsted/AGV_EEPIS/build/slam
+[6.452s] running symlink_data
+[6.666s] Invoked command in '/home/orsted/AGV_EEPIS/build/slam' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/slam/build --no-deps symlink_data

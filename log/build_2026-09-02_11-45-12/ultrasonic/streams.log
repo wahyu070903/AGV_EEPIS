@@ -1,0 +1,15 @@
+[3.558s] Invoking command in '/home/orsted/AGV_EEPIS/build/ultrasonic': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ultrasonic/build --no-deps symlink_data
+[4.459s] running develop
+[5.032s] running egg_info
+[5.089s] writing ultrasonic.egg-info/PKG-INFO
+[5.090s] writing dependency_links to ultrasonic.egg-info/dependency_links.txt
+[5.092s] writing requirements to ultrasonic.egg-info/requires.txt
+[5.092s] writing top-level names to ultrasonic.egg-info/top_level.txt
+[5.206s] reading manifest file 'ultrasonic.egg-info/SOURCES.txt'
+[5.208s] writing manifest file 'ultrasonic.egg-info/SOURCES.txt'
+[5.269s] running build_ext
+[5.269s] Creating /home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages/ultrasonic.egg-link (link to .)
+[5.271s] 
+[5.271s] Installed /home/orsted/AGV_EEPIS/build/ultrasonic
+[5.271s] running symlink_data
+[5.436s] Invoked command in '/home/orsted/AGV_EEPIS/build/ultrasonic' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ultrasonic/build --no-deps symlink_data

@@ -1,0 +1,17 @@
+[7.029s] Invoking command in '/home/orsted/AGV_EEPIS/build/drive_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[8.177s] running develop
+[8.793s] running egg_info
+[8.858s] writing drive_controller.egg-info/PKG-INFO
+[8.861s] writing dependency_links to drive_controller.egg-info/dependency_links.txt
+[8.863s] writing entry points to drive_controller.egg-info/entry_points.txt
+[8.864s] writing requirements to drive_controller.egg-info/requires.txt
+[8.865s] writing top-level names to drive_controller.egg-info/top_level.txt
+[8.999s] reading manifest file 'drive_controller.egg-info/SOURCES.txt'
+[9.001s] writing manifest file 'drive_controller.egg-info/SOURCES.txt'
+[9.085s] running build_ext
+[9.088s] Creating /home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages/drive-controller.egg-link (link to .)
+[9.090s] Installing kinematics_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[9.090s] 
+[9.090s] Installed /home/orsted/AGV_EEPIS/build/drive_controller
+[9.090s] running symlink_data
+[9.815s] Invoked command in '/home/orsted/AGV_EEPIS/build/drive_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data

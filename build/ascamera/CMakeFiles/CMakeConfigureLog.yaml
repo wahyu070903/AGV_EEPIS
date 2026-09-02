@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d7416/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_d7416.dir/build.make CMakeFiles/cmTC_d7416.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4'
-        Building C object CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85e9c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_85e9c.dir/build.make CMakeFiles/cmTC_85e9c.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD'
+        Building C object CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -87,8 +87,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d7416.dir/'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d7416.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccqr6JBK.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_85e9c.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_85e9c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc99Yf6m.s
         GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (aarch64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -105,15 +105,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: af3ce90fa71916e7a8489f94b60f417c
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d7416.dir/'
-         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o /tmp/ccqr6JBK.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_85e9c.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o /tmp/cc99Yf6m.s
         GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_d7416
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7416.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o -o cmTC_d7416 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_85e9c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85e9c.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o -o cmTC_85e9c 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
@@ -126,10 +126,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d7416' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_d7416.'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQHL2KU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_d7416 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d7416' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_d7416.'
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85e9c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_85e9c.'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctLCDfV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_85e9c /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85e9c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_85e9c.'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD'
         
       exitCode: 0
   -
@@ -163,13 +163,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4']
+        ignore line: [Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d7416/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d7416.dir/build.make CMakeFiles/cmTC_d7416.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-LVJrt4']
-        ignore line: [Building C object CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85e9c/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_85e9c.dir/build.make CMakeFiles/cmTC_85e9c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BuSIVD']
+        ignore line: [Building C object CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -179,8 +179,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d7416.dir/']
-        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d7416.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccqr6JBK.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_85e9c.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_85e9c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc99Yf6m.s]
         ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (aarch64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -197,15 +197,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: af3ce90fa71916e7a8489f94b60f417c]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d7416.dir/']
-        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o /tmp/ccqr6JBK.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_85e9c.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o /tmp/cc99Yf6m.s]
         ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_d7416]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7416.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o -o cmTC_d7416 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_85e9c]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85e9c.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o -o cmTC_85e9c ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper]
@@ -218,13 +218,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d7416' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_d7416.']
-        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQHL2KU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_d7416 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85e9c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_85e9c.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctLCDfV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_85e9c /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/aarch64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccQHL2KU.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cctLCDfV.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -244,7 +244,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_d7416] ==> ignore
+          arg [cmTC_85e9c] ==> ignore
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
@@ -258,7 +258,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib]
           arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_d7416.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_85e9c.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -300,8 +300,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -310,13 +310,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_21ac5/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_21ac5.dir/build.make CMakeFiles/cmTC_21ac5.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY'
-        Building CXX object CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0bb6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e0bb6.dir/build.make CMakeFiles/cmTC_e0bb6.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK'
+        Building CXX object CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -326,8 +326,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_21ac5.dir/'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_21ac5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccFLib0S.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e0bb6.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e0bb6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccfWC420.s
         GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (aarch64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -348,15 +348,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 3007a9bdd78900ddf3753164e1e631d0
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_21ac5.dir/'
-         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFLib0S.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e0bb6.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccfWC420.s
         GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_21ac5
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21ac5.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_21ac5 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_e0bb6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0bb6.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e0bb6 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
@@ -369,10 +369,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21ac5' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_21ac5.'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRgTRm9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_21ac5 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21ac5' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_21ac5.'
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0bb6' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e0bb6.'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccovsYKD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e0bb6 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0bb6' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e0bb6.'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK'
         
       exitCode: 0
   -
@@ -412,13 +412,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY']
+        ignore line: [Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_21ac5/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_21ac5.dir/build.make CMakeFiles/cmTC_21ac5.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5DcNJY']
-        ignore line: [Building CXX object CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0bb6/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e0bb6.dir/build.make CMakeFiles/cmTC_e0bb6.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-RfBxBK']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -428,8 +428,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_21ac5.dir/']
-        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_21ac5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccFLib0S.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e0bb6.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e0bb6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccfWC420.s]
         ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (aarch64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -450,15 +450,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 3007a9bdd78900ddf3753164e1e631d0]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_21ac5.dir/']
-        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFLib0S.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e0bb6.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccfWC420.s]
         ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_21ac5]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21ac5.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_21ac5 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_e0bb6]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0bb6.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e0bb6 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper]
@@ -471,13 +471,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21ac5' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_21ac5.']
-        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRgTRm9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_21ac5 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0bb6' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e0bb6.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccovsYKD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e0bb6 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/aarch64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccRgTRm9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccovsYKD.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -497,7 +497,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_21ac5] ==> ignore
+          arg [cmTC_e0bb6] ==> ignore
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
@@ -511,7 +511,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib]
           arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_21ac5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_e0bb6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -564,11 +564,11 @@ events:
       stdout: |
         Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8a3e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e8a3e.dir/build.make CMakeFiles/cmTC_e8a3e.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ee2cf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ee2cf.dir/build.make CMakeFiles/cmTC_ee2cf.dir/build
         gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
-        Building C object CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o
-        /usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+        Building C object CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o
+        /usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -578,8 +578,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e8a3e.dir/'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu -D_REENTRANT /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_e8a3e.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccYWgkEZ.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee2cf.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu -D_REENTRANT /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_ee2cf.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccFIuNOM.s
         GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (aarch64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -596,15 +596,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: af3ce90fa71916e7a8489f94b60f417c
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e8a3e.dir/'
-         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o /tmp/ccYWgkEZ.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee2cf.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o /tmp/ccFIuNOM.s
         GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.'
-        Linking C executable cmTC_e8a3e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8a3e.dir/link.txt --verbose=1
-        /usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o -o cmTC_e8a3e  -v 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_ee2cf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee2cf.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o -o cmTC_ee2cf  -v 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
@@ -618,9 +618,9 @@ events:
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/aarch64-linux-gnu/13/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_e8a3e' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_e8a3e.'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgV07pD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e8a3e /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_e8a3e.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadend.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_e8a3e' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_e8a3e.'
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_ee2cf' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_ee2cf.'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc964FuE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ee2cf /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_ee2cf.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_ee2cf' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_ee2cf.'
         gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
         
       exitCode: 0
@@ -648,11 +648,11 @@ events:
       stdout: |
         Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0b94/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_f0b94.dir/build.make CMakeFiles/cmTC_f0b94.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8cfa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8cfa.dir/build.make CMakeFiles/cmTC_b8cfa.dir/build
         gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
-        Building CXX object CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o
-        /usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+        Building CXX object CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -662,8 +662,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_f0b94.dir/'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_f0b94.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccCpdVm2.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_b8cfa.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_b8cfa.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccT4Qq1m.s
         GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (aarch64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -684,15 +684,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 3007a9bdd78900ddf3753164e1e631d0
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_f0b94.dir/'
-         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o /tmp/ccCpdVm2.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_b8cfa.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o /tmp/ccT4Qq1m.s
         GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.'
-        Linking CXX executable cmTC_f0b94
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0b94.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o -o cmTC_f0b94  -v 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_b8cfa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8cfa.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o -o cmTC_b8cfa  -v 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
@@ -706,9 +706,9 @@ events:
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/aarch64-linux-gnu/13/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_f0b94' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_f0b94.'
-         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVp0fvg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_f0b94 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_f0b94.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadend.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_f0b94' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_f0b94.'
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_b8cfa' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_b8cfa.'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cciH04xm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_b8cfa /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_b8cfa.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/13/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_b8cfa' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_b8cfa.'
         gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
         
       exitCode: 0
@@ -736,14 +736,14 @@ events:
       stdout: |
         Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4d95c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4d95c.dir/build.make CMakeFiles/cmTC_4d95c.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8d0de/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8d0de.dir/build.make CMakeFiles/cmTC_8d0de.dir/build
         gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
-        Building CXX object CMakeFiles/cmTC_4d95c.dir/OpenMPCheckVersion.cpp.o
-        /usr/bin/c++   -fopenmp -o CMakeFiles/cmTC_4d95c.dir/OpenMPCheckVersion.cpp.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_4d95c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d95c.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp CMakeFiles/cmTC_4d95c.dir/OpenMPCheckVersion.cpp.o -o cmTC_4d95c 
+        Building CXX object CMakeFiles/cmTC_8d0de.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -fopenmp -o CMakeFiles/cmTC_8d0de.dir/OpenMPCheckVersion.cpp.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_8d0de
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d0de.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp CMakeFiles/cmTC_8d0de.dir/OpenMPCheckVersion.cpp.o -o cmTC_8d0de 
         gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeTmp'
         
       exitCode: 0
@@ -763,8 +763,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GtW779"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GtW779"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-QzOOcL"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-QzOOcL"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -774,17 +774,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GtW779'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-QzOOcL'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78111/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_78111.dir/build.make CMakeFiles/cmTC_78111.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GtW779'
-        Building C object CMakeFiles/cmTC_78111.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_78111.dir/src.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GtW779/src.c
-        Linking C executable cmTC_78111
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78111.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_78111.dir/src.c.o -o cmTC_78111 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GtW779'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_894c4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_894c4.dir/build.make CMakeFiles/cmTC_894c4.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-QzOOcL'
+        Building C object CMakeFiles/cmTC_894c4.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_894c4.dir/src.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-QzOOcL/src.c
+        Linking C executable cmTC_894c4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_894c4.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_894c4.dir/src.c.o -o cmTC_894c4 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-QzOOcL'
         
       exitCode: 0
   -
@@ -803,8 +803,8 @@ events:
       - "CMakeLists.txt:39 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-vw3R1f"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-vw3R1f"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-YZzv9y"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-YZzv9y"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -814,17 +814,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-vw3R1f'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-YZzv9y'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_de5d0/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_de5d0.dir/build.make CMakeFiles/cmTC_de5d0.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-vw3R1f'
-        Building C object CMakeFiles/cmTC_de5d0.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_de5d0.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-vw3R1f/test_mpi.c
-        Linking C executable cmTC_de5d0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de5d0.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_de5d0.dir/test_mpi.c.o -o cmTC_de5d0  /usr/lib/aarch64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-vw3R1f'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e07f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e07f.dir/build.make CMakeFiles/cmTC_9e07f.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-YZzv9y'
+        Building C object CMakeFiles/cmTC_9e07f.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_9e07f.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-YZzv9y/test_mpi.c
+        Linking C executable cmTC_9e07f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e07f.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_9e07f.dir/test_mpi.c.o -o cmTC_9e07f  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-YZzv9y'
         
       exitCode: 0
   -
@@ -841,8 +841,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-MA1Zug"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-MA1Zug"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5xkUfu"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5xkUfu"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -852,17 +852,17 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-MA1Zug'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5xkUfu'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3f0e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a3f0e.dir/build.make CMakeFiles/cmTC_a3f0e.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-MA1Zug'
-        Building C object CMakeFiles/cmTC_a3f0e.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_a3f0e.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-MA1Zug/CheckFunctionExists.c
-        Linking C executable cmTC_a3f0e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3f0e.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_a3f0e.dir/CheckFunctionExists.c.o -o cmTC_a3f0e  /usr/lib/aarch64-linux-gnu/libX11.so /usr/lib/aarch64-linux-gnu/libXext.so 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-MA1Zug'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3da6f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3da6f.dir/build.make CMakeFiles/cmTC_3da6f.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5xkUfu'
+        Building C object CMakeFiles/cmTC_3da6f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_3da6f.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5xkUfu/CheckFunctionExists.c
+        Linking C executable cmTC_3da6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3da6f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_3da6f.dir/CheckFunctionExists.c.o -o cmTC_3da6f  /usr/lib/aarch64-linux-gnu/libX11.so /usr/lib/aarch64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-5xkUfu'
         
       exitCode: 0
   -
@@ -879,8 +879,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Sqnzxb"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Sqnzxb"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-s9bst9"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-s9bst9"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -890,17 +890,17 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Sqnzxb'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-s9bst9'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e9552/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e9552.dir/build.make CMakeFiles/cmTC_e9552.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Sqnzxb'
-        Building C object CMakeFiles/cmTC_e9552.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_e9552.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Sqnzxb/CheckFunctionExists.c
-        Linking C executable cmTC_e9552
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9552.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_e9552.dir/CheckFunctionExists.c.o -o cmTC_e9552 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Sqnzxb'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dabdd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dabdd.dir/build.make CMakeFiles/cmTC_dabdd.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-s9bst9'
+        Building C object CMakeFiles/cmTC_dabdd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_dabdd.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-s9bst9/CheckFunctionExists.c
+        Linking C executable cmTC_dabdd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dabdd.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_dabdd.dir/CheckFunctionExists.c.o -o cmTC_dabdd 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-s9bst9'
         
       exitCode: 0
   -
@@ -917,8 +917,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-qQKlDC"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-qQKlDC"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Lmjnx8"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Lmjnx8"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -928,17 +928,17 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-qQKlDC'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Lmjnx8'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ec00/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_6ec00.dir/build.make CMakeFiles/cmTC_6ec00.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-qQKlDC'
-        Building C object CMakeFiles/cmTC_6ec00.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_6ec00.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-qQKlDC/CheckFunctionExists.c
-        Linking C executable cmTC_6ec00
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ec00.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_6ec00.dir/CheckFunctionExists.c.o -o cmTC_6ec00 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-qQKlDC'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c9ffd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c9ffd.dir/build.make CMakeFiles/cmTC_c9ffd.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Lmjnx8'
+        Building C object CMakeFiles/cmTC_c9ffd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_c9ffd.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Lmjnx8/CheckFunctionExists.c
+        Linking C executable cmTC_c9ffd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9ffd.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_c9ffd.dir/CheckFunctionExists.c.o -o cmTC_c9ffd 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Lmjnx8'
         
       exitCode: 0
   -
@@ -955,8 +955,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-zx4uhM"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-zx4uhM"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Zt5sfI"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Zt5sfI"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -966,17 +966,17 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-zx4uhM'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Zt5sfI'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed8f9/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ed8f9.dir/build.make CMakeFiles/cmTC_ed8f9.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-zx4uhM'
-        Building C object CMakeFiles/cmTC_ed8f9.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_ed8f9.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-zx4uhM/CheckFunctionExists.c
-        Linking C executable cmTC_ed8f9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed8f9.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_ed8f9.dir/CheckFunctionExists.c.o -o cmTC_ed8f9 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-zx4uhM'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_de0df/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_de0df.dir/build.make CMakeFiles/cmTC_de0df.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Zt5sfI'
+        Building C object CMakeFiles/cmTC_de0df.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_de0df.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Zt5sfI/CheckFunctionExists.c
+        Linking C executable cmTC_de0df
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de0df.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_de0df.dir/CheckFunctionExists.c.o -o cmTC_de0df 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Zt5sfI'
         
       exitCode: 0
   -
@@ -993,8 +993,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-c0l7FN"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-c0l7FN"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-WO1mtM"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-WO1mtM"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1004,17 +1004,17 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-c0l7FN'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-WO1mtM'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea626/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ea626.dir/build.make CMakeFiles/cmTC_ea626.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-c0l7FN'
-        Building C object CMakeFiles/cmTC_ea626.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_ea626.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-c0l7FN/CheckFunctionExists.c
-        Linking C executable cmTC_ea626
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea626.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_ea626.dir/CheckFunctionExists.c.o -o cmTC_ea626 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-c0l7FN'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9dba7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9dba7.dir/build.make CMakeFiles/cmTC_9dba7.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-WO1mtM'
+        Building C object CMakeFiles/cmTC_9dba7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_9dba7.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-WO1mtM/CheckFunctionExists.c
+        Linking C executable cmTC_9dba7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dba7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_9dba7.dir/CheckFunctionExists.c.o -o cmTC_9dba7 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-WO1mtM'
         
       exitCode: 0
   -
@@ -1031,8 +1031,8 @@ events:
       - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
       - "CMakeLists.txt:39 (find_package)"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GiueLx"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GiueLx"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-x8yPzN"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-x8yPzN"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1042,17 +1042,17 @@ events:
       variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GiueLx'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-x8yPzN'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_606ea/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_606ea.dir/build.make CMakeFiles/cmTC_606ea.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GiueLx'
-        Building C object CMakeFiles/cmTC_606ea.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_606ea.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GiueLx/CheckFunctionExists.c
-        Linking C executable cmTC_606ea
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_606ea.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_606ea.dir/CheckFunctionExists.c.o -o cmTC_606ea  -lICE 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-GiueLx'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2cd6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e2cd6.dir/build.make CMakeFiles/cmTC_e2cd6.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-x8yPzN'
+        Building C object CMakeFiles/cmTC_e2cd6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_e2cd6.dir/CheckFunctionExists.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-x8yPzN/CheckFunctionExists.c
+        Linking C executable cmTC_e2cd6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2cd6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_e2cd6.dir/CheckFunctionExists.c.o -o cmTC_e2cd6  -lICE 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-x8yPzN'
         
       exitCode: 0
   -
@@ -1071,8 +1071,8 @@ events:
       - "CMakeLists.txt:39 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-oj3rj5"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-oj3rj5"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-pVOBXR"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-pVOBXR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1082,17 +1082,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-oj3rj5'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-pVOBXR'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e633f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e633f.dir/build.make CMakeFiles/cmTC_e633f.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-oj3rj5'
-        Building C object CMakeFiles/cmTC_e633f.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_e633f.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-oj3rj5/test_mpi.c
-        Linking C executable cmTC_e633f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e633f.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_e633f.dir/test_mpi.c.o -o cmTC_e633f  /usr/lib/aarch64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-oj3rj5'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cbfed/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cbfed.dir/build.make CMakeFiles/cmTC_cbfed.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-pVOBXR'
+        Building C object CMakeFiles/cmTC_cbfed.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_cbfed.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-pVOBXR/test_mpi.c
+        Linking C executable cmTC_cbfed
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbfed.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_cbfed.dir/test_mpi.c.o -o cmTC_cbfed  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-pVOBXR'
         
       exitCode: 0
   -
@@ -1111,8 +1111,8 @@ events:
       - "CMakeLists.txt:39 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Hzc7Av"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Hzc7Av"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-eF2ovQ"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-eF2ovQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1122,17 +1122,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Hzc7Av'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-eF2ovQ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_db975/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_db975.dir/build.make CMakeFiles/cmTC_db975.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Hzc7Av'
-        Building C object CMakeFiles/cmTC_db975.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_db975.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Hzc7Av/test_mpi.c
-        Linking C executable cmTC_db975
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db975.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_db975.dir/test_mpi.c.o -o cmTC_db975  /usr/lib/aarch64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-Hzc7Av'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a14e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a14e6.dir/build.make CMakeFiles/cmTC_a14e6.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-eF2ovQ'
+        Building C object CMakeFiles/cmTC_a14e6.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_a14e6.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-eF2ovQ/test_mpi.c
+        Linking C executable cmTC_a14e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a14e6.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_a14e6.dir/test_mpi.c.o -o cmTC_a14e6  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-eF2ovQ'
         
       exitCode: 0
   -
@@ -1151,8 +1151,8 @@ events:
       - "CMakeLists.txt:39 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-2Sgf9d"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-2Sgf9d"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-9tiTC9"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-9tiTC9"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1162,17 +1162,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-2Sgf9d'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-9tiTC9'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f133e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_f133e.dir/build.make CMakeFiles/cmTC_f133e.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-2Sgf9d'
-        Building C object CMakeFiles/cmTC_f133e.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_f133e.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-2Sgf9d/test_mpi.c
-        Linking C executable cmTC_f133e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f133e.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_f133e.dir/test_mpi.c.o -o cmTC_f133e  /usr/lib/aarch64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-2Sgf9d'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11337/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_11337.dir/build.make CMakeFiles/cmTC_11337.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-9tiTC9'
+        Building C object CMakeFiles/cmTC_11337.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_11337.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-9tiTC9/test_mpi.c
+        Linking C executable cmTC_11337
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11337.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_11337.dir/test_mpi.c.o -o cmTC_11337  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-9tiTC9'
         
       exitCode: 0
   -
@@ -1191,8 +1191,8 @@ events:
       - "CMakeLists.txt:39 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-DpvocK"
-      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-DpvocK"
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BHlMdD"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BHlMdD"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1202,17 +1202,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-DpvocK'
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BHlMdD'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c522d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c522d.dir/build.make CMakeFiles/cmTC_c522d.dir/build
-        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-DpvocK'
-        Building C object CMakeFiles/cmTC_c522d.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_c522d.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-DpvocK/test_mpi.c
-        Linking C executable cmTC_c522d
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c522d.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_c522d.dir/test_mpi.c.o -o cmTC_c522d  /usr/lib/aarch64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-DpvocK'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fd26c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fd26c.dir/build.make CMakeFiles/cmTC_fd26c.dir/build
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BHlMdD'
+        Building C object CMakeFiles/cmTC_fd26c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_fd26c.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BHlMdD/test_mpi.c
+        Linking C executable cmTC_fd26c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd26c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_fd26c.dir/test_mpi.c.o -o cmTC_fd26c  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-BHlMdD'
         
       exitCode: 0
 ...
