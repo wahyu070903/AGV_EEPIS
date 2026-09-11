@@ -10,7 +10,7 @@ from os.path import join
 def generate_launch_description():
 
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
-    pkg_ros_gz_rbot = get_package_share_directory('DDRM_description')
+    pkg_ros_gz_rbot = get_package_share_directory('ddmr_description')
 
 
     robot_description_file = os.path.join(pkg_ros_gz_rbot, 'urdf', 'DDRM.xacro')

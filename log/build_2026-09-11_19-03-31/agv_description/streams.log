@@ -1,0 +1,16 @@
+[6.717s] Invoking command in '/home/orsted/AGV_EEPIS/build/agv_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/agv_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/agv_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/agv_description/build --no-deps symlink_data
+[7.752s] running develop
+[8.364s] running egg_info
+[8.429s] writing agv_description.egg-info/PKG-INFO
+[8.429s] writing dependency_links to agv_description.egg-info/dependency_links.txt
+[8.429s] writing requirements to agv_description.egg-info/requires.txt
+[8.430s] writing top-level names to agv_description.egg-info/top_level.txt
+[8.555s] reading manifest file 'agv_description.egg-info/SOURCES.txt'
+[8.558s] writing manifest file 'agv_description.egg-info/SOURCES.txt'
+[8.623s] running build_ext
+[8.623s] Creating /home/orsted/AGV_EEPIS/install/agv_description/lib/python3.12/site-packages/agv-description.egg-link (link to .)
+[8.629s] 
+[8.629s] Installed /home/orsted/AGV_EEPIS/build/agv_description
+[8.629s] running symlink_data
+[8.630s] error: can't copy '/home/orsted/AGV_EEPIS/build/agv_description/resource/agv_description': doesn't exist or not a regular file
+[9.283s] Invoked command in '/home/orsted/AGV_EEPIS/build/agv_description' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/agv_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/agv_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/agv_description/build --no-deps symlink_data

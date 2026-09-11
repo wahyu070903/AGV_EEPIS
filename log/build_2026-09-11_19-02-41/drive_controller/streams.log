@@ -1,0 +1,16 @@
+[6.524s] Invoking command in '/home/orsted/AGV_EEPIS/build/drive_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[7.589s] running develop
+[8.209s] running egg_info
+[8.262s] writing drive_controller.egg-info/PKG-INFO
+[8.265s] writing dependency_links to drive_controller.egg-info/dependency_links.txt
+[8.273s] writing entry points to drive_controller.egg-info/entry_points.txt
+[8.288s] writing requirements to drive_controller.egg-info/requires.txt
+[8.295s] writing top-level names to drive_controller.egg-info/top_level.txt
+[8.438s] reading manifest file 'drive_controller.egg-info/SOURCES.txt'
+[8.440s] writing manifest file 'drive_controller.egg-info/SOURCES.txt'
+[8.510s] running build_ext
+[8.511s] Creating /home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages/drive-controller.egg-link (link to .)
+[8.521s] Installing kinematics_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[8.522s] 
+[8.522s] Installed /home/orsted/AGV_EEPIS/build/drive_controller
+[8.523s] running symlink_data

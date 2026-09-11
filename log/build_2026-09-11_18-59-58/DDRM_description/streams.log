@@ -1,0 +1,15 @@
+[9.351s] Invoking command in '/home/orsted/AGV_EEPIS/build/DDRM_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/DDRM_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/DDRM_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/DDRM_description/build --no-deps symlink_data
+[11.608s] running develop
+[12.948s] running egg_info
+[13.059s] writing DDRM_description.egg-info/PKG-INFO
+[13.067s] writing dependency_links to DDRM_description.egg-info/dependency_links.txt
+[13.068s] writing requirements to DDRM_description.egg-info/requires.txt
+[13.068s] writing top-level names to DDRM_description.egg-info/top_level.txt
+[13.336s] reading manifest file 'DDRM_description.egg-info/SOURCES.txt'
+[13.336s] writing manifest file 'DDRM_description.egg-info/SOURCES.txt'
+[13.475s] running build_ext
+[13.476s] Creating /home/orsted/AGV_EEPIS/install/DDRM_description/lib/python3.12/site-packages/DDRM-description.egg-link (link to .)
+[13.480s] 
+[13.484s] Installed /home/orsted/AGV_EEPIS/build/DDRM_description
+[13.484s] running symlink_data
+[14.089s] Invoked command in '/home/orsted/AGV_EEPIS/build/DDRM_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/DDRM_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/DDRM_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/DDRM_description/build --no-deps symlink_data

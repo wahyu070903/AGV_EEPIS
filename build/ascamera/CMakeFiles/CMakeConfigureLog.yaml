@@ -1216,3 +1216,217 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "CMakeLists.txt:39 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/usr/lib/aarch64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_505a4/fast
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_505a4.dir/build.make CMakeFiles/cmTC_505a4.dir/build
+        gmake[2]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ'
+        Building C object CMakeFiles/cmTC_505a4.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_505a4.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ/test_mpi.c
+        Linking C executable cmTC_505a4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_505a4.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_505a4.dir/test_mpi.c.o -o cmTC_505a4  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-M0ZVgJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "CMakeLists.txt:39 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/usr/lib/aarch64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2198/fast
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2198.dir/build.make CMakeFiles/cmTC_d2198.dir/build
+        gmake[2]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS'
+        Building C object CMakeFiles/cmTC_d2198.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_d2198.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS/test_mpi.c
+        Linking C executable cmTC_d2198
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2198.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_d2198.dir/test_mpi.c.o -o cmTC_d2198  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-nGLaJS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "CMakeLists.txt:39 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/usr/lib/aarch64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0e49f/fast
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0e49f.dir/build.make CMakeFiles/cmTC_0e49f.dir/build
+        gmake[2]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT'
+        Building C object CMakeFiles/cmTC_0e49f.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_0e49f.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT/test_mpi.c
+        Linking C executable cmTC_0e49f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e49f.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_0e49f.dir/test_mpi.c.o -o cmTC_0e49f  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-27OCFT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "CMakeLists.txt:39 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/usr/lib/aarch64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcea6/fast
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcea6.dir/build.make CMakeFiles/cmTC_dcea6.dir/build
+        gmake[2]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco'
+        Building C object CMakeFiles/cmTC_dcea6.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_dcea6.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco/test_mpi.c
+        Linking C executable cmTC_dcea6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcea6.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_dcea6.dir/test_mpi.c.o -o cmTC_dcea6  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-7ApZco'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "CMakeLists.txt:39 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG"
+      binary: "/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/aarch64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/usr/lib/aarch64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2fb6/fast
+        gmake[1]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2fb6.dir/build.make CMakeFiles/cmTC_d2fb6.dir/build
+        gmake[2]: Entering directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG'
+        Building C object CMakeFiles/cmTC_d2fb6.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/aarch64-linux-gnu/openmpi/include -isystem /usr/lib/aarch64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_d2fb6.dir/test_mpi.c.o -c /home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG/test_mpi.c
+        Linking C executable cmTC_d2fb6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2fb6.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/aarch64-linux-gnu/openmpi/lib CMakeFiles/cmTC_d2fb6.dir/test_mpi.c.o -o cmTC_d2fb6  /usr/lib/aarch64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG'
+        gmake[1]: Leaving directory '/home/orsted/AGV_EEPIS/build/ascamera/CMakeFiles/CMakeScratch/TryCompile-4a3vmG'
+        
+      exitCode: 0
+...
