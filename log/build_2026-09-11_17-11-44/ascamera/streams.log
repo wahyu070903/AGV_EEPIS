@@ -1,0 +1,121 @@
+[1.230s] Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/orsted/AGV_EEPIS/src/ascamera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orsted/AGV_EEPIS/install/ascamera
+[2.555s] [0mdefault compiler:aarch64-linux-gnu-g++[0m
+[2.555s] -- The C compiler identification is GNU 13.3.0
+[2.556s] -- The CXX compiler identification is GNU 13.3.0
+[2.556s] -- Detecting C compiler ABI info
+[2.556s] -- Detecting C compiler ABI info - done
+[2.556s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.557s] -- Detecting C compile features
+[2.557s] -- Detecting C compile features - done
+[2.558s] -- Detecting CXX compiler ABI info
+[2.558s] -- Detecting CXX compiler ABI info - done
+[2.558s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.558s] -- Detecting CXX compile features
+[2.559s] -- Detecting CXX compile features - done
+[2.559s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.559s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.774s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.901s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.013s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.050s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.092s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.359s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.360s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.610s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.667s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.740s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.958s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.999s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.118s] -- Found pcl_conversions: 2.6.4 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[4.338s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[4.338s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[4.339s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[4.339s]   cmake_policy command to set the policy and suppress this warning.
+[4.339s] 
+[4.339s]   CMake variable FLANN_ROOT is set to:
+[4.339s] 
+[4.339s]     /usr
+[4.339s] 
+[4.340s]   For compatibility, find_package is ignoring the variable, but code in a
+[4.340s]   .cmake module might still use it.
+[4.340s] Call Stack (most recent call first):
+[4.340s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[4.340s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[4.340s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[4.340s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[4.341s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[4.341s]   CMakeLists.txt:39 (find_package)
+[4.341s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.341s] [0m
+[4.347s] -- Found flann version 1.9.2
+[5.379s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[5.379s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[9.189s] -- Checking for module 'libusb-1.0'
+[9.223s] --   Found libusb-1.0, version 1.0.27
+[9.298s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[9.301s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[9.425s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[9.433s] -- Found Pcap: /usr/lib/aarch64-linux-gnu/libpcap.so  
+[9.465s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[9.499s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[10.458s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[10.473s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[11.410s] -- Found Qhull version 8.0.2
+[12.365s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.291s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[13.293s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[13.295s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[13.297s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[13.299s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[13.301s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[13.302s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[13.303s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[13.305s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[13.307s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[13.309s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[13.311s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[13.314s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[13.316s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[13.318s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[13.321s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[13.323s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[13.325s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[13.327s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[13.330s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[13.331s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[13.332s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[13.333s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[13.335s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[13.338s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[13.343s] [33mCMake Warning (dev) at CMakeLists.txt:40 (find_package):
+[13.344s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[13.344s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[13.344s]   command to set the policy and suppress this warning.
+[13.344s] 
+[13.345s]   CMake variable PCL_ROOT is set to:
+[13.345s] 
+[13.345s]     /usr
+[13.345s] 
+[13.346s]   For compatibility, CMake is ignoring the variable.
+[13.346s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[13.346s] [0m
+[13.369s] -- Found tf2: 0.36.21 (/opt/ros/jazzy/share/tf2/cmake)
+[13.384s] -- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[13.674s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[13.985s] -- Added test 'copyright' to check source files copyright and LICENSE
+[13.992s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.993s] -- Configured cppcheck include dirs: /home/orsted/AGV_EEPIS/src/ascamera/include;/home/orsted/AGV_EEPIS/src/ascamera/libs/include;$<BUILD_INTERFACE:/home/orsted/AGV_EEPIS/src/ascamera/include>
+[13.993s] -- Configured cppcheck exclude dirs and/or files: 
+[13.999s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[13.999s] -- Configured cpplint exclude dirs and/or files: 
+[14.001s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.001s] -- Configured 'flake8' exclude dirs and/or files: 
+[14.003s] -- Added test 'lint_cmake' to check CMake code style
+[14.005s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.011s] -- Added test 'uncrustify' to check C / C++ code style
+[14.012s] -- Configured uncrustify additional arguments: 
+[14.013s] -- Added test 'xmllint' to check XML markup files
+[14.018s] -- Configuring done (12.8s)
+[14.125s] -- Generating done (0.1s)
+[14.143s] -- Build files have been written to: /home/orsted/AGV_EEPIS/build/ascamera

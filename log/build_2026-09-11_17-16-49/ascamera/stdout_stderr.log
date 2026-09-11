@@ -1,0 +1,28 @@
+[100%] Built target ascamera_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/lib/ascamera/ascamera_node
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/ascamera.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/changA.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60c.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60cn.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kondyor.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_a.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_c.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/nuwa.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/runCamera.launch.py
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/package_run_dependencies/ascamera
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/parent_prefix_path/ascamera
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.sh
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.dsv
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.sh
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.dsv
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.bash
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.sh
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.zsh
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.dsv
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.dsv
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/packages/ascamera
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig.cmake
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig-version.cmake
+-- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.xml

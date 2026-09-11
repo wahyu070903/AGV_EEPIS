@@ -1,8 +1,15 @@
+import os
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
-
 def generate_launch_description():
+
+    config_file = os.path.join(
+        get_package_share_directory("slam"),
+        "config",
+        "rtabmap_param.yaml"
+    )
 
     camera_tf = Node(
         package='tf2_ros',
@@ -77,42 +84,9 @@ def generate_launch_description():
         name='rtabmap',
         output='screen',
 
-        parameters=[{
-            # =========================
-            # TF
-            # =========================
-            'frame_id': 'base_link',
-
-            # =========================
-            # Input RGB-D
-            # =========================
-            'subscribe_depth': False,
-            'subscribe_rgbd': True,
-
-            # =========================
-            # Synchronization
-            # =========================
-            'queue_size': 10,
-            'approx_sync': False,
-
-            # =========================
-            # SLAM / Mapping
-            # =========================
-            'RGBD/AngularUpdate': '0.01',
-            'RGBD/LinearUpdate': '0.01',
-            'RGBD/OptimizeFromGraphEnd': 'false',
-
-            # =========================
-            # Map
-            # =========================
-            'Grid/FromDepth': 'true',
-
-            # =========================
-            # Memory
-            # =========================
-            'Mem/IncrementalMemory': 'true',
-            'Mem/InitWMWithAllNodes': 'false',
-        }],
+        parameters=[
+            config_file
+        ],
 
         remappings=[
             ('odom', '/odom'),
@@ -124,10 +98,30 @@ def generate_launch_description():
         ],
     )
 
+    rtab_viz = Node(
+        package="rtabmap_viz",
+        executable="rtabmap_viz",
+        name="rtabmap_viz",
+        output="screen",
+
+        parameters=[
+            {
+                'subscribe_rgbd': True,
+                'subscribe_odom': True,
+            }
+        ],
+
+        remappings=[
+            ('rgbd_image', '/rgbd_image'),
+            ('odom', '/odom'),
+        ]
+    )
+
     return LaunchDescription([
         camera_tf,
         camera_link_tf,
         rgbd_sync,
         rgbd_odometry,
         rtabmap,
+        rtab_viz,
     ])

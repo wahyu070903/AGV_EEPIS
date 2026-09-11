@@ -1,0 +1,79 @@
+rtabmap:
+  ros__parameters:
+
+    frame_id: base_link
+    odom_frame_id: odom
+
+    subscribe_rgbd: true
+    subscribe_odom: true
+
+    subscribe_rgb: false
+    subscribe_depth: false
+
+    approx_sync: true
+    sync_queue_size: 10
+
+    qos: 2
+    qos_camera_info: 2
+    qos_odom: 2
+
+    Mem/IncrementalMemory: "true"
+    Mem/InitWMWithAllNodes: "false"
+
+    Mem/STMSize: "10"
+
+    RGBD/Enabled: "true"
+
+    RGBD/LinearUpdate: "0.10"
+    RGBD/AngularUpdate: "0.10"
+
+    RGBD/MaxFeatures: "400"
+
+    Vis/FeatureType: "6"
+
+    Vis/MaxFeatures: "400"
+
+    Vis/MinInliers: "15"
+
+    Reg/Strategy: "0"
+
+    Reg/Force3DoF: "true"
+
+    Optimizer/Strategy: "2"
+
+    Optimizer/Iterations: "50"
+
+    RGBD/LoopClosureReextractFeatures: "true"
+
+    RGBD/ProximityBySpace: "true"
+
+    RGBD/ProximityPathMaxNeighbors: "1"
+
+    RGBD/OptimizeFromGraphEnd: "true"
+
+    Grid/FromDepth: "true"
+
+    Grid/3D: "false"
+
+    Grid/CellSize: "0.05"
+
+    Grid/RangeMin: "0.20"
+
+    Grid/RangeMax: "6.0"
+
+    Grid/RayTracing: "true"
+
+    Grid/NoiseFilteringRadius: "0.05"
+
+    Grid/NoiseFilteringMinNeighbors: "5"
+
+    Rtabmap/DetectionRate: "5.0"
+
+    Rtabmap/TimeThr: "0"
+
+    RGBD/LocalLoopDetectionSpace: "1"
+
+    Rtabmap/SaveWMState: "true"
+
+    RGBD/LinearSpeedUpdate: "0.0"
+    RGBD/AngularSpeedUpdate: "0.0"

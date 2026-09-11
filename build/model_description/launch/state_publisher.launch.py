@@ -1,1 +1,0 @@
-/home/orsted/AGV_EEPIS/src/model_description/launch/state_publisher.launch.py
