@@ -1,0 +1,9 @@
+digraph G {
+"base_link" -> "rwheel_1"[label=" Broadcaster: default_authority\nAverage rate: 10.681\nBuffer length: 4.4\nMost recent transform: 1789299483.690805\nOldest transform: 1789299479.290508\n"];
+"base_link" -> "lwheel_1"[label=" Broadcaster: default_authority\nAverage rate: 10.681\nBuffer length: 4.4\nMost recent transform: 1789299483.690805\nOldest transform: 1789299479.290508\n"];
+"base_link" -> "camera_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1789299483.7126153"[ shape=plaintext ] ;
+}->"base_link";
+}

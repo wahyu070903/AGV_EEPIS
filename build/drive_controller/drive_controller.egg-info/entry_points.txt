@@ -1,2 +1,3 @@
 [console_scripts]
+ddmr_kinec_node = drive_controller.kinematics_ddmr:main
 kinematics_node = drive_controller.kinematics_node:main

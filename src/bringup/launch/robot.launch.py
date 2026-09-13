@@ -58,9 +58,19 @@ def generate_launch_description():
         }.items()
     )
 
+    kinematics_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([
+                FindPackageShare('drive_controller'),
+                'launch',
+                'bringup.launch.py'
+            ])
+        )
+    )
 
     return LaunchDescription([
         display_node,
         canbus_node,
+        kinematics_node,
     ])
 

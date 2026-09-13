@@ -1,0 +1,32 @@
+[0.767s] Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/home/orsted/AGV_EEPIS/install/DDRM_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/ascamera -- -j6 -l6
+[2.782s] [100%] Built target ascamera_node
+[3.458s] Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/home/orsted/AGV_EEPIS/install/DDRM_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/ascamera -- -j6 -l6
+[3.499s] Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/home/orsted/AGV_EEPIS/install/DDRM_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/ascamera
+[3.532s] -- Install configuration: ""
+[3.542s] -- Execute custom install script
+[3.542s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/lib/ascamera/ascamera_node
+[3.546s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/ascamera.launch.py
+[3.546s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/changA.launch.py
+[3.547s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60c.launch.py
+[3.550s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60cn.launch.py
+[3.550s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kondyor.launch.py
+[3.550s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_a.launch.py
+[3.550s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_c.launch.py
+[3.551s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/nuwa.launch.py
+[3.551s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/runCamera.launch.py
+[3.555s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/package_run_dependencies/ascamera
+[3.555s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/parent_prefix_path/ascamera
+[3.555s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.sh
+[3.556s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.dsv
+[3.558s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.sh
+[3.559s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.dsv
+[3.560s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.bash
+[3.561s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.sh
+[3.562s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.zsh
+[3.564s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.dsv
+[3.565s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.dsv
+[3.607s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/packages/ascamera
+[3.607s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig.cmake
+[3.607s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig-version.cmake
+[3.610s] -- Up-to-date symlink: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.xml
+[3.620s] Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/home/orsted/AGV_EEPIS/install/DDRM_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/ascamera

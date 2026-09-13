@@ -1,111 +1,185 @@
 <?xml version="1.0" ?>
 <robot name="ddmr" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find ddmr_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find ddmr_description)/urdf/ddmr.ros2control" />
-<xacro:include filename="$(find ddmr_description)/urdf/ddmr.gazebo" />
-<link name="base_link">
-  <inertial>
-    <origin xyz="-6.490307168177591e-16 0.0020121119114001255 0.05843539265059488" rpy="0 0 0"/>
-    <mass value="25.96071096243103"/>
-    <inertia ixx="0.089883" iyy="0.093648" izz="0.129137" ixy="0.0" iyz="0.003165" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
+  <xacro:include filename="$(find ddmr_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find ddmr_description)/urdf/ddmr.ros2control" />
+  <xacro:include filename="$(find ddmr_description)/urdf/ddmr.gazebo" />
 
-<link name="rwheel_1">
-  <inertial>
-    <origin xyz="0.01575 -6.938893903907228e-18 0.0" rpy="0 0 0"/>
-    <mass value="0.898023945869377"/>
-    <inertia ixx="0.000519" iyy="0.000334" izz="0.000334" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.0635 0.0475 -0.025" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/rwheel_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.0635 0.0475 -0.025" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/rwheel_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.002012 0.000000 0.058435" rpy="0 0 0"/>
+      <mass value="25.96071096243103"/>
+      <inertia
+        ixx="0.093648"
+        iyy="0.089883"
+        izz="0.129137"
+        ixy="0.0"
+        iyz="0.003165"
+        ixz="0.0"/>
+    </inertial>
 
-<link name="lwheel_1">
-  <inertial>
-    <origin xyz="-0.015749999999999986 -1.3877787807814457e-17 0.0" rpy="0 0 0"/>
-    <mass value="0.8980239458693772"/>
-    <inertia ixx="0.000519" iyy="0.000334" izz="0.000334" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.0635 0.0475 -0.025" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/lwheel_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.0635 0.0475 -0.025" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/lwheel_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/base_link.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
 
-<link name="camera_1">
-  <inertial>
-    <origin xyz="0.0 -1.3877787807814457e-17 0.00949999999999998" rpy="0 0 0"/>
-    <mass value="0.11932000000000001"/>
-    <inertia ixx="8e-06" iyy="1.9e-05" izz="2e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.0 -0.0775 -0.113" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.0 -0.0775 -0.113" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find ddmr_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/base_link.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
 
-<joint name="Revolute 1" type="continuous">
-  <origin xyz="0.0635 -0.0475 0.025" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="rwheel_1"/>
-  <axis xyz="1.0 0.0 0.0"/>
-</joint>
+  <link name="rwheel_1">
+    <inertial>
+      <origin xyz="0.0 0.01575 0.0" rpy="0 0 0"/>
+      <mass value="0.898023945869377"/>
+      <inertia
+        ixx="0.000519"
+        iyy="0.000334"
+        izz="0.000334"
+        ixy="0.0"
+        iyz="0.0"
+        ixz="0.0"/>
+    </inertial>
 
-<joint name="Revolute 2" type="continuous">
-  <origin xyz="-0.0635 -0.0475 0.025" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="lwheel_1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
-</joint>
+    <visual>
+      <origin
+        xyz="0.0475 0.0635 -0.025"
+        rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/rwheel_1.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
 
-<joint name="Rigid 3" type="fixed">
-  <origin xyz="0.0 0.0775 0.113" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="camera_1"/>
-</joint>
+    <collision>
+      <origin
+        xyz="0.0475 0.0635 -0.025"
+        rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/rwheel_1.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="lwheel_1">
+    <inertial>
+      <origin xyz="0.0 -0.01575 0.0" rpy="0 0 0"/>
+      <mass value="0.8980239458693772"/>
+      <inertia
+        ixx="0.000519"
+        iyy="0.000334"
+        izz="0.000334"
+        ixy="0.0"
+        iyz="0.0"
+        ixz="0.0"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0.0475 -0.0635 -0.025"
+        rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/lwheel_1.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0.0475 -0.0635 -0.025"
+        rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/lwheel_1.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="camera_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0095" rpy="0 0 0"/>
+      <mass value="0.11932"/>
+      <inertia
+        ixx="8e-06"
+        iyy="1.9e-05"
+        izz="2e-05"
+        ixy="0.0"
+        iyz="0.0"
+        ixz="0.0"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="-0.0775 0.0 -0.113"
+        rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/camera_1.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="-0.0775 0.0 -0.113"
+        rpy="0 0 -1.57079632679"/>
+      <geometry>
+        <mesh
+          filename="file://$(find ddmr_description)/meshes/camera_1.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="Revolute 1" type="continuous">
+    <origin
+      xyz="-0.0475 -0.0635 0.025"
+      rpy="0 0 0"/>
+
+    <parent link="base_link"/>
+    <child link="rwheel_1"/>
+
+    <!-- Wheel axle is now Y -->
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="Revolute 2" type="continuous">
+    <origin
+      xyz="-0.0475 0.0635 0.025"
+      rpy="0 0 0"/>
+
+    <parent link="base_link"/>
+    <child link="lwheel_1"/>
+
+    <!-- Wheel axle is now Y -->
+    <axis xyz="0 -1 0"/>
+  </joint>
+
+  <joint name="Rigid 3" type="fixed">
+    <origin
+      xyz="0.0775 0 0.113"
+      rpy="0 0 0"/>
+
+    <parent link="base_link"/>
+    <child link="camera_1"/>
+  </joint>
 
 </robot>

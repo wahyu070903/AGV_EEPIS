@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 drive_controller/__init__.py
+drive_controller/kinematics_ddmr.py
 drive_controller/kinematics_node.py
 drive_controller.egg-info/PKG-INFO
 drive_controller.egg-info/SOURCES.txt

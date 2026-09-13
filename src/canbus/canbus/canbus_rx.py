@@ -12,6 +12,7 @@ MESSAGE_TABLE = {
         "group": "ultrasonic",
         "slice": (0, 2),
     },
+
     0x401: {
         "name": "ultrasonic_line2",
         "dlc": 8,
@@ -19,6 +20,7 @@ MESSAGE_TABLE = {
         "group": "ultrasonic",
         "slice": (2, 4),
     },
+
     0x100: {
         "name": "right",
         "dlc": 4,
@@ -26,6 +28,7 @@ MESSAGE_TABLE = {
         "group": "enc_ticks",
         "slice": (0, 1),
     },
+    
     0x101: {
         "name": "left",
         "dlc": 4,

@@ -12,12 +12,8 @@ def generate_launch_description():
     
     kinematics_node = Node(
         package='drive_controller',
-        executable='kinematics_node',
+        executable='ddmr_kinec_node',
         output='screen',
-        parameters=[{
-            'use_sim_time': True,
-            'simulation': True,
-        }],
     )
 
     return LaunchDescription([

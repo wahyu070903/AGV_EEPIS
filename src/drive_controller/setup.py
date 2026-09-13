@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'kinematics_node = drive_controller.kinematics_node:main',
+            'ddmr_kinec_node = drive_controller.kinematics_ddmr:main',
         ],
     },
 )
