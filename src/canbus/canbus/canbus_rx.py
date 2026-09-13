@@ -1,61 +1,104 @@
+import struct
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
 
-import can
-import struct 
+MESSAGE_TABLE = {
+    0x400: {
+        "name": "ultrasonic_line1",
+        "dlc": 8,
+        "fmt": "<ff",
+        "group": "ultrasonic",
+        "slice": (0, 2),
+    },
+    0x401: {
+        "name": "ultrasonic_line2",
+        "dlc": 8,
+        "fmt": "<ff",
+        "group": "ultrasonic",
+        "slice": (2, 4),
+    },
+    0x100: {
+        "name": "right",
+        "dlc": 4,
+        "fmt": "<i",
+        "group": "enc_ticks",
+        "slice": (0, 1),
+    },
+    0x101: {
+        "name": "left",
+        "dlc": 4,
+        "fmt": "<i",
+        "group": "enc_ticks",
+        "slice": (1, 2),
+    }
+}
+
+GROUP_TOPICS = {
+    "ultrasonic": "/ultrasonic",
+    "enc_ticks": "/enc_ticks",
+}
+
 
 class CanBusRX(Node):
     def __init__(self, bus):
         super().__init__('can_rx')
-
         self.bus = bus
-        self.address_table = {
-            "ultrasonic_line1": 0x400,
-            "ultrasonic_line2": 0x401,
+
+        group_sizes = {}
+        for spec in MESSAGE_TABLE.values():
+            group = spec["group"]
+            _, end = spec["slice"]
+            group_sizes[group] = max(group_sizes.get(group, 0), end)
+
+        self.group_buffers = {
+            group: [None] * size for group, size in group_sizes.items()
         }
 
-        self.dlc_length = {
-            "ultrasonic_line1" : 8,
-            "ultrasonic_line2" : 8,
+        self.group_publishers = {
+            group: self.create_publisher(Float32MultiArray, topic, 10)
+            for group, topic in GROUP_TOPICS.items()
         }
-
-        self.ultrasonic_data = [None, None, None, None]
-        self.ultrasonic_pub = self.create_publisher(
-            Float32MultiArray,
-            '/ultrasonic',
-            10
-        )
 
     def read(self):
         while True:
             message = self.bus.recv(timeout=0.0)
             if message is None:
                 break
-            self.read_ultrasonic(message)
-            
-        return None
+            self.handle_message(message)
 
-    def read_ultrasonic(self, message):
+    def handle_message(self, message):
+        spec = MESSAGE_TABLE.get(message.arbitration_id)
+        if spec is None:
+            # Skip unknown arbitration_id 
+            return
 
-        if message.arbitration_id == self.address_table["ultrasonic_line1"] and message.dlc == self.dlc_length["ultrasonic_line1"]:
-            ch1, ch2 = struct.unpack("<ff", message.data)
-            self.ultrasonic_data[0] = ch1
-            self.ultrasonic_data[1] = ch2
+        if message.dlc != spec["dlc"]:
+            self.get_logger().warn(
+                f"DLC mismatch for {spec['name']}: "
+                f"expected {spec['dlc']}, got {message.dlc}"
+            )
+            return
 
-        if message.arbitration_id == self.address_table["ultrasonic_line2"] and message.dlc == self.dlc_length["ultrasonic_line2"]:
-            ch3, ch4 = struct.unpack("<ff", message.data)
-            self.ultrasonic_data[2] = ch3
-            self.ultrasonic_data[3] = ch4
+        try:
+            values = struct.unpack(spec["fmt"], message.data)
+        except struct.error as e:
+            self.get_logger().error(f"Failed to unpack {spec['name']}: {e}")
+            return
 
-        for data in self.ultrasonic_data:
-            if data is None:
-                return 
-        
-        copy = self.ultrasonic_data
-        self.ultrasonic_data = [None, None, None, None]
+        self._update_group(spec["group"], spec["slice"], values)
+
+    def _update_group(self, group, slice_range, values):
+        start, end = slice_range
+        buf = self.group_buffers[group]
+        buf[start:end] = values
+
+        if any(v is None for v in buf):
+            return  
 
         pub_data = Float32MultiArray()
-        pub_data.data = copy
-        self.ultrasonic_pub.publish(pub_data)
-        return copy
+        pub_data.data = list(buf)
+        self.group_publishers[group].publish(pub_data)
+
+        self.group_buffers[group] = [None] * len(buf)

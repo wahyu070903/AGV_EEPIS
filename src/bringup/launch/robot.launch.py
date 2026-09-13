@@ -16,6 +16,7 @@ def generate_launch_description():
     # free = freedrive
     
     mode = LaunchConfiguration('mode', default='map')
+    model = LaunchConfiguration('model', default='ddmr')
 
     remote_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -44,4 +45,22 @@ def generate_launch_description():
         )
     )
 
+    display_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([
+                FindPackageShare('ddmr_description'),
+                'launch',
+                'display.launch.py'
+            ])
+        ),
+        launch_arguments={
+            'gui': 'false',
+        }.items()
+    )
+
+
+    return LaunchDescription([
+        display_node,
+        canbus_node,
+    ])
 
