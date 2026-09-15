@@ -179,8 +179,8 @@ class RadioReceiver(Node):
                 return
             else:
                 self.lastNoData = None
-                self.warnIsprinted = False
                 if self.warnIsprinted:
+                    self.warnIsprinted = False
                     self.get_logger().info(
                         '\033[94m[Remote] Data Received'
                     )

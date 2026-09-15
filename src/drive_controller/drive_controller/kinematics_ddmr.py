@@ -9,7 +9,6 @@ from sensor_msgs.msg import JointState
 from std_msgs.msg import Float32MultiArray
 from tf2_ros import TransformBroadcaster, Buffer, TransformListener
 
-
 class KinematicsDDMR(Node):
     def __init__(self):
         super().__init__('kinematics_ddmr')
@@ -29,9 +28,9 @@ class KinematicsDDMR(Node):
         self.prev_left_ticks = None
         self.prev_right_ticks = None
         
-        self.cmd_sub = self.create_subscription(
+        self.enc_sub = self.create_subscription(
             Float32MultiArray, 
-            '/enc_ticks',
+            '/low_level/enc_ticks',
             self.encoder_callback,
             10
         )
@@ -160,6 +159,10 @@ class KinematicsDDMR(Node):
         transform.transform.rotation = q
 
         self.tf_broadcaster.sendTransform(transform)
+
+    def cmd_callback(self, msg: Twist):
+        pass
+
 
 def main(args=None):
 

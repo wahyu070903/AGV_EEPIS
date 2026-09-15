@@ -5,23 +5,15 @@ from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
 
 MESSAGE_TABLE = {
-    0x400: {
-        "name": "ultrasonic_line1",
-        "dlc": 8,
-        "fmt": "<ff",
-        "group": "ultrasonic",
-        "slice": (0, 2),
+    0x010: {
+        "name" : "low_level_status",
+        "dlc" : 4,
+        "fmt" : "<i",
+        "group" : "ll_status",
+        "slice" : (0,1)
     },
 
-    0x401: {
-        "name": "ultrasonic_line2",
-        "dlc": 8,
-        "fmt": "<ff",
-        "group": "ultrasonic",
-        "slice": (2, 4),
-    },
-
-    0x100: {
+    0x011: {
         "name": "right",
         "dlc": 4,
         "fmt": "<i",
@@ -29,18 +21,35 @@ MESSAGE_TABLE = {
         "slice": (0, 1),
     },
     
-    0x101: {
+    0x012: {
         "name": "left",
         "dlc": 4,
         "fmt": "<i",
         "group": "enc_ticks",
         "slice": (1, 2),
-    }
+    },
+
+    0x020: {
+        "name": "ultrasonic_line1",
+        "dlc": 8,
+        "fmt": "<ff",
+        "group": "ultrasonic",
+        "slice": (0, 2),
+    },
+
+    0x021: {
+        "name": "ultrasonic_line2",
+        "dlc": 8,
+        "fmt": "<ff",
+        "group": "ultrasonic",
+        "slice": (2, 4),
+    },
 }
 
 GROUP_TOPICS = {
     "ultrasonic": "/ultrasonic",
-    "enc_ticks": "/enc_ticks",
+    "enc_ticks": "/low_level/enc_ticks",
+    "ll_status" : "/low_level/status",
 }
 
 

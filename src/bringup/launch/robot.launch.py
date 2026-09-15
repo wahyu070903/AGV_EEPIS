@@ -18,7 +18,7 @@ def generate_launch_description():
     mode = LaunchConfiguration('mode', default='map')
     model = LaunchConfiguration('model', default='ddmr')
 
-    remote_launch = IncludeLaunchDescription(
+    remote_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
                 [FindPackageShare('remote'), 'launch', 'radiomaster_ER6.launch.py']
@@ -72,5 +72,6 @@ def generate_launch_description():
         display_node,
         canbus_node,
         kinematics_node,
+        remote_node,
     ])
 
