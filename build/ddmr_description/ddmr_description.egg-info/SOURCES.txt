@@ -14,9 +14,9 @@ ddmr_description.egg-info/zip-safe
 launch/display.launch.py
 launch/gazebo.launch.py
 meshes/base_link.stl
-meshes/camera_1.stl
-meshes/lwheel_1.stl
-meshes/rwheel_1.stl
+meshes/camera.stl
+meshes/lwheel.stl
+meshes/rwheel.stl
 resource/ddmr_description
 urdf/ddmr.gazebo
 urdf/ddmr.ros2control

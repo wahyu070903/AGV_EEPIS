@@ -2,7 +2,7 @@ import struct
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Float32MultiArray, Int32MultiArray
 
 MESSAGE_TABLE = {
     0x010: {
@@ -68,9 +68,24 @@ class CanBusRX(Node):
             group: [None] * size for group, size in group_sizes.items()
         }
 
+        self.group_msg_types = {}
+        for spec in MESSAGE_TABLE.values():
+            group = spec["group"]
+            fmt = spec["fmt"]
+
+            msg_type = self._get_ros_message_type(fmt)
+
+            if group in self.group_msg_types:
+                if self.group_msg_types[group] != msg_type:
+                    raise ValueError(
+                        f"Group '{group}' has multiple ROS message types"
+                    )
+            else:
+                self.group_msg_types[group] = msg_type
+
         self.group_publishers = {
-            group: self.create_publisher(Float32MultiArray, topic, 10)
-            for group, topic in GROUP_TOPICS.items()
+            group: self.create_publisher(self.group_msg_types[group],GROUP_TOPICS[group],10)
+            for group in self.group_buffers
         }
 
     def read(self):
@@ -101,16 +116,30 @@ class CanBusRX(Node):
 
         self._update_group(spec["group"], spec["slice"], values)
 
+    def _get_ros_message_type(self, fmt):
+        if fmt == "<ff":
+            return Float32MultiArray
+
+        elif fmt == "<i":
+            return Int32MultiArray
+
+        else:
+            raise ValueError(f"Unsupported CAN format: {fmt}")
+
     def _update_group(self, group, slice_range, values):
         start, end = slice_range
+
         buf = self.group_buffers[group]
         buf[start:end] = values
 
         if any(v is None for v in buf):
-            return  
+            return
 
-        pub_data = Float32MultiArray()
-        pub_data.data = list(buf)
-        self.group_publishers[group].publish(pub_data)
+        msg_type = self.group_msg_types[group]
+        msg = msg_type()
+
+        msg.data = list(buf)
+
+        self.group_publishers[group].publish(msg)
 
         self.group_buffers[group] = [None] * len(buf)

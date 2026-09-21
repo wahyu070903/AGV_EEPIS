@@ -11,21 +11,21 @@
   <gravity>true</gravity>
 </gazebo>
 
-<gazebo reference="rwheel_1">
+<gazebo reference="rwheel">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="lwheel_1">
+<gazebo reference="lwheel">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="camera_1">
+<gazebo reference="camera">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>

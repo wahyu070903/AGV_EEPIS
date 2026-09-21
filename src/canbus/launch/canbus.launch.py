@@ -16,7 +16,6 @@ def generate_launch_description():
         Node(
             package='canbus',
             executable='canbus_node',
-            name='canbus_service',
             output='screen'
         )
     ])

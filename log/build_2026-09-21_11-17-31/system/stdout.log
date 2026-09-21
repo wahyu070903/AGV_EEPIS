@@ -1,0 +1,13 @@
+running develop
+running egg_info
+writing system.egg-info/PKG-INFO
+writing dependency_links to system.egg-info/dependency_links.txt
+writing requirements to system.egg-info/requires.txt
+writing top-level names to system.egg-info/top_level.txt
+reading manifest file 'system.egg-info/SOURCES.txt'
+writing manifest file 'system.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages/system.egg-link (link to .)
+
+Installed /home/orsted/AGV_EEPIS/build/system
+running symlink_data

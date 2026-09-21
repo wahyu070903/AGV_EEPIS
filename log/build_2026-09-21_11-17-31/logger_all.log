@@ -1,0 +1,642 @@
+[0.314s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink']
+[0.315s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff80a57e00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff80a57a40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff80a57a40>>, mixin_verb=('build',))
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.420s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/orsted/AGV_EEPIS'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'ros'
+[0.502s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_description' with type 'ros.ament_python' and name 'agv_description'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extension 'colcon_meta'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/ascamera) by extension 'ros'
+[0.505s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ascamera' with type 'ros.ament_cmake' and name 'ascamera'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore_ament_install'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_pkg']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_pkg'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_meta']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_meta'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ros']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ros'
+[0.507s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bringup' with type 'ros.ament_python' and name 'bringup'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extension 'ignore'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extension 'ignore_ament_install'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extensions ['colcon_pkg']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extension 'colcon_pkg'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extensions ['colcon_meta']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extension 'colcon_meta'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extensions ['ros']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/canbus) by extension 'ros'
+[0.510s] DEBUG:colcon.colcon_core.package_identification:Package 'src/canbus' with type 'ros.ament_python' and name 'canbus'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extension 'colcon_pkg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extensions ['colcon_meta']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extension 'colcon_meta'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extensions ['ros']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/ddmr_description) by extension 'ros'
+[0.512s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ddmr_description' with type 'ros.ament_python' and name 'ddmr_description'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extension 'ignore_ament_install'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extension 'colcon_pkg'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extensions ['colcon_meta']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_controller) by extension 'ros'
+[0.515s] DEBUG:colcon.colcon_core.package_identification:Package 'src/drive_controller' with type 'ros.ament_python' and name 'drive_controller'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extensions ['ignore', 'ignore_ament_install']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extension 'ignore'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extension 'ignore_ament_install'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extensions ['colcon_pkg']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extension 'colcon_pkg'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extensions ['colcon_meta']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extension 'colcon_meta'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extensions ['ros']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/remote) by extension 'ros'
+[0.517s] DEBUG:colcon.colcon_core.package_identification:Package 'src/remote' with type 'ros.ament_python' and name 'remote'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ignore_ament_install'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['colcon_pkg']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'colcon_pkg'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['colcon_meta']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'colcon_meta'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['ros']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ros'
+[0.519s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam' with type 'ros.ament_python' and name 'slam'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extensions ['ignore', 'ignore_ament_install']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extension 'ignore_ament_install'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extensions ['colcon_pkg']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extension 'colcon_pkg'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extensions ['colcon_meta']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extension 'colcon_meta'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extensions ['ros']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/system) by extension 'ros'
+[0.521s] DEBUG:colcon.colcon_core.package_identification:Package 'src/system' with type 'ros.ament_python' and name 'system'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extensions ['ignore', 'ignore_ament_install']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extension 'ignore'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extension 'ignore_ament_install'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extensions ['colcon_pkg']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extension 'colcon_pkg'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extensions ['colcon_meta']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extension 'colcon_meta'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extensions ['ros']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic) by extension 'ros'
+[0.523s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ultrasonic' with type 'ros.ament_python' and name 'ultrasonic'
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.580s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.580s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.586s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/orsted/AGV_EEPIS/install
+[0.590s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 351 installed packages in /opt/ros/jazzy
+[0.594s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'cmake_target' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'agv_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.721s] DEBUG:colcon.colcon_core.verb:Building package 'agv_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/agv_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/agv_description', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/agv_description', 'symlink_install': True, 'test_result_base': None}
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'cmake_target' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'ament_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ascamera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.722s] DEBUG:colcon.colcon_core.verb:Building package 'ascamera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/ascamera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/ascamera', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/ascamera', 'symlink_install': True, 'test_result_base': None}
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.723s] DEBUG:colcon.colcon_core.verb:Building package 'bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/bringup', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/bringup', 'symlink_install': True, 'test_result_base': None}
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'cmake_target' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'cmake_clean_cache' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'cmake_clean_first' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'cmake_force_configure' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'ament_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'canbus' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'canbus' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/canbus', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/canbus', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/canbus', 'symlink_install': True, 'test_result_base': None}
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'cmake_target' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'ddmr_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.725s] DEBUG:colcon.colcon_core.verb:Building package 'ddmr_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/ddmr_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/ddmr_description', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/ddmr_description', 'symlink_install': True, 'test_result_base': None}
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'drive_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'drive_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/drive_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/drive_controller', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/drive_controller', 'symlink_install': True, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'cmake_clean_cache' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'remote' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'remote' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/remote', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/remote', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/remote', 'symlink_install': True, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.729s] DEBUG:colcon.colcon_core.verb:Building package 'slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/slam', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/slam', 'symlink_install': True, 'test_result_base': None}
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'cmake_target' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'cmake_clean_cache' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'cmake_clean_first' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'cmake_force_configure' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'ament_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'catkin_cmake_args' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'system' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.730s] DEBUG:colcon.colcon_core.verb:Building package 'system' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/system', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/system', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/system', 'symlink_install': True, 'test_result_base': None}
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'cmake_args' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'cmake_target' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'cmake_clean_cache' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'cmake_clean_first' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'cmake_force_configure' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'ament_cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'catkin_cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'ultrasonic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.731s] DEBUG:colcon.colcon_core.verb:Building package 'ultrasonic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orsted/AGV_EEPIS/build/ultrasonic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orsted/AGV_EEPIS/install/ultrasonic', 'merge_install': False, 'path': '/home/orsted/AGV_EEPIS/src/ultrasonic', 'symlink_install': True, 'test_result_base': None}
+[0.731s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.734s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.735s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/agv_description' with build type 'ament_python'
+[0.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_description', 'ament_prefix_path')
+[0.742s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/hook/ament_prefix_path.ps1'
+[0.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/hook/ament_prefix_path.dsv'
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/hook/ament_prefix_path.sh'
+[0.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.760s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/ascamera' with build type 'ament_cmake'
+[0.761s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/orsted/AGV_EEPIS/src/ascamera'
+[0.762s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.762s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.773s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/bringup' with build type 'ament_python'
+[0.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'ament_prefix_path')
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/hook/ament_prefix_path.ps1'
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/hook/ament_prefix_path.dsv'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/hook/ament_prefix_path.sh'
+[0.781s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.781s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.792s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/canbus' with build type 'ament_python'
+[0.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('canbus', 'ament_prefix_path')
+[0.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/hook/ament_prefix_path.ps1'
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/hook/ament_prefix_path.dsv'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/hook/ament_prefix_path.sh'
+[0.798s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.798s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.809s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/ddmr_description' with build type 'ament_python'
+[0.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('ddmr_description', 'ament_prefix_path')
+[0.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/hook/ament_prefix_path.ps1'
+[0.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/hook/ament_prefix_path.dsv'
+[0.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/hook/ament_prefix_path.sh'
+[0.816s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.816s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.827s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/drive_controller' with build type 'ament_python'
+[0.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_controller', 'ament_prefix_path')
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/hook/ament_prefix_path.ps1'
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/hook/ament_prefix_path.dsv'
+[0.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/hook/ament_prefix_path.sh'
+[0.833s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.833s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.511s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/agv_description'
+[1.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.512s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/ascamera -- -j6 -l6
+[2.219s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/bringup'
+[2.220s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.220s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.902s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/canbus'
+[2.903s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.903s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.598s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/ddmr_description'
+[3.599s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.599s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/ascamera -- -j6 -l6
+[3.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/ascamera
+[4.330s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/drive_controller'
+[4.331s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ascamera)
+[4.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/ascamera
+[4.407s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera' for CMake module files
+[4.409s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera' for CMake config files
+[4.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('ascamera', 'cmake_prefix_path')
+[4.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/hook/cmake_prefix_path.ps1'
+[4.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/hook/cmake_prefix_path.dsv'
+[4.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/hook/cmake_prefix_path.sh'
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/lib'
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/bin'
+[4.418s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/lib/pkgconfig/ascamera.pc'
+[4.418s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/lib/python3.12/site-packages'
+[4.419s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/bin'
+[4.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.ps1'
+[4.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.dsv'
+[4.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.sh'
+[4.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.bash'
+[4.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.zsh'
+[4.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/ascamera/share/colcon-core/packages/ascamera)
+[4.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ascamera)
+[4.434s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera' for CMake module files
+[4.435s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera' for CMake config files
+[4.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('ascamera', 'cmake_prefix_path')
+[4.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/hook/cmake_prefix_path.ps1'
+[4.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/hook/cmake_prefix_path.dsv'
+[4.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/hook/cmake_prefix_path.sh'
+[4.440s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/lib'
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/bin'
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/lib/pkgconfig/ascamera.pc'
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/lib/python3.12/site-packages'
+[4.442s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ascamera/bin'
+[4.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.ps1'
+[4.445s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.dsv'
+[4.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.sh'
+[4.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.bash'
+[4.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.zsh'
+[4.452s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/ascamera/share/colcon-core/packages/ascamera)
+[4.454s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/remote' with build type 'ament_python'
+[4.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote', 'ament_prefix_path')
+[4.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/remote/share/remote/hook/ament_prefix_path.ps1'
+[4.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/remote/share/remote/hook/ament_prefix_path.dsv'
+[4.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/remote/share/remote/hook/ament_prefix_path.sh'
+[4.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.464s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.261s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/remote'
+[5.261s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.262s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.372s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[6.452s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[6.533s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[6.670s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[7.100s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[7.620s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[7.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/canbus': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/canbus/build --no-deps symlink_data
+[7.733s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[7.794s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[7.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/agv_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/agv_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/agv_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/agv_description/build --no-deps symlink_data
+[8.040s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[8.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/bringup/build --no-deps symlink_data
+[8.057s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[8.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/drive_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[8.334s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[8.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/ddmr_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ddmr_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ddmr_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ddmr_description/build --no-deps symlink_data
+[9.256s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[9.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/remote': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/remote/build --no-deps symlink_data
+[9.849s] Level 1:colcon.colcon_core.shell:create_environment_hook('canbus', 'pythonpath_develop')
+[9.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/canbus/share/canbus/hook/pythonpath_develop.ps1'
+[9.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/canbus/share/canbus/hook/pythonpath_develop.dsv'
+[9.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/canbus' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/canbus/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/canbus/build --no-deps symlink_data
+[9.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/canbus/share/canbus/hook/pythonpath_develop.sh'
+[9.864s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus' for CMake module files
+[9.866s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus' for CMake config files
+[9.867s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus/lib'
+[9.867s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus/bin'
+[9.867s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus/lib/pkgconfig/canbus.pc'
+[9.868s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus/lib/python3.12/site-packages'
+[9.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('canbus', 'pythonpath')
+[9.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/hook/pythonpath.ps1'
+[9.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/hook/pythonpath.dsv'
+[9.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/hook/pythonpath.sh'
+[9.873s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/canbus/bin'
+[9.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(canbus)
+[9.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/package.ps1'
+[9.875s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/package.dsv'
+[9.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/package.sh'
+[9.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/package.bash'
+[9.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/canbus/share/canbus/package.zsh'
+[9.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/canbus/share/colcon-core/packages/canbus)
+[9.882s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/slam' with build type 'ament_python'
+[9.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam', 'ament_prefix_path')
+[9.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/slam/share/slam/hook/ament_prefix_path.ps1'
+[9.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/slam/share/slam/hook/ament_prefix_path.dsv'
+[9.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/slam/share/slam/hook/ament_prefix_path.sh'
+[9.893s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.893s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.638s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/slam'
+[10.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_description', 'pythonpath_develop')
+[10.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/agv_description/share/agv_description/hook/pythonpath_develop.ps1'
+[10.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/agv_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/agv_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/agv_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/agv_description/build --no-deps symlink_data
+[10.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/agv_description/share/agv_description/hook/pythonpath_develop.dsv'
+[10.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/agv_description/share/agv_description/hook/pythonpath_develop.sh'
+[10.667s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description' for CMake module files
+[10.669s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description' for CMake config files
+[10.672s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description/lib'
+[10.673s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description/bin'
+[10.673s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description/lib/pkgconfig/agv_description.pc'
+[10.674s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description/lib/python3.12/site-packages'
+[10.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_description', 'pythonpath')
+[10.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/hook/pythonpath.ps1'
+[10.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/hook/pythonpath.dsv'
+[10.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/hook/pythonpath.sh'
+[10.681s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/agv_description/bin'
+[10.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_description)
+[10.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/package.ps1'
+[10.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/package.dsv'
+[10.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/package.sh'
+[10.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/package.bash'
+[10.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/agv_description/share/agv_description/package.zsh'
+[10.692s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/agv_description/share/colcon-core/packages/agv_description)
+[10.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'pythonpath_develop')
+[10.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/bringup/share/bringup/hook/pythonpath_develop.ps1'
+[10.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/bringup/share/bringup/hook/pythonpath_develop.dsv'
+[10.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/bringup/share/bringup/hook/pythonpath_develop.sh'
+[10.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/bringup/build --no-deps symlink_data
+[10.703s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup' for CMake module files
+[10.705s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup' for CMake config files
+[10.707s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup/lib'
+[10.707s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup/bin'
+[10.708s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup/lib/pkgconfig/bringup.pc'
+[10.709s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages'
+[10.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'pythonpath')
+[10.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/hook/pythonpath.ps1'
+[10.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/hook/pythonpath.dsv'
+[10.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/hook/pythonpath.sh'
+[10.716s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/bringup/bin'
+[10.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[10.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/package.ps1'
+[10.720s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/package.dsv'
+[10.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/package.sh'
+[10.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/package.bash'
+[10.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/bringup/share/bringup/package.zsh'
+[10.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/bringup/share/colcon-core/packages/bringup)
+[10.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_controller', 'pythonpath_develop')
+[10.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/drive_controller/share/drive_controller/hook/pythonpath_develop.ps1'
+[10.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/drive_controller/share/drive_controller/hook/pythonpath_develop.dsv'
+[10.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/drive_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[10.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/drive_controller/share/drive_controller/hook/pythonpath_develop.sh'
+[10.737s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller' for CMake module files
+[10.739s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller' for CMake config files
+[10.741s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller/lib'
+[10.741s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller/bin'
+[10.742s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller/lib/pkgconfig/drive_controller.pc'
+[10.743s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages'
+[10.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_controller', 'pythonpath')
+[10.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/hook/pythonpath.ps1'
+[10.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/hook/pythonpath.dsv'
+[10.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/hook/pythonpath.sh'
+[10.750s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/drive_controller/bin'
+[10.750s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drive_controller)
+[10.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/package.ps1'
+[10.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/package.dsv'
+[10.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/package.sh'
+[10.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/package.bash'
+[10.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/package.zsh'
+[10.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/drive_controller/share/colcon-core/packages/drive_controller)
+[10.764s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/system' with build type 'ament_python'
+[10.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('system', 'ament_prefix_path')
+[10.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/system/share/system/hook/ament_prefix_path.ps1'
+[10.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/system/share/system/hook/ament_prefix_path.dsv'
+[10.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/system/share/system/hook/ament_prefix_path.sh'
+[10.771s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.771s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.784s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orsted/AGV_EEPIS/src/ultrasonic' with build type 'ament_python'
+[10.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('ultrasonic', 'ament_prefix_path')
+[10.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/hook/ament_prefix_path.ps1'
+[10.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/hook/ament_prefix_path.dsv'
+[10.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/hook/ament_prefix_path.sh'
+[10.790s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.790s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('ddmr_description', 'pythonpath_develop')
+[10.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/ddmr_description/share/ddmr_description/hook/pythonpath_develop.ps1'
+[10.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/ddmr_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ddmr_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ddmr_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ddmr_description/build --no-deps symlink_data
+[10.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/ddmr_description/share/ddmr_description/hook/pythonpath_develop.dsv'
+[10.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/ddmr_description/share/ddmr_description/hook/pythonpath_develop.sh'
+[10.808s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description' for CMake module files
+[10.811s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description' for CMake config files
+[10.813s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description/lib'
+[10.813s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description/bin'
+[10.813s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description/lib/pkgconfig/ddmr_description.pc'
+[10.814s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description/lib/python3.12/site-packages'
+[10.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('ddmr_description', 'pythonpath')
+[10.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/hook/pythonpath.ps1'
+[10.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/hook/pythonpath.dsv'
+[10.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/hook/pythonpath.sh'
+[10.820s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ddmr_description/bin'
+[10.820s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ddmr_description)
+[10.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/package.ps1'
+[10.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/package.dsv'
+[10.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/package.sh'
+[10.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/package.bash'
+[10.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/package.zsh'
+[10.830s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/ddmr_description/share/colcon-core/packages/ddmr_description)
+[11.509s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/system'
+[11.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.190s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orsted/AGV_EEPIS/src/ultrasonic'
+[12.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote', 'pythonpath_develop')
+[12.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/remote/share/remote/hook/pythonpath_develop.ps1'
+[12.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/remote' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/remote/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/remote/build --no-deps symlink_data
+[12.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/remote/share/remote/hook/pythonpath_develop.dsv'
+[12.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/remote/share/remote/hook/pythonpath_develop.sh'
+[12.219s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote' for CMake module files
+[12.221s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote' for CMake config files
+[12.223s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote/lib'
+[12.223s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote/bin'
+[12.223s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote/lib/pkgconfig/remote.pc'
+[12.224s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages'
+[12.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('remote', 'pythonpath')
+[12.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/remote/share/remote/hook/pythonpath.ps1'
+[12.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/remote/share/remote/hook/pythonpath.dsv'
+[12.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/remote/share/remote/hook/pythonpath.sh'
+[12.231s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/remote/bin'
+[12.231s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(remote)
+[12.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/remote/share/remote/package.ps1'
+[12.235s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/remote/share/remote/package.dsv'
+[12.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/remote/share/remote/package.sh'
+[12.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/remote/share/remote/package.bash'
+[12.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/remote/share/remote/package.zsh'
+[12.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/remote/share/colcon-core/packages/remote)
+[12.740s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[13.812s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[13.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/slam': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/slam/build --no-deps symlink_data
+[14.085s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[14.186s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, alias, test, compile_catalog, extract_messages, develop, bdist_wheel, install_lib, update_catalog, init_catalog, upload_docs, bdist_dumb, rotate, install_scripts, install, bdist_rpm, build_scripts, build_clib, setopt, symlink_data, saveopts, install_data, build_py, upload, dist_info, build, editable_wheel, build_ext, clean, egg_info, install_egg_info, install_headers, sdist, bdist, easy_install, check, register
+[15.136s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[15.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/ultrasonic': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ultrasonic/build --no-deps symlink_data
+[15.273s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --site-dirs, --quiet, --dry-run, --force-installation-into-system-dir, --prefix, --script-dir, --egg-path, --editable, --version, --no-user-cfg, --help, --optimize, --allow-hosts, --uninstall, --record, --local-snapshots-ok, --verbose, --install-layout, --install-dir, --always-unzip, --exclude-scripts, --index-url, --no-find-links, --find-links, --multi-version, --user, --no-deps, --build-directory, --upgrade, --always-copy, --zip-ok
+[15.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orsted/AGV_EEPIS/build/system': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/system/build --no-deps symlink_data
+[15.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam', 'pythonpath_develop')
+[15.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/slam/share/slam/hook/pythonpath_develop.ps1'
+[15.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/slam' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/slam/build --no-deps symlink_data
+[15.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/slam/share/slam/hook/pythonpath_develop.dsv'
+[15.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/slam/share/slam/hook/pythonpath_develop.sh'
+[15.899s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam' for CMake module files
+[15.900s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam' for CMake config files
+[15.901s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam/lib'
+[15.902s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam/bin'
+[15.902s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam/lib/pkgconfig/slam.pc'
+[15.902s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages'
+[15.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam', 'pythonpath')
+[15.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/slam/share/slam/hook/pythonpath.ps1'
+[15.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/slam/share/slam/hook/pythonpath.dsv'
+[15.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/slam/share/slam/hook/pythonpath.sh'
+[15.908s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/slam/bin'
+[15.908s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam)
+[15.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/slam/share/slam/package.ps1'
+[15.911s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/slam/share/slam/package.dsv'
+[15.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/slam/share/slam/package.sh'
+[15.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/slam/share/slam/package.bash'
+[15.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/slam/share/slam/package.zsh'
+[15.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/slam/share/colcon-core/packages/slam)
+[17.092s] Level 1:colcon.colcon_core.shell:create_environment_hook('ultrasonic', 'pythonpath_develop')
+[17.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/ultrasonic/share/ultrasonic/hook/pythonpath_develop.ps1'
+[17.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/ultrasonic' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ultrasonic/build --no-deps symlink_data
+[17.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/ultrasonic/share/ultrasonic/hook/pythonpath_develop.dsv'
+[17.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/ultrasonic/share/ultrasonic/hook/pythonpath_develop.sh'
+[17.101s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic' for CMake module files
+[17.103s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic' for CMake config files
+[17.104s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic/lib'
+[17.105s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic/bin'
+[17.105s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic/lib/pkgconfig/ultrasonic.pc'
+[17.106s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages'
+[17.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('ultrasonic', 'pythonpath')
+[17.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/hook/pythonpath.ps1'
+[17.109s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/hook/pythonpath.dsv'
+[17.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/hook/pythonpath.sh'
+[17.113s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/ultrasonic/bin'
+[17.113s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ultrasonic)
+[17.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/package.ps1'
+[17.119s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/package.dsv'
+[17.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/package.sh'
+[17.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/package.bash'
+[17.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic/package.zsh'
+[17.125s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/ultrasonic/share/colcon-core/packages/ultrasonic)
+[17.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('system', 'pythonpath_develop')
+[17.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/system/share/system/hook/pythonpath_develop.ps1'
+[17.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orsted/AGV_EEPIS/build/system' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/system/build --no-deps symlink_data
+[17.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/build/system/share/system/hook/pythonpath_develop.dsv'
+[17.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/build/system/share/system/hook/pythonpath_develop.sh'
+[17.315s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system' for CMake module files
+[17.317s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system' for CMake config files
+[17.318s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system/lib'
+[17.319s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system/bin'
+[17.319s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system/lib/pkgconfig/system.pc'
+[17.320s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages'
+[17.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('system', 'pythonpath')
+[17.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/system/share/system/hook/pythonpath.ps1'
+[17.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orsted/AGV_EEPIS/install/system/share/system/hook/pythonpath.dsv'
+[17.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orsted/AGV_EEPIS/install/system/share/system/hook/pythonpath.sh'
+[17.326s] Level 1:colcon.colcon_core.environment:checking '/home/orsted/AGV_EEPIS/install/system/bin'
+[17.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(system)
+[17.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/system/share/system/package.ps1'
+[17.330s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orsted/AGV_EEPIS/install/system/share/system/package.dsv'
+[17.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/system/share/system/package.sh'
+[17.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/system/share/system/package.bash'
+[17.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/orsted/AGV_EEPIS/install/system/share/system/package.zsh'
+[17.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orsted/AGV_EEPIS/install/system/share/colcon-core/packages/system)
+[17.338s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.340s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.340s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[17.340s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.344s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.345s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orsted/AGV_EEPIS/install/local_setup.ps1'
+[17.348s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/orsted/AGV_EEPIS/install/_local_setup_util_ps1.py'
+[17.353s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orsted/AGV_EEPIS/install/setup.ps1'
+[17.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orsted/AGV_EEPIS/install/local_setup.sh'
+[17.360s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/orsted/AGV_EEPIS/install/_local_setup_util_sh.py'
+[17.363s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orsted/AGV_EEPIS/install/setup.sh'
+[17.368s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orsted/AGV_EEPIS/install/local_setup.bash'
+[17.370s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orsted/AGV_EEPIS/install/setup.bash'
+[17.375s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orsted/AGV_EEPIS/install/local_setup.zsh'
+[17.377s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orsted/AGV_EEPIS/install/setup.zsh'

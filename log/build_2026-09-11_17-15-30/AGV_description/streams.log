@@ -1,9 +1,0 @@
-[9.128s] Invoking command in '/home/orsted/AGV_EEPIS/build/AGV_description': PYTHONPATH=/home/orsted/AGV_EEPIS/build/AGV_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/AGV_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/AGV_description/build --no-deps symlink_data
-[11.389s] running develop
-[12.245s] running egg_info
-[12.307s] writing AGV_description.egg-info/PKG-INFO
-[12.325s] writing dependency_links to AGV_description.egg-info/dependency_links.txt
-[12.325s] writing requirements to AGV_description.egg-info/requires.txt
-[12.325s] writing top-level names to AGV_description.egg-info/top_level.txt
-[12.509s] error: package directory 'AGV_description' does not exist
-[13.273s] Invoked command in '/home/orsted/AGV_EEPIS/build/AGV_description' returned '1': PYTHONPATH=/home/orsted/AGV_EEPIS/build/AGV_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/AGV_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/AGV_description/build --no-deps symlink_data

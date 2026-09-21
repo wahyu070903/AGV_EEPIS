@@ -6,14 +6,14 @@ from rclpy.time import Time
 from geometry_msgs.msg import Twist, TransformStamped, Quaternion
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import JointState
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Int32MultiArray
 from tf2_ros import TransformBroadcaster, Buffer, TransformListener
 
 class KinematicsDDMR(Node):
     def __init__(self):
         super().__init__('kinematics_ddmr')
 
-        self.encoder_ppr = 11
+        self.encoder_ppr = 20
         self.gearRatio = 30.0
         self.wheel_diameter = 0.068      
         self.wheel_base = 0.19             
@@ -29,7 +29,7 @@ class KinematicsDDMR(Node):
         self.prev_right_ticks = None
         
         self.enc_sub = self.create_subscription(
-            Float32MultiArray, 
+            Int32MultiArray, 
             '/low_level/enc_ticks',
             self.encoder_callback,
             10
@@ -43,7 +43,7 @@ class KinematicsDDMR(Node):
 
         self.tf_broadcaster = TransformBroadcaster(self)
 
-    def encoder_callback(self, msg: Float32MultiArray):
+    def encoder_callback(self, msg: Int32MultiArray):
         if len(msg.data) < 2:
             self.get_logger().warn(
                 'Encoder data must contain [left, right]'
@@ -114,7 +114,7 @@ class KinematicsDDMR(Node):
 
         odom.header.stamp = current_time.to_msg()
         odom.header.frame_id = 'odom'
-        odom.child_frame_id = 'base_link'
+        odom.child_frame_id = 'base_footprint'
 
         odom.pose.pose.position.x = self.x
         odom.pose.pose.position.y = self.y
@@ -150,7 +150,7 @@ class KinematicsDDMR(Node):
 
         transform.header.stamp = current_time.to_msg()
         transform.header.frame_id = 'odom'
-        transform.child_frame_id = 'base_link'
+        transform.child_frame_id = 'base_footprint'
 
         transform.transform.translation.x = self.x
         transform.transform.translation.y = self.y

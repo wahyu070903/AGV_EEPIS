@@ -5,6 +5,14 @@
   <xacro:include filename="$(find ddmr_description)/urdf/ddmr.ros2control" />
   <xacro:include filename="$(find ddmr_description)/urdf/ddmr.gazebo" />
 
+  <link name="base_footprint"></link>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.010" rpy="0 0 0"/>
+  </joint>
+  
   <link name="base_link">
     <inertial>
       <origin xyz="0.002012 0.000000 0.058435" rpy="0 0 0"/>
@@ -38,7 +46,7 @@
     </collision>
   </link>
 
-  <link name="rwheel_1">
+  <link name="rwheel">
     <inertial>
       <origin xyz="0.0 0.01575 0.0" rpy="0 0 0"/>
       <mass value="0.898023945869377"/>
@@ -57,7 +65,7 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/rwheel_1.stl"
+          filename="file://$(find ddmr_description)/meshes/rwheel.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
@@ -69,13 +77,13 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/rwheel_1.stl"
+          filename="file://$(find ddmr_description)/meshes/rwheel.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
 
-  <link name="lwheel_1">
+  <link name="lwheel">
     <inertial>
       <origin xyz="0.0 -0.01575 0.0" rpy="0 0 0"/>
       <mass value="0.8980239458693772"/>
@@ -94,7 +102,7 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/lwheel_1.stl"
+          filename="file://$(find ddmr_description)/meshes/lwheel.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
@@ -106,13 +114,13 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/lwheel_1.stl"
+          filename="file://$(find ddmr_description)/meshes/lwheel.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
 
-  <link name="camera_1">
+  <link name="camera">
     <inertial>
       <origin xyz="0.0 0.0 0.0095" rpy="0 0 0"/>
       <mass value="0.11932"/>
@@ -131,7 +139,7 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/camera_1.stl"
+          filename="file://$(find ddmr_description)/meshes/camera.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
@@ -143,7 +151,7 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/camera_1.stl"
+          filename="file://$(find ddmr_description)/meshes/camera.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
@@ -155,7 +163,7 @@
       rpy="0 0 0"/>
 
     <parent link="base_link"/>
-    <child link="rwheel_1"/>
+    <child link="rwheel"/>
 
     <!-- Wheel axle is now Y -->
     <axis xyz="0 1 0"/>
@@ -167,7 +175,7 @@
       rpy="0 0 0"/>
 
     <parent link="base_link"/>
-    <child link="lwheel_1"/>
+    <child link="lwheel"/>
 
     <!-- Wheel axle is now Y -->
     <axis xyz="0 -1 0"/>
@@ -179,7 +187,7 @@
       rpy="0 0 0"/>
 
     <parent link="base_link"/>
-    <child link="camera_1"/>
+    <child link="camera"/>
   </joint>
 
 </robot>

@@ -29,6 +29,14 @@ def generate_launch_description():
         }.items()
     )
 
+    camera_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('ascamera'), 'launch','hp60c.launch.py']
+            )
+        )
+    )
+
     canbus_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
@@ -37,10 +45,10 @@ def generate_launch_description():
         )
     )
 
-    camera_node = IncludeLaunchDescription(
+    slam_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
-                [FindPackageShare('ascamera'), 'launch', 'ascamera.launch.py']
+                [FindPackageShare('slam'), 'launch', 'slam.launch.py']
             )
         )
     )
@@ -68,10 +76,29 @@ def generate_launch_description():
         )
     )
 
+    camera_tf_link = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        name="base_to_camera_tf",
+        arguments=[
+            "--x", "0.0",
+            "--y", "0.0",
+            "--z", "0.0",
+            "--roll", "0.0",
+            "--pitch", "0.0",
+            "--yaw", "0.0",
+            "--frame-id", 'base_link',
+            "--child-frame-id", 'ascamera_hp60c_camera_link_0',
+        ],
+    )
+
     return LaunchDescription([
         display_node,
-        canbus_node,
-        kinematics_node,
-        remote_node,
+        # canbus_node,
+        # kinematics_node,
+        # remote_node,
+        # camera_node,
+        camera_tf_link,
+        # slam_node,
     ])
 
