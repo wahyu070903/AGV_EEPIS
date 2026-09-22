@@ -120,7 +120,7 @@
     </collision>
   </link>
 
-  <link name="camera">
+  <link name="camera_link">
     <inertial>
       <origin xyz="0.0 0.0 0.0095" rpy="0 0 0"/>
       <mass value="0.11932"/>
@@ -139,7 +139,7 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/camera.stl"
+          filename="file://$(find ddmr_description)/meshes/camera_link.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
@@ -151,7 +151,7 @@
         rpy="0 0 -1.57079632679"/>
       <geometry>
         <mesh
-          filename="file://$(find ddmr_description)/meshes/camera.stl"
+          filename="file://$(find ddmr_description)/meshes/camera_link.stl"
           scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
@@ -187,7 +187,7 @@
       rpy="0 0 0"/>
 
     <parent link="base_link"/>
-    <child link="camera"/>
+    <child link="camera_link"/>
   </joint>
 
 </robot>

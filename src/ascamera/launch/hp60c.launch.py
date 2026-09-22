@@ -14,8 +14,8 @@ def generate_launch_description():
         parameters=[
             {"usb_bus_no": -1},
             {"usb_path": "null"},
-            {"confiPath": "//home/orsted/AGV_EEPIS/src/ascamera/configurationfiles"},
-            {"color_pcl": False},
+            {"confiPath": "/home/orsted/AGV_EEPIS/src/ascamera/configurationfiles"},
+            {"color_pcl": True},
             {"pub_tfTree": True},
             {"depth_width": 640},
             {"depth_height": 480},

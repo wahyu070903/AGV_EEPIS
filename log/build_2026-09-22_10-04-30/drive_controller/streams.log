@@ -1,0 +1,28 @@
+[7.238s] Invoking command in '/home/orsted/AGV_EEPIS/build/drive_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[8.268s] running develop
+[8.852s] running egg_info
+[8.852s] creating drive_controller.egg-info
+[8.912s] writing drive_controller.egg-info/PKG-INFO
+[8.913s] writing dependency_links to drive_controller.egg-info/dependency_links.txt
+[8.913s] writing entry points to drive_controller.egg-info/entry_points.txt
+[8.913s] writing requirements to drive_controller.egg-info/requires.txt
+[8.913s] writing top-level names to drive_controller.egg-info/top_level.txt
+[8.913s] writing manifest file 'drive_controller.egg-info/SOURCES.txt'
+[9.035s] reading manifest file 'drive_controller.egg-info/SOURCES.txt'
+[9.038s] writing manifest file 'drive_controller.egg-info/SOURCES.txt'
+[9.102s] running build_ext
+[9.103s] Creating /home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages/drive-controller.egg-link (link to .)
+[9.105s] Installing ddmr_kinec_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[9.107s] Installing kinematics_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[9.107s] 
+[9.107s] Installed /home/orsted/AGV_EEPIS/build/drive_controller
+[9.108s] running symlink_data
+[9.109s] creating /home/orsted/AGV_EEPIS/install/drive_controller/share/ament_index
+[9.110s] creating /home/orsted/AGV_EEPIS/install/drive_controller/share/ament_index/resource_index
+[9.110s] creating /home/orsted/AGV_EEPIS/install/drive_controller/share/ament_index/resource_index/packages
+[9.110s] symbolically linking /home/orsted/AGV_EEPIS/build/drive_controller/resource/drive_controller -> /home/orsted/AGV_EEPIS/install/drive_controller/share/ament_index/resource_index/packages
+[9.111s] symbolically linking /home/orsted/AGV_EEPIS/build/drive_controller/package.xml -> /home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller
+[9.112s] creating /home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/launch
+[9.112s] symbolically linking /home/orsted/AGV_EEPIS/build/drive_controller/launch/bringup.launch.py -> /home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/launch
+[9.113s] creating /home/orsted/AGV_EEPIS/install/drive_controller/share/drive_controller/config
+[9.330s] Invoked command in '/home/orsted/AGV_EEPIS/build/drive_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data

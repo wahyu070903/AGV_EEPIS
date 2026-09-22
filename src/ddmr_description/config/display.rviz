@@ -71,7 +71,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        camera:
+        camera_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -109,9 +109,13 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        camera:
+        camera_link:
           Value: true
         lwheel:
+          Value: true
+        map:
+          Value: true
+        odom:
           Value: true
         rwheel:
           Value: true
@@ -123,15 +127,18 @@ Visualization Manager:
       Tree:
         base_footprint:
           base_link:
-            ascamera_hp60c_camera_link_0:
-              ascamera_hp60c_color_0:
-                {}
-            camera:
-              {}
+            camera_link:
+              ascamera_hp60c_camera_link_0:
+                ascamera_hp60c_color_0:
+                  {}
             lwheel:
               {}
             rwheel:
               {}
+        map:
+          {}
+        odom:
+          {}
       Update Interval: 0
       Value: true
     - Class: rviz_default_plugins/Image
@@ -151,7 +158,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_footprint
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
