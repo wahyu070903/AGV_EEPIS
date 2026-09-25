@@ -11,12 +11,12 @@ class CanBusTX(Node):
         self.bus = bus
         self.cmd_sub = self.create_subscription(
             Twist,
-            '/radio/cmd_vel',
-            self.send_remote_cmd,
+            '/cmd_vel',
+            self.send_cmd_msg,
             10
         )
 
-    def send_remote_cmd(self, msg: Twist):
+    def send_cmd_msg(self, msg: Twist):
         linear = msg.linear.x
         angular =  msg.angular.z
 

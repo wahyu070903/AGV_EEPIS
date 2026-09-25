@@ -1,0 +1,27 @@
+[6.816s] Invoking command in '/home/orsted/AGV_EEPIS/build/bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/bringup/build --no-deps symlink_data
+[8.855s] running develop
+[8.856s] running egg_info
+[8.856s] creating bringup.egg-info
+[8.856s] writing bringup.egg-info/PKG-INFO
+[8.857s] writing dependency_links to bringup.egg-info/dependency_links.txt
+[8.857s] writing requirements to bringup.egg-info/requires.txt
+[8.857s] writing top-level names to bringup.egg-info/top_level.txt
+[8.857s] writing manifest file 'bringup.egg-info/SOURCES.txt'
+[8.857s] reading manifest file 'bringup.egg-info/SOURCES.txt'
+[8.857s] writing manifest file 'bringup.egg-info/SOURCES.txt'
+[8.857s] running build_ext
+[8.858s] Creating /home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages/bringup.egg-link (link to .)
+[8.858s] 
+[8.858s] Installed /home/orsted/AGV_EEPIS/build/bringup
+[8.858s] running symlink_data
+[8.858s] creating /home/orsted/AGV_EEPIS/install/bringup/share/ament_index
+[8.858s] creating /home/orsted/AGV_EEPIS/install/bringup/share/ament_index/resource_index
+[8.858s] creating /home/orsted/AGV_EEPIS/install/bringup/share/ament_index/resource_index/packages
+[8.859s] symbolically linking /home/orsted/AGV_EEPIS/build/bringup/resource/bringup -> /home/orsted/AGV_EEPIS/install/bringup/share/ament_index/resource_index/packages
+[8.859s] symbolically linking /home/orsted/AGV_EEPIS/build/bringup/package.xml -> /home/orsted/AGV_EEPIS/install/bringup/share/bringup
+[8.859s] creating /home/orsted/AGV_EEPIS/install/bringup/share/bringup/launch
+[8.859s] symbolically linking /home/orsted/AGV_EEPIS/build/bringup/launch/robot.launch.py -> /home/orsted/AGV_EEPIS/install/bringup/share/bringup/launch
+[8.862s] symbolically linking /home/orsted/AGV_EEPIS/build/bringup/launch/simulation.launch.py -> /home/orsted/AGV_EEPIS/install/bringup/share/bringup/launch
+[8.863s] creating /home/orsted/AGV_EEPIS/install/bringup/share/bringup/rviz
+[8.863s] symbolically linking /home/orsted/AGV_EEPIS/build/bringup/rviz/simulation.rviz -> /home/orsted/AGV_EEPIS/install/bringup/share/bringup/rviz
+[9.049s] Invoked command in '/home/orsted/AGV_EEPIS/build/bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/bringup/build --no-deps symlink_data

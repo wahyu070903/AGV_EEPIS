@@ -1,0 +1,31 @@
+[5.522s] Invoking command in '/home/orsted/AGV_EEPIS/build/slam': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/slam/build --no-deps symlink_data
+[6.608s] running develop
+[7.232s] running egg_info
+[7.233s] creating slam.egg-info
+[7.298s] writing slam.egg-info/PKG-INFO
+[7.302s] writing dependency_links to slam.egg-info/dependency_links.txt
+[7.303s] writing requirements to slam.egg-info/requires.txt
+[7.303s] writing top-level names to slam.egg-info/top_level.txt
+[7.303s] writing manifest file 'slam.egg-info/SOURCES.txt'
+[7.425s] reading manifest file 'slam.egg-info/SOURCES.txt'
+[7.431s] writing manifest file 'slam.egg-info/SOURCES.txt'
+[7.496s] running build_ext
+[7.496s] Creating /home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages/slam.egg-link (link to .)
+[7.497s] 
+[7.497s] Installed /home/orsted/AGV_EEPIS/build/slam
+[7.498s] running symlink_data
+[7.499s] creating /home/orsted/AGV_EEPIS/install/slam/share/ament_index
+[7.499s] creating /home/orsted/AGV_EEPIS/install/slam/share/ament_index/resource_index
+[7.500s] creating /home/orsted/AGV_EEPIS/install/slam/share/ament_index/resource_index/packages
+[7.500s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/resource/slam -> /home/orsted/AGV_EEPIS/install/slam/share/ament_index/resource_index/packages
+[7.500s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/package.xml -> /home/orsted/AGV_EEPIS/install/slam/share/slam
+[7.500s] creating /home/orsted/AGV_EEPIS/install/slam/share/slam/launch
+[7.501s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/launch/mapping.launch.py -> /home/orsted/AGV_EEPIS/install/slam/share/slam/launch
+[7.501s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/launch/localization.launch.py -> /home/orsted/AGV_EEPIS/install/slam/share/slam/launch
+[7.503s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/launch/navigation.launch.py -> /home/orsted/AGV_EEPIS/install/slam/share/slam/launch
+[7.503s] creating /home/orsted/AGV_EEPIS/install/slam/share/slam/config
+[7.504s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/config/nav_params.yaml -> /home/orsted/AGV_EEPIS/install/slam/share/slam/config
+[7.504s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/config/display.rviz -> /home/orsted/AGV_EEPIS/install/slam/share/slam/config
+[7.504s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/config/rtabmap_mapping.yaml -> /home/orsted/AGV_EEPIS/install/slam/share/slam/config
+[7.504s] symbolically linking /home/orsted/AGV_EEPIS/build/slam/config/rtabmap_localization.yaml -> /home/orsted/AGV_EEPIS/install/slam/share/slam/config
+[7.727s] Invoked command in '/home/orsted/AGV_EEPIS/build/slam' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/slam/build --no-deps symlink_data

@@ -1,0 +1,22 @@
+[6.120s] Invoking command in '/home/orsted/AGV_EEPIS/build/system': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/system/build --no-deps symlink_data
+[7.157s] running develop
+[7.788s] running egg_info
+[7.789s] creating system.egg-info
+[7.851s] writing system.egg-info/PKG-INFO
+[7.852s] writing dependency_links to system.egg-info/dependency_links.txt
+[7.852s] writing requirements to system.egg-info/requires.txt
+[7.853s] writing top-level names to system.egg-info/top_level.txt
+[7.853s] writing manifest file 'system.egg-info/SOURCES.txt'
+[7.976s] reading manifest file 'system.egg-info/SOURCES.txt'
+[7.978s] writing manifest file 'system.egg-info/SOURCES.txt'
+[8.046s] running build_ext
+[8.046s] Creating /home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages/system.egg-link (link to .)
+[8.048s] 
+[8.048s] Installed /home/orsted/AGV_EEPIS/build/system
+[8.048s] running symlink_data
+[8.048s] creating /home/orsted/AGV_EEPIS/install/system/share/ament_index
+[8.049s] creating /home/orsted/AGV_EEPIS/install/system/share/ament_index/resource_index
+[8.049s] creating /home/orsted/AGV_EEPIS/install/system/share/ament_index/resource_index/packages
+[8.049s] symbolically linking /home/orsted/AGV_EEPIS/build/system/resource/system -> /home/orsted/AGV_EEPIS/install/system/share/ament_index/resource_index/packages
+[8.049s] symbolically linking /home/orsted/AGV_EEPIS/build/system/package.xml -> /home/orsted/AGV_EEPIS/install/system/share/system
+[8.247s] Invoked command in '/home/orsted/AGV_EEPIS/build/system' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/system/build --no-deps symlink_data

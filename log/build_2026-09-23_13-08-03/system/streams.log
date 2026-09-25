@@ -1,0 +1,15 @@
+[4.459s] Invoking command in '/home/orsted/AGV_EEPIS/build/system': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/system/build --no-deps symlink_data
+[5.454s] running develop
+[6.067s] running egg_info
+[6.129s] writing system.egg-info/PKG-INFO
+[6.130s] writing dependency_links to system.egg-info/dependency_links.txt
+[6.131s] writing requirements to system.egg-info/requires.txt
+[6.131s] writing top-level names to system.egg-info/top_level.txt
+[6.253s] reading manifest file 'system.egg-info/SOURCES.txt'
+[6.255s] writing manifest file 'system.egg-info/SOURCES.txt'
+[6.326s] running build_ext
+[6.327s] Creating /home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages/system.egg-link (link to .)
+[6.328s] 
+[6.329s] Installed /home/orsted/AGV_EEPIS/build/system
+[6.331s] running symlink_data
+[6.512s] Invoked command in '/home/orsted/AGV_EEPIS/build/system' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/system/build --no-deps symlink_data

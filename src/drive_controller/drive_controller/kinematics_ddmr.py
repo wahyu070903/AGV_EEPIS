@@ -8,11 +8,12 @@ from nav_msgs.msg import Odometry
 from sensor_msgs.msg import JointState
 from std_msgs.msg import Int32MultiArray
 from tf2_ros import TransformBroadcaster, Buffer, TransformListener
+from geometry_msgs.msg import Twist
+
 
 class KinematicsDDMR(Node):
     def __init__(self):
         super().__init__('kinematics_ddmr')
-
         self.encoder_ppr = 20
         self.gearRatio = 30.0
         self.wheel_diameter = 0.068      
@@ -27,7 +28,7 @@ class KinematicsDDMR(Node):
 
         self.prev_left_ticks = None
         self.prev_right_ticks = None
-        
+
         self.enc_sub = self.create_subscription(
             Int32MultiArray, 
             '/low_level/enc_ticks',

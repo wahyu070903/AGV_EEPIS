@@ -2,8 +2,12 @@ package.xml
 setup.cfg
 setup.py
 config/display.rviz
-config/rtabmap_param.yaml
-launch/slam.launch.py
+config/nav_params.yaml
+config/rtabmap_localization.yaml
+config/rtabmap_mapping.yaml
+launch/localization.launch.py
+launch/mapping.launch.py
+launch/navigation.launch.py
 resource/slam
 slam/__init__.py
 slam.egg-info/PKG-INFO

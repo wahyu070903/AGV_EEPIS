@@ -9,12 +9,13 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    
+
     kinematics_node = Node(
         package='drive_controller',
         executable='ddmr_kinec_node',
         output='screen',
     )
+
 
     return LaunchDescription([
         kinematics_node,

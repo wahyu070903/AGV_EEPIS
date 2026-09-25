@@ -1,0 +1,18 @@
+rtabmap:
+  ros__parameters:
+    frame_id: base_link
+    odom_frame_id: odom
+    map_frame_id: map
+
+    subscribe_rgbd: true
+    subscribe_odom_info: false
+
+    publish_tf: true
+    wait_for_transform: 0.2
+
+    Mem/IncrementalMemory: "false"
+    Mem/InitWMWithAllNodes: "true"
+
+    Grid/FromDepth: "true"
+
+    use_sim_time: false

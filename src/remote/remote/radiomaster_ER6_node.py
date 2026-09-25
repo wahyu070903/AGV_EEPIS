@@ -146,7 +146,7 @@ class RadioReceiver(Node):
 
         self.simPublisher = self.create_publisher(
             Twist,
-            '/radio/cmd_vel',
+            '/cmd_vel',
             10
         )
 

@@ -7,7 +7,9 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /RobotModel1/Status1
         - /TF1
+        - /Map1
       Splitter Ratio: 0.5
     Tree Height: 418
   - Class: rviz_common/Selection
@@ -125,20 +127,18 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        base_footprint:
-          base_link:
-            camera_link:
-              ascamera_hp60c_camera_link_0:
-                ascamera_hp60c_color_0:
-                  {}
-            lwheel:
-              {}
-            rwheel:
-              {}
         map:
-          {}
-        odom:
-          {}
+          odom:
+            base_footprint:
+              base_link:
+                camera_link:
+                  ascamera_hp60c_camera_link_0:
+                    ascamera_hp60c_color_0:
+                      {}
+                lwheel:
+                  {}
+                rwheel:
+                  {}
       Update Interval: 0
       Value: true
     - Class: rviz_default_plugins/Image
@@ -154,6 +154,29 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /ascamera_hp60c/camera_publisher/rgb0/image
+      Value: true
+    - Alpha: 0.699999988079071
+      Binary representation: false
+      Binary threshold: 100
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /octomap_grid
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /octomap_grid_updates
+      Use Timestamp: false
       Value: true
   Enabled: true
   Global Options:
@@ -201,7 +224,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.8402727246284485
+      Distance: 4.599287986755371
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1

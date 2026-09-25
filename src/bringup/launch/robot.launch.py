@@ -8,6 +8,7 @@ from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitut
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration, EqualsSubstitution
 
 def generate_launch_description():
     # launching mode
@@ -24,6 +25,7 @@ def generate_launch_description():
                 [FindPackageShare('remote'), 'launch', 'radiomaster_ER6.launch.py']
             )
         ),
+        condition=IfCondition(EqualsSubstitution(mode, 'map')),
         launch_arguments={
             'sim' : 'true'
         }.items()
@@ -45,12 +47,31 @@ def generate_launch_description():
         )
     )
 
-    slam_node = IncludeLaunchDescription(
+    slam_mapping_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
-                [FindPackageShare('slam'), 'launch', 'slam.launch.py']
+                [FindPackageShare('slam'), 'launch', 'mapping.launch.py']
             )
-        )
+        ),
+        condition=IfCondition(EqualsSubstitution(mode, 'map'))
+    )
+
+    slam_localization_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('slam'), 'launch', 'localization.launch.py']
+            )
+        ),
+        condition=IfCondition(EqualsSubstitution(mode, 'nav'))
+    )
+
+    slam_navigation_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('slam'), 'launch', 'navigation.launch.py']
+            )
+        ),
+        condition=IfCondition(EqualsSubstitution(mode, 'nav'))
     )
 
     display_node = IncludeLaunchDescription(
@@ -99,6 +120,8 @@ def generate_launch_description():
         canbus_node,
         kinematics_node,
         remote_node,
-        slam_node,
+        slam_mapping_node,
+        slam_localization_node,
+        slam_navigation_node,
     ])
 
