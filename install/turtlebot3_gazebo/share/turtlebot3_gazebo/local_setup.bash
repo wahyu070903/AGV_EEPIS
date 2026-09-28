@@ -1,0 +1,1 @@
+/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash

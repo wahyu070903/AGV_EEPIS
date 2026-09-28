@@ -10,5 +10,6 @@ bringup.egg-info/top_level.txt
 bringup.egg-info/zip-safe
 launch/robot.launch.py
 launch/simulation.launch.py
+launch/turtlebot_test.launch.py
 resource/bringup
 rviz/simulation.rviz

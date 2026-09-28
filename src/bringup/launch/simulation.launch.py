@@ -20,7 +20,7 @@ def generate_launch_description():
     robot_model = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
-                [FindPackageShare('model_description'), 'launch', 'agv_world.launch.py']
+                [FindPackageShare('agv_description'), 'launch', 'agv_world.launch.py']
             )
         ),
         launch_arguments={'headless': headless_sim}.items() 
