@@ -4,7 +4,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution, PythonExpression
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from launch.conditions import IfCondition
@@ -12,12 +12,39 @@ from launch.substitutions import LaunchConfiguration, EqualsSubstitution
 
 def generate_launch_description():
     # launching mode
-    # nav = navigation
-    # map = mapping
-    # free = freedrive
+    # nav       = navigation
+    # map       = mapping from existing database
+    # map-new   = mapping from zero
+        
+    mode = LaunchConfiguration('mode')
+    model = LaunchConfiguration('model')
+
+    mode_declare = DeclareLaunchArgument(
+        name='mode',
+        default_value='nav',
+        description="robot running mode"
+    )
+
+    model_declare = DeclareLaunchArgument(
+        name='mode',
+        default_value='ddmr',
+        description='robot model ddmr/agv'
+    )
+
+    is_mapping = PythonExpression([
+        "'", mode, "' in ['map', 'map-new']"
+    ])
+
+    share_dir = get_package_share_directory('bringup')
+    rviz_config_file = os.path.join(share_dir, 'rviz', 'robot.rviz')
     
-    mode = LaunchConfiguration('mode', default='map')
-    model = LaunchConfiguration('model', default='ddmr')
+    robot_description = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('ddmr_description'), 'launch', 'display.launch.py']
+            )
+        )
+    )
 
     remote_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -25,7 +52,7 @@ def generate_launch_description():
                 [FindPackageShare('remote'), 'launch', 'radiomaster_ER6.launch.py']
             )
         ),
-        condition=IfCondition(EqualsSubstitution(mode, 'map')),
+        condition=IfCondition(is_mapping),
         launch_arguments={
             'sim' : 'true'
         }.items()
@@ -53,7 +80,10 @@ def generate_launch_description():
                 [FindPackageShare('slam'), 'launch', 'mapping.launch.py']
             )
         ),
-        condition=IfCondition(EqualsSubstitution(mode, 'map'))
+        launch_arguments={
+            'mode': mode,
+        }.items(),
+        condition=IfCondition(is_mapping)
     )
 
     slam_localization_node = IncludeLaunchDescription(
@@ -62,6 +92,9 @@ def generate_launch_description():
                 [FindPackageShare('slam'), 'launch', 'localization.launch.py']
             )
         ),
+        launch_arguments={
+            'use_sim_time': 'false',
+        }.items(),
         condition=IfCondition(EqualsSubstitution(mode, 'nav'))
     )
 
@@ -71,20 +104,20 @@ def generate_launch_description():
                 [FindPackageShare('slam'), 'launch', 'navigation.launch.py']
             )
         ),
+        launch_arguments={
+            'use_sim_time': 'false',
+        }.items(),
         condition=IfCondition(EqualsSubstitution(mode, 'nav'))
     )
 
-    display_node = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution([
-                FindPackageShare('ddmr_description'),
-                'launch',
-                'display.launch.py'
-            ])
-        ),
-        launch_arguments={
-            'gui': 'false',
-        }.items()
+    display_node =  Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', rviz_config_file],
+        parameters=[{'use_sim_time': True}],
+        condition=IfCondition(EqualsSubstitution(mode, 'nav'))
     )
 
     kinematics_node = IncludeLaunchDescription(
@@ -114,14 +147,22 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        display_node,
+        mode_declare,
+        model_declare,
+
+        robot_description,
+        canbus_node,
+        remote_node,
+
+        kinematics_node,
+        
+
         camera_node,
         camera_tf_link,
-        canbus_node,
-        kinematics_node,
-        remote_node,
         slam_mapping_node,
         slam_localization_node,
         slam_navigation_node,
+
+        display_node,
     ])
 

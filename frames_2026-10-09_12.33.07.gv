@@ -1,0 +1,13 @@
+digraph G {
+"base_link" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "rwheel"[label=" Broadcaster: default_authority\nAverage rate: 10.202\nBuffer length: 4.901\nMost recent transform: 1791523987.505504\nOldest transform: 1791523982.604553\n"];
+"base_link" -> "lwheel"[label=" Broadcaster: default_authority\nAverage rate: 10.202\nBuffer length: 4.901\nMost recent transform: 1791523987.505504\nOldest transform: 1791523982.604553\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 20.25\nBuffer length: 4.0\nMost recent transform: 1791523987.65989\nOldest transform: 1791523983.659892\n"];
+"camera_link" -> "ascamera_hp60c_camera_link_0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ascamera_hp60c_camera_link_0" -> "ascamera_hp60c_color_0"[label=" Broadcaster: default_authority\nAverage rate: 42.36\nBuffer length: 2.55\nMost recent transform: 1791523987.535847\nOldest transform: 1791523984.986285\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1791523987.5956562"[ shape=plaintext ] ;
+}->"map";
+}

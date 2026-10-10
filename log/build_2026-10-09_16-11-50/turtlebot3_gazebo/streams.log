@@ -1,0 +1,445 @@
+[2.091s] Invoking command in '/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake /home/orsted/AGV_EEPIS/src/turtlebot3_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orsted/AGV_EEPIS/install/turtlebot3_gazebo
+[2.782s] -- The C compiler identification is GNU 13.3.0
+[2.783s] -- The CXX compiler identification is GNU 13.3.0
+[2.783s] -- Detecting C compiler ABI info
+[2.783s] -- Detecting C compiler ABI info - done
+[2.784s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.784s] -- Detecting C compile features
+[2.785s] -- Detecting C compile features - done
+[2.785s] -- Detecting CXX compiler ABI info
+[3.051s] -- Detecting CXX compiler ABI info - done
+[3.077s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.077s] -- Detecting CXX compile features
+[3.078s] -- Detecting CXX compile features - done
+[3.091s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.652s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.977s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.132s] -- Found ros_gz_sim: 1.0.22 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[4.328s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.374s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.429s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.496s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.738s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.753s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.026s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.088s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.162s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.022s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[6.112s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[6.177s] -- Found gz_math_vendor: 0.0.9 (/opt/ros/jazzy/share/gz_math_vendor/cmake)
+[6.215s] -- Looking for gz-math7 -- found version 7.6.0
+[6.259s] -- Searching for dependencies of gz-math7
+[6.270s] -- Looking for gz-utils2 -- found version 2.2.1
+[6.270s] -- Searching for dependencies of gz-utils2
+[6.281s] -- Found gz_sim_vendor: 0.0.10 (/opt/ros/jazzy/share/gz_sim_vendor/cmake)
+[6.597s] -- Looking for gz-sim8 -- found version 8.11.0
+[6.597s] -- Searching for dependencies of gz-sim8
+[6.597s] -- Looking for sdformat14 -- found version 14.9.0
+[6.597s] -- Searching for dependencies of sdformat14
+[6.598s] -- Checking for module 'tinyxml2'
+[6.645s] --   Found tinyxml2, version 10.0.0
+[6.728s] -- Looking for gz-math7 -- found version 7.6.0
+[6.728s] -- Looking for gz-utils2 -- found version 2.2.1
+[6.728s] -- Searching for dependencies of gz-utils2
+[6.729s] -- Searching for <gz-utils2> component [cli]
+[6.741s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[6.741s] -- Searching for dependencies of gz-utils2-cli
+[6.757s] -- Looking for gz-plugin2 -- found version 2.0.4
+[6.757s] -- Searching for dependencies of gz-plugin2
+[6.757s] -- Looking for gz-utils2 -- found version 2.2.1
+[6.761s] -- Searching for <gz-plugin2> component [loader]
+[6.771s] -- Looking for gz-plugin2-loader -- found version 2.0.4
+[6.781s] -- Searching for dependencies of gz-plugin2-loader
+[6.781s] -- Searching for <gz-plugin2> component [register]
+[6.783s] -- Looking for gz-plugin2-register -- found version 2.0.4
+[6.784s] -- Searching for dependencies of gz-plugin2-register
+[6.795s] -- Looking for gz-transport13 -- found version 13.5.0
+[6.797s] -- Searching for dependencies of gz-transport13
+[7.252s] -- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[7.291s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[7.309s] -- Checking for module 'libzmq >= 4'
+[7.359s] --   Found libzmq, version 4.3.5
+[7.492s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[7.517s] -- Checking for module 'uuid'
+[7.569s] --   Found uuid, version 2.39.3
+[7.664s] -- Found UUID: TRUE  
+[7.665s] -- Looking for gz-utils2 -- found version 2.2.1
+[7.678s] -- Looking for gz-msgs10 -- found version 10.3.2
+[7.678s] -- Searching for dependencies of gz-msgs10
+[7.746s] -- Looking for gz-utils2 -- found version 2.2.1
+[7.753s] -- Looking for gz-math7 -- found version 7.6.0
+[7.789s] -- Searching for <gz-transport13> component [log]
+[7.792s] -- Looking for gz-transport13-log -- found version 13.5.0
+[7.792s] -- Searching for dependencies of gz-transport13-log
+[7.795s] -- Searching for <gz-transport13> component [parameters]
+[7.805s] -- Looking for gz-transport13-parameters -- found version 13.5.0
+[7.805s] -- Searching for dependencies of gz-transport13-parameters
+[7.807s] -- Looking for gz-msgs10 -- found version 10.3.2
+[7.818s] -- Looking for gz-common5 -- found version 5.8.0
+[7.819s] -- Searching for dependencies of gz-common5
+[7.819s] -- Looking for gz-utils2 -- found version 2.2.1
+[7.824s] -- Looking for dlfcn.h - found
+[7.833s] -- Looking for libdl - found
+[7.841s] -- Found DL: TRUE  
+[7.866s] -- Searching for <gz-common5> component [av]
+[7.875s] -- Looking for gz-common5-av -- found version 5.8.0
+[7.877s] -- Searching for dependencies of gz-common5-av
+[7.905s] -- Checking for module 'libswscale'
+[7.954s] --   Found libswscale, version 7.5.100
+[8.069s] -- Found SWSCALE: TRUE  
+[8.091s] -- Checking for module 'libavdevice >= 56.4.100'
+[8.171s] --   Found libavdevice, version 60.3.100
+[8.386s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[8.406s] -- Checking for module 'libavformat'
+[8.466s] --   Found libavformat, version 60.16.100
+[8.587s] -- Found AVFORMAT: TRUE  
+[8.605s] -- Checking for module 'libavcodec'
+[8.648s] --   Found libavcodec, version 60.31.102
+[8.753s] -- Found AVCODEC: TRUE  
+[8.774s] -- Checking for module 'libavutil'
+[8.814s] --   Found libavutil, version 58.29.100
+[8.897s] -- Found AVUTIL: TRUE  
+[8.902s] -- Searching for <gz-common5> component [events]
+[8.917s] -- Looking for gz-common5-events -- found version 5.8.0
+[8.917s] -- Searching for dependencies of gz-common5-events
+[8.918s] -- Looking for gz-math7 -- found version 7.6.0
+[8.920s] -- Searching for <gz-common5> component [graphics]
+[8.931s] -- Looking for gz-common5-graphics -- found version 5.8.0
+[8.936s] -- Searching for dependencies of gz-common5-graphics
+[8.937s] -- Looking for gz-math7 -- found version 7.6.0
+[8.959s] -- Found GzAssimp: TRUE (found version "5.3.0") 
+[8.963s] -- Searching for <gz-common5> component [io]
+[8.972s] -- Looking for gz-common5-io -- found version 5.8.0
+[8.973s] -- Searching for dependencies of gz-common5-io
+[8.977s] -- Searching for <gz-common5> component [profiler]
+[8.985s] -- Looking for gz-common5-profiler -- found version 5.8.0
+[8.986s] -- Searching for dependencies of gz-common5-profiler
+[9.000s] -- Looking for gz-fuel_tools9 -- found version 9.1.1
+[9.001s] -- Searching for dependencies of gz-fuel_tools9
+[9.250s] -- Found CURL: /usr/lib/aarch64-linux-gnu/libcurl.so (found version "8.5.0")  
+[9.287s] -- Checking for module 'jsoncpp'
+[9.328s] --   Found jsoncpp, version 1.9.5
+[9.425s] -- Found JSONCPP: TRUE  
+[9.473s] -- Checking for module 'yaml-0.1'
+[9.535s] --   Found yaml-0.1, version 0.2.5
+[9.634s] -- Found YAML: TRUE  
+[9.654s] -- Checking for module 'libzip'
+[9.707s] --   Found libzip, version 1.7.3
+[9.784s] -- Found ZIP: TRUE  
+[9.790s] -- Looking for gz-utils2 -- found version 2.2.1
+[9.790s] -- Looking for gz-common5 -- found version 5.8.0
+[9.790s] -- Searching for dependencies of gz-common5
+[9.790s] -- Looking for gz-utils2 -- found version 2.2.1
+[9.790s] -- Looking for dlfcn.h - found
+[9.791s] -- Looking for libdl - found
+[9.813s] -- Searching for <gz-common5> component [testing]
+[9.826s] -- Looking for gz-common5-testing -- found version 5.8.0
+[9.827s] -- Searching for dependencies of gz-common5-testing
+[9.832s] -- Looking for gz-math7 -- found version 7.6.0
+[9.832s] -- Looking for gz-msgs10 -- found version 10.3.2
+[9.855s] -- Looking for gz-gui8 -- found version 8.4.0
+[9.855s] -- Searching for dependencies of gz-gui8
+[9.926s] -- Looking for gz-utils2 -- found version 2.2.1
+[9.929s] -- Looking for gz-math7 -- found version 7.6.0
+[9.929s] -- Looking for gz-common5 -- found version 5.8.0
+[9.929s] -- Looking for gz-plugin2 -- found version 2.0.4
+[9.931s] -- Looking for gz-transport13 -- found version 13.5.0
+[9.943s] -- Looking for gz-rendering8 -- found version 8.2.3
+[9.944s] -- Searching for dependencies of gz-rendering8
+[9.945s] -- Looking for gz-math7 -- found version 7.6.0
+[9.946s] -- Searching for dependencies of gz-math7
+[9.948s] -- Looking for gz-utils2 -- found version 2.2.1
+[9.949s] -- Searching for <gz-math7> component [eigen3]
+[9.956s] -- Looking for gz-math7-eigen3 -- found version 7.6.0
+[9.957s] -- Searching for dependencies of gz-math7-eigen3
+[9.986s] -- Looking for gz-common5 -- found version 5.8.0
+[9.986s] -- Searching for dependencies of gz-common5
+[9.987s] -- Looking for gz-utils2 -- found version 2.2.1
+[9.988s] -- Looking for dlfcn.h - found
+[9.988s] -- Looking for libdl - found
+[10.017s] -- Searching for <gz-common5> component [graphics]
+[10.018s] -- Searching for <gz-common5> component [events]
+[10.018s] -- Searching for <gz-common5> component [geospatial]
+[10.036s] -- Looking for gz-common5-geospatial -- found version 5.8.0
+[10.036s] -- Searching for dependencies of gz-common5-geospatial
+[10.038s] -- Looking for gz-math7 -- found version 7.6.0
+[10.039s] -- Looking for gz-common5 -- found version 5.8.0
+[10.043s] -- Looking for gz-plugin2 -- found version 2.0.4
+[10.045s] -- Searching for dependencies of gz-plugin2
+[10.046s] -- Looking for gz-utils2 -- found version 2.2.1
+[10.047s] -- Searching for <gz-plugin2> component [all]
+[10.059s] -- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+[10.062s] -- Looking for gz-plugin2 -- found version 2.0.4
+[10.067s] -- Looking for gz-utils2 -- found version 2.2.1
+[10.124s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL 
+[10.137s] -- Looking for gz-msgs10 -- found version 10.3.2
+[10.252s] -- Looking for gz-physics7 -- found version 7.6.0
+[10.257s] -- Searching for dependencies of gz-physics7
+[10.258s] -- Looking for gz-common5 -- found version 5.8.0
+[10.258s] -- Looking for gz-math7 -- found version 7.6.0
+[10.258s] -- Looking for gz-plugin2 -- found version 2.0.4
+[10.258s] -- Looking for gz-utils2 -- found version 2.2.1
+[10.273s] -- Searching for <gz-physics7> component [heightmap]
+[10.284s] -- Looking for gz-physics7-heightmap -- found version 7.6.0
+[10.284s] -- Searching for dependencies of gz-physics7-heightmap
+[10.284s] -- Looking for gz-common5 -- found version 5.8.0
+[10.287s] -- Searching for <gz-physics7> component [mesh]
+[10.297s] -- Looking for gz-physics7-mesh -- found version 7.6.0
+[10.299s] -- Searching for dependencies of gz-physics7-mesh
+[10.301s] -- Looking for gz-common5 -- found version 5.8.0
+[10.313s] -- Searching for <gz-physics7> component [sdf]
+[10.318s] -- Looking for gz-physics7-sdf -- found version 7.6.0
+[10.319s] -- Searching for dependencies of gz-physics7-sdf
+[10.321s] -- Looking for sdformat14 -- found version 14.9.0
+[10.341s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.341s] -- Searching for dependencies of gz-sensors8
+[10.409s] -- Looking for gz-math7 -- found version 7.6.0
+[10.410s] -- Looking for gz-common5 -- found version 5.8.0
+[10.410s] -- Looking for gz-transport13 -- found version 13.5.0
+[10.410s] -- Looking for gz-rendering8 -- found version 8.2.3
+[10.411s] -- Looking for gz-msgs10 -- found version 10.3.2
+[10.413s] -- Looking for sdformat14 -- found version 14.9.0
+[10.419s] -- Searching for <gz-sensors8> component [air_pressure]
+[10.427s] -- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+[10.428s] -- Searching for dependencies of gz-sensors8-air_pressure
+[10.437s] -- Searching for <gz-sensors8> component [air_speed]
+[10.443s] -- Looking for gz-sensors8-air_speed -- found version 8.2.2
+[10.443s] -- Searching for dependencies of gz-sensors8-air_speed
+[10.446s] -- Searching for <gz-sensors8> component [altimeter]
+[10.457s] -- Looking for gz-sensors8-altimeter -- found version 8.2.2
+[10.459s] -- Searching for dependencies of gz-sensors8-altimeter
+[10.469s] -- Searching for <gz-sensors8> component [imu]
+[10.483s] -- Looking for gz-sensors8-imu -- found version 8.2.2
+[10.484s] -- Searching for dependencies of gz-sensors8-imu
+[10.489s] -- Searching for <gz-sensors8> component [force_torque]
+[10.501s] -- Looking for gz-sensors8-force_torque -- found version 8.2.2
+[10.502s] -- Searching for dependencies of gz-sensors8-force_torque
+[10.502s] -- Searching for <gz-sensors8> component [logical_camera]
+[10.510s] -- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+[10.510s] -- Searching for dependencies of gz-sensors8-logical_camera
+[10.514s] -- Searching for <gz-sensors8> component [magnetometer]
+[10.521s] -- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+[10.521s] -- Searching for dependencies of gz-sensors8-magnetometer
+[10.525s] -- Searching for <gz-sensors8> component [navsat]
+[10.534s] -- Looking for gz-sensors8-navsat -- found version 8.2.2
+[10.534s] -- Searching for dependencies of gz-sensors8-navsat
+[10.538s] -- Searching for <gz-sensors8> component [dvl]
+[10.546s] -- Looking for gz-sensors8-dvl -- found version 8.2.2
+[10.547s] -- Searching for dependencies of gz-sensors8-dvl
+[10.547s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.547s] -- Searching for dependencies of gz-sensors8
+[10.611s] -- Looking for gz-math7 -- found version 7.6.0
+[10.613s] -- Looking for gz-common5 -- found version 5.8.0
+[10.615s] -- Looking for gz-transport13 -- found version 13.5.0
+[10.617s] -- Looking for gz-rendering8 -- found version 8.2.3
+[10.618s] -- Looking for gz-msgs10 -- found version 10.3.2
+[10.620s] -- Looking for sdformat14 -- found version 14.9.0
+[10.621s] -- Searching for <gz-sensors8> component [rendering]
+[10.631s] -- Looking for gz-sensors8-rendering -- found version 8.2.2
+[10.633s] -- Searching for dependencies of gz-sensors8-rendering
+[10.639s] -- Searching for <gz-sensors8> component [rendering]
+[10.642s] -- Searching for <gz-sensors8> component [lidar]
+[10.658s] -- Looking for gz-sensors8-lidar -- found version 8.2.2
+[10.659s] -- Searching for dependencies of gz-sensors8-lidar
+[10.660s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.669s] -- Searching for <gz-sensors8> component [gpu_lidar]
+[10.680s] -- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+[10.681s] -- Searching for dependencies of gz-sensors8-gpu_lidar
+[10.681s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.688s] -- Searching for <gz-sensors8> component [camera]
+[10.698s] -- Looking for gz-sensors8-camera -- found version 8.2.2
+[10.700s] -- Searching for dependencies of gz-sensors8-camera
+[10.700s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.703s] -- Searching for <gz-sensors8> component [boundingbox_camera]
+[10.713s] -- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+[10.714s] -- Searching for dependencies of gz-sensors8-boundingbox_camera
+[10.721s] -- Searching for <gz-sensors8> component [segmentation_camera]
+[10.731s] -- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+[10.731s] -- Searching for dependencies of gz-sensors8-segmentation_camera
+[10.739s] -- Searching for <gz-sensors8> component [depth_camera]
+[10.746s] -- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+[10.746s] -- Searching for dependencies of gz-sensors8-depth_camera
+[10.747s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.753s] -- Searching for <gz-sensors8> component [rgbd_camera]
+[10.765s] -- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+[10.765s] -- Searching for dependencies of gz-sensors8-rgbd_camera
+[10.767s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.773s] -- Searching for <gz-sensors8> component [thermal_camera]
+[10.785s] -- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+[10.785s] -- Searching for dependencies of gz-sensors8-thermal_camera
+[10.789s] -- Looking for gz-sensors8 -- found version 8.2.2
+[10.791s] -- Searching for <gz-sensors8> component [wide_angle_camera]
+[10.800s] -- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+[10.800s] -- Searching for dependencies of gz-sensors8-wide_angle_camera
+[10.809s] -- Looking for gz-rendering8 -- found version 8.2.3
+[10.809s] -- Looking for gz-math7 -- found version 7.6.0
+[10.809s] -- Looking for gz-utils2 -- found version 2.2.1
+[10.882s] -- Looking for gz-plugin2 -- found version 2.0.4
+[11.275s] -- Configuring done (9.2s)
+[11.391s] -- Generating done (0.1s)
+[11.428s] -- Build files have been written to: /home/orsted/AGV_EEPIS/build/turtlebot3_gazebo
+[11.530s] Invoked command in '/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake /home/orsted/AGV_EEPIS/src/turtlebot3_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orsted/AGV_EEPIS/install/turtlebot3_gazebo
+[11.533s] Invoking command in '/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/turtlebot3_gazebo -- -j6 -l6
+[11.761s] [ 12%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[11.763s] [ 25%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/src/obstacle1.cpp.o[0m
+[11.768s] [ 37%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/src/obstacle2.cpp.o[0m
+[11.769s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacles.dir/src/obstacles.cpp.o[0m
+[23.270s] [ 62%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[23.441s] [ 75%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[24.808s] [ 75%] Built target obstacle1
+[24.990s] [ 75%] Built target obstacle2
+[26.192s] [ 87%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[26.947s] [ 87%] Built target obstacles
+[52.087s] [100%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[53.528s] [100%] Built target turtlebot3_drive
+[53.569s] Invoked command in '/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/turtlebot3_gazebo -- -j6 -l6
+[53.603s] Invoking command in '/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/turtlebot3_gazebo
+[53.629s] -- Install configuration: ""
+[53.629s] -- Execute custom install script
+[53.630s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[53.659s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacles.so
+[53.688s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacle1.so
+[53.719s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacle2.so
+[53.750s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/bringup.launch.py
+[53.777s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[53.807s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/navigation.launch.py
+[53.836s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[53.864s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[53.895s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[53.924s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[53.953s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[53.980s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[54.009s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[54.038s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[54.069s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[54.099s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[54.129s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[54.158s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model-1_4.sdf
+[54.187s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.config
+[54.215s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.sdf
+[54.244s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_rgbd/model.config
+[54.272s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_rgbd/model.sdf
+[54.303s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/burger_base.stl
+[54.332s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_base.stl
+[54.361s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_pi_base.stl
+[54.389s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[54.418s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[54.447s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[54.477s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.dae
+[54.506s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.jpg
+[54.534s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/lds.stl
+[54.562s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.dae
+[54.593s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.jpg
+[54.622s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[54.652s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[54.682s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[54.713s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/left_tire.stl
+[54.743s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/right_tire.stl
+[54.772s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[54.805s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[54.836s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[54.865s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[54.894s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[54.924s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/textures/wood.png
+[54.954s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[54.984s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[55.016s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[55.044s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[55.074s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[55.104s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[55.133s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[55.162s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[55.193s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/textures/wood.png
+[55.223s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/materials/textures/Maple.jpg
+[55.253s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/materials/textures/Wood_Floor_Dark.jpg
+[55.282s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/meshes/cafe_table.dae
+[55.312s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/model-1_4.sdf
+[55.342s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/model.config
+[55.373s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/model.sdf
+[55.403s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/meshes/trash_can.dae
+[55.433s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/model.config
+[55.463s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/model.sdf
+[55.493s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/scripts/mailbox.material
+[55.522s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures/Mailbox_Diffuse.png
+[55.550s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures/Mailbox_Diffuse.tga.orig
+[55.577s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures/Mailbox_Spec.png
+[55.607s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/meshes/mailbox.dae
+[55.638s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model-1_3.sdf
+[55.668s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model-1_4.sdf
+[55.697s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model.config
+[55.726s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model.sdf
+[55.757s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[55.786s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[55.817s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/scripts/table_lightmap.material
+[55.845s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/textures/marble.png
+[55.874s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/textures/table_lightmap.png
+[55.903s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/meshes/table_lightmap.dae
+[55.933s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/model-1_4.sdf
+[55.962s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/model.config
+[55.992s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/model.sdf
+[56.023s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/textures/bricks.png
+[56.051s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/textures/wood.png
+[56.080s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[56.109s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[56.138s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[56.166s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[56.195s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[56.225s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[56.254s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[56.283s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[56.312s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[56.341s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[56.370s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[56.401s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/nav2_params.yaml
+[56.430s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/ps4_teleop.yaml
+[56.457s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_burger_bridge.yaml
+[56.485s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_burger_cam_bridge.yaml
+[56.516s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_burger_rgbd_bridge.yaml
+[56.543s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_waffle_bridge.yaml
+[56.572s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_waffle_pi_bridge.yaml
+[56.602s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[56.631s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_navigation.rviz
+[56.660s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[56.688s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[56.719s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_cam.urdf
+[56.747s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_rgbd.urdf
+[56.776s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[56.806s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[56.835s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[56.863s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autorace_2020.world
+[56.892s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[56.921s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[56.949s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[56.979s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[57.008s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[57.068s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[57.237s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/map.pgm
+[57.267s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/map.yaml
+[57.295s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/map2.pgm
+[57.325s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/map2.yaml
+[57.353s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/my_map.pgm
+[57.380s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/my_map.yaml
+[57.412s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle1.hpp
+[57.440s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle2.hpp
+[57.468s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacles.hpp
+[57.497s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_bar_plugin.hpp
+[57.527s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_light_plugin.hpp
+[57.555s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[57.584s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[57.614s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[57.643s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[57.672s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[57.701s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[57.731s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[57.761s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[57.789s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[57.820s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[57.849s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[57.878s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[57.908s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[57.938s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[57.967s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[57.996s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[58.026s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[58.055s] -- Symlinking: /home/orsted/AGV_EEPIS/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[58.091s] Invoked command in '/home/orsted/AGV_EEPIS/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/turtlebot3_gazebo

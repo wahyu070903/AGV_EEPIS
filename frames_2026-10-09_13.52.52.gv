@@ -1,0 +1,13 @@
+digraph G {
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 20.005\nBuffer length: 3.299\nMost recent transform: 1791528772.164664\nOldest transform: 1791528768.865476\n"];
+"base_link" -> "rwheel"[label=" Broadcaster: default_authority\nAverage rate: 10.508\nBuffer length: 1.998\nMost recent transform: 1791528771.993027\nOldest transform: 1791528769.994618\n"];
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "lwheel"[label=" Broadcaster: default_authority\nAverage rate: 10.508\nBuffer length: 1.998\nMost recent transform: 1791528771.993027\nOldest transform: 1791528769.994618\n"];
+"camera_link" -> "ascamera_hp60c_camera_link_0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ascamera_hp60c_camera_link_0" -> "ascamera_hp60c_color_0"[label=" Broadcaster: default_authority\nAverage rate: 42.021\nBuffer length: 2.142\nMost recent transform: 1791528772.088979\nOldest transform: 1791528769.947199\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1791528772.1152852"[ shape=plaintext ] ;
+}->"base_footprint";
+}

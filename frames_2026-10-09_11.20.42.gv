@@ -1,0 +1,10 @@
+digraph G {
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 50.202\nBuffer length: 5.04\nMost recent transform: 1791519642.225912\nOldest transform: 1791519637.186305\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 20.204\nBuffer length: 4.999\nMost recent transform: 1791519642.287336\nOldest transform: 1791519637.288228\n"];
+"ascamera_hp60c_camera_link_0" -> "ascamera_hp60c_color_0"[label=" Broadcaster: default_authority\nAverage rate: 41.946\nBuffer length: 4.959\nMost recent transform: 1791519642.165562\nOldest transform: 1791519637.206845\n"];
+"camera_link" -> "ascamera_hp60c_camera_link_0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1791519642.2546315"[ shape=plaintext ] ;
+}->"camera_link";
+}

@@ -11,11 +11,23 @@ import os
 def generate_launch_description():
 
     use_sim_time = LaunchConfiguration('use_sim_time')
+    rgb_info = LaunchConfiguration('rgb_info')
+    depth_topic = LaunchConfiguration('depth_topic')
 
     declare_use_sim_time = DeclareLaunchArgument(
         'use_sim_time',
         default_value='false',
         description='Use simulation time'
+    )
+
+    declare_rgb_info = DeclareLaunchArgument(
+        'rgb_info',
+        default_value='/ascamera_hp60c/camera_publisher/depth0/camera_info',
+    )
+
+    declare_depth_topic = DeclareLaunchArgument(
+        'depth_topic',
+        default_value='/ascamera_hp60c/camera_publisher/depth0/image_raw',
     )
 
     nav2_params = os.path.join(
@@ -27,11 +39,11 @@ def generate_launch_description():
     depth_remappings = [
         (
             'camera_info',
-            '/ascamera_hp60c/camera_publisher/depth0/camera_info'
+            rgb_info
         ),
         (
             'image_rect',
-            '/ascamera_hp60c/camera_publisher/depth0/image_raw'
+            depth_topic
         )
     ]
 
@@ -162,6 +174,9 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time,
+        declare_rgb_info,
+        declare_depth_topic,
+        
         rgbd_to_pointcloud2,
 
         controller_server,

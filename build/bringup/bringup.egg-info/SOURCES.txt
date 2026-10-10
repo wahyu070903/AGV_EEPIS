@@ -12,4 +12,5 @@ launch/robot.launch.py
 launch/simulation.launch.py
 launch/turtlebot_test.launch.py
 resource/bringup
+rviz/robot.rviz
 rviz/simulation.rviz

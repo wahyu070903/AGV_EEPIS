@@ -1,0 +1,179 @@
+[0.798s] Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake /home/orsted/AGV_EEPIS/src/ascamera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orsted/AGV_EEPIS/install/ascamera
+[2.858s] -- The C compiler identification is GNU 13.3.0
+[2.859s] -- The CXX compiler identification is GNU 13.3.0
+[2.859s] -- Detecting C compiler ABI info
+[2.859s] -- Detecting C compiler ABI info - done
+[2.860s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.860s] -- Detecting C compile features
+[2.860s] -- Detecting C compile features - done
+[2.860s] -- Detecting CXX compiler ABI info
+[2.861s] -- Detecting CXX compiler ABI info - done
+[2.861s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.861s] -- Detecting CXX compile features
+[2.861s] -- Detecting CXX compile features - done
+[2.861s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.861s] [0mdefault compiler:aarch64-linux-gnu-g++[0m
+[2.964s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.207s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.414s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.587s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.645s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.721s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.793s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.092s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.120s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.491s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.558s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.628s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.987s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[5.053s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[5.207s] -- Found pcl_conversions: 2.6.4 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[5.488s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[5.489s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[5.489s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[5.489s]   cmake_policy command to set the policy and suppress this warning.
+[5.489s] 
+[5.489s]   CMake variable FLANN_ROOT is set to:
+[5.489s] 
+[5.490s]     /usr
+[5.490s] 
+[5.490s]   For compatibility, find_package is ignoring the variable, but code in a
+[5.490s]   .cmake module might still use it.
+[5.490s] Call Stack (most recent call first):
+[5.490s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[5.490s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[5.491s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[5.491s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[5.491s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[5.491s]   CMakeLists.txt:39 (find_package)
+[5.491s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.491s] [0m
+[5.492s] -- Found flann version 1.9.2
+[6.504s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[6.506s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[13.627s] -- Checking for module 'libusb-1.0'
+[13.663s] --   Found libusb-1.0, version 1.0.27
+[13.750s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[13.755s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.905s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.916s] -- Found Pcap: /usr/lib/aarch64-linux-gnu/libpcap.so  
+[13.953s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[13.991s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[15.151s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.167s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[16.506s] -- Found Qhull version 8.0.2
+[18.320s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[19.787s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[19.794s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[19.801s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[19.801s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[19.804s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[19.806s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[19.807s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[19.809s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[19.812s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[19.816s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[19.818s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[19.821s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[19.828s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[19.829s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[19.833s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[19.834s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[19.838s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[19.841s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[19.848s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[19.848s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[19.850s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[19.851s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[19.852s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[19.855s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[19.860s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[19.872s] [33mCMake Warning (dev) at CMakeLists.txt:40 (find_package):
+[19.873s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[19.873s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[19.873s]   command to set the policy and suppress this warning.
+[19.873s] 
+[19.873s]   CMake variable PCL_ROOT is set to:
+[19.873s] 
+[19.874s]     /usr
+[19.874s] 
+[19.874s]   For compatibility, CMake is ignoring the variable.
+[19.874s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[19.874s] [0m
+[19.906s] -- Found tf2: 0.36.21 (/opt/ros/jazzy/share/tf2/cmake)
+[19.927s] -- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[20.286s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[20.783s] -- Added test 'copyright' to check source files copyright and LICENSE
+[20.797s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[20.797s] -- Configured cppcheck include dirs: /home/orsted/AGV_EEPIS/src/ascamera/include;/home/orsted/AGV_EEPIS/src/ascamera/libs/include;$<BUILD_INTERFACE:/home/orsted/AGV_EEPIS/src/ascamera/include>
+[20.797s] -- Configured cppcheck exclude dirs and/or files: 
+[20.805s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[20.805s] -- Configured cpplint exclude dirs and/or files: 
+[20.816s] -- Added test 'flake8' to check Python code syntax and style conventions
+[20.817s] -- Configured 'flake8' exclude dirs and/or files: 
+[20.817s] -- Added test 'lint_cmake' to check CMake code style
+[20.822s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[20.831s] -- Added test 'uncrustify' to check C / C++ code style
+[20.832s] -- Configured uncrustify additional arguments: 
+[20.840s] -- Added test 'xmllint' to check XML markup files
+[20.847s] -- Configuring done (19.9s)
+[21.039s] -- Generating done (0.1s)
+[21.069s] -- Build files have been written to: /home/orsted/AGV_EEPIS/build/ascamera
+[21.266s] Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake /home/orsted/AGV_EEPIS/src/ascamera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orsted/AGV_EEPIS/install/ascamera
+[21.268s] Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/ascamera -- -j6 -l6
+[21.442s] [ 50%] [32mBuilding CXX object CMakeFiles/ascamera_node.dir/src/ascamera_node.cpp.o[0m
+[21.442s] [ 50%] [32mBuilding CXX object CMakeFiles/ascamera_node.dir/src/CameraPublisher.cpp.o[0m
+[21.443s] [ 50%] [32mBuilding CXX object CMakeFiles/ascamera_node.dir/src/CameraSrv.cpp.o[0m
+[21.443s] [ 66%] [32mBuilding CXX object CMakeFiles/ascamera_node.dir/src/Camera.cpp.o[0m
+[21.443s] [ 83%] [32mBuilding CXX object CMakeFiles/ascamera_node.dir/src/TfTreeFrameIdInfo.cpp.o[0m
+[44.552s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:[m[K In member function ‘[01m[Kvoid CameraPublisher::[01;32m[KirInfoPublisher[m[K(AS_CAM_PTR, const AS_SDK_Data_s*, AS_CAM_Parameter_s&, builtin_interfaces::msg::Time)[m[K’:
+[44.552s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1000:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[44.553s]  1000 |                                       AS_CAM_Parameter_s &stParameter, [01;35m[Kbuiltin_interfaces::msg::Time time[m[K)
+[44.553s]       |                                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[44.553s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:[m[K In member function ‘[01m[Kvoid CameraPublisher::[01;32m[KpeakInfoPublisher[m[K(AS_CAM_PTR, const AS_SDK_Data_s*, AS_CAM_Parameter_s&, builtin_interfaces::msg::Time)[m[K’:
+[44.553s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1033:104:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[44.553s]  1033 |                                         AS_CAM_Parameter_s &stParameter, [01;35m[Kbuiltin_interfaces::msg::Time time[m[K)
+[44.554s]       |                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[44.555s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:[m[K In member function ‘[01m[Kvoid CameraPublisher::[01;32m[KdepthMergeInfoPublisher[m[K(AS_CAM_PTR, const AS_SDK_MERGE_s*, AS_CAM_Parameter_s&, builtin_interfaces::msg::Time)[m[K’:
+[44.556s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1081:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KstParameter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[44.556s]  1081 |         [01;35m[KAS_CAM_Parameter_s &stParameter[m[K, builtin_interfaces::msg::Time time)
+[44.556s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[44.561s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:[m[K In member function ‘[01m[Kvoid CameraPublisher::[01;32m[KpointcloudMergePublisher[m[K(AS_CAM_PTR, const AS_SDK_MERGE_s*, AS_CAM_Parameter_s&)[m[K’:
+[44.562s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraPublisher.cpp:1119:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KstParameter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[44.562s]  1119 |         [01;35m[KAS_CAM_Parameter_s &stParameter[m[K)
+[44.562s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[44.942s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraSrv.cpp:[m[K In member function ‘[01m[Kint CameraSrv::[01;32m[KgetConfigFile[m[K(AS_CAM_PTR, std::string&, AS_SDK_CAM_MODEL_E)[m[K’:
+[44.942s] [01m[K/home/orsted/AGV_EEPIS/src/ascamera/src/CameraSrv.cpp:296:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpCamera[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[44.942s]   296 | int CameraSrv::getConfigFile([01;35m[KAS_CAM_PTR pCamera[m[K, std::string &configfile, AS_SDK_CAM_MODEL_E cam_type)
+[44.942s]       |                              [01;35m[K~~~~~~~~~~~^~~~~~~[m[K
+[85.650s] [100%] [32m[1mLinking CXX executable ascamera_node[0m
+[87.033s] [100%] Built target ascamera_node
+[87.069s] Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --build /home/orsted/AGV_EEPIS/build/ascamera -- -j6 -l6
+[87.074s] Invoking command in '/home/orsted/AGV_EEPIS/build/ascamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/ascamera
+[87.103s] -- Install configuration: ""
+[87.104s] -- Execute custom install script
+[87.105s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/lib/ascamera/ascamera_node
+[87.133s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/ascamera.launch.py
+[87.160s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/changA.launch.py
+[87.193s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60c.launch.py
+[87.225s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/hp60cn.launch.py
+[87.257s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kondyor.launch.py
+[87.291s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_a.launch.py
+[87.317s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/kunlun_c.launch.py
+[87.349s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/launch/nuwa.launch.py
+[87.383s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/package_run_dependencies/ascamera
+[87.417s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/parent_prefix_path/ascamera
+[87.447s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.sh
+[87.481s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/ament_prefix_path.dsv
+[87.516s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.sh
+[87.541s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/environment/path.dsv
+[87.575s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.bash
+[87.609s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.sh
+[87.641s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.zsh
+[87.675s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/local_setup.dsv
+[87.709s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.dsv
+[87.740s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ament_index/resource_index/packages/ascamera
+[87.767s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig.cmake
+[87.800s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/cmake/ascameraConfig-version.cmake
+[87.831s] -- Symlinking: /home/orsted/AGV_EEPIS/install/ascamera/share/ascamera/package.xml
+[87.873s] Invoked command in '/home/orsted/AGV_EEPIS/build/ascamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orsted/AGV_EEPIS/install/ultrasonic:/home/orsted/AGV_EEPIS/install/system:/home/orsted/AGV_EEPIS/install/slam:/home/orsted/AGV_EEPIS/install/remote:/home/orsted/AGV_EEPIS/install/drive_controller:/home/orsted/AGV_EEPIS/install/ddmr_description:/home/orsted/AGV_EEPIS/install/canbus:/home/orsted/AGV_EEPIS/install/bringup:/home/orsted/AGV_EEPIS/install/agv_description:/opt/ros/jazzy /usr/bin/cmake --install /home/orsted/AGV_EEPIS/build/ascamera

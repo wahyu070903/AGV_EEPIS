@@ -1,0 +1,22 @@
+[6.036s] Invoking command in '/home/orsted/AGV_EEPIS/build/ultrasonic': PYTHONPATH=/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ultrasonic/build --no-deps symlink_data
+[7.206s] running develop
+[7.889s] running egg_info
+[7.889s] creating ultrasonic.egg-info
+[7.957s] writing ultrasonic.egg-info/PKG-INFO
+[7.958s] writing dependency_links to ultrasonic.egg-info/dependency_links.txt
+[7.958s] writing requirements to ultrasonic.egg-info/requires.txt
+[7.959s] writing top-level names to ultrasonic.egg-info/top_level.txt
+[7.959s] writing manifest file 'ultrasonic.egg-info/SOURCES.txt'
+[8.105s] reading manifest file 'ultrasonic.egg-info/SOURCES.txt'
+[8.107s] writing manifest file 'ultrasonic.egg-info/SOURCES.txt'
+[8.188s] running build_ext
+[8.189s] Creating /home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages/ultrasonic.egg-link (link to .)
+[8.189s] 
+[8.190s] Installed /home/orsted/AGV_EEPIS/build/ultrasonic
+[8.190s] running symlink_data
+[8.190s] creating /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index
+[8.191s] creating /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index/resource_index
+[8.191s] creating /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index/resource_index/packages
+[8.191s] symbolically linking /home/orsted/AGV_EEPIS/build/ultrasonic/resource/ultrasonic -> /home/orsted/AGV_EEPIS/install/ultrasonic/share/ament_index/resource_index/packages
+[8.191s] symbolically linking /home/orsted/AGV_EEPIS/build/ultrasonic/package.xml -> /home/orsted/AGV_EEPIS/install/ultrasonic/share/ultrasonic
+[8.518s] Invoked command in '/home/orsted/AGV_EEPIS/build/ultrasonic' returned '0': PYTHONPATH=/home/orsted/AGV_EEPIS/build/ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ultrasonic/build --no-deps symlink_data

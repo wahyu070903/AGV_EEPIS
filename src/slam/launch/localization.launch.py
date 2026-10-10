@@ -8,7 +8,17 @@ from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
 
+    use_sim_time = LaunchConfiguration('use_sim_time')
     database_path = LaunchConfiguration('database_path')
+    rgb_topic = LaunchConfiguration('rgb_topic')
+    rgb_info = LaunchConfiguration('rgb_info')
+    depth_topic = LaunchConfiguration('depth_topic')
+
+    declare_use_sim_time = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='false',
+        description='Use simulation time'
+    )
 
     declare_database_path = DeclareLaunchArgument(
         'database_path',
@@ -16,6 +26,21 @@ def generate_launch_description():
         description='RTAB-Map database used for localization'
     )
     
+    declare_rgb_topic = DeclareLaunchArgument(
+        'rgb_topic',
+        default_value='/ascamera_hp60c/camera_publisher/rgb0/image'
+    )
+
+    declare_rgb_info = DeclareLaunchArgument(
+        'rgb_info',
+        default_value='/ascamera_hp60c/camera_publisher/rgb0/camera_info'
+    )
+
+    declare_depth_topic = DeclareLaunchArgument(
+        'depth_topic',
+        default_value='/ascamera_hp60c/camera_publisher/depth0/image_raw'
+    )
+
     localization_param = os.path.join(
         get_package_share_directory('slam'),
         'config',
@@ -25,15 +50,15 @@ def generate_launch_description():
     camera_remappings = [
         (
             'rgb/image',
-            '/ascamera_hp60c/camera_publisher/rgb0/image'
+            rgb_topic
         ),
         (
             'rgb/camera_info',
-            '/ascamera_hp60c/camera_publisher/rgb0/camera_info'
+            rgb_info
         ),
         (
             'depth/image',
-            '/ascamera_hp60c/camera_publisher/depth0/image_raw'
+            depth_topic
         ),
         (
             'odom',
@@ -48,6 +73,7 @@ def generate_launch_description():
         output='screen',
 
         parameters=[{
+            'use_sim_time': use_sim_time,
             'approx_sync': True,
             'approx_sync_max_interval': 0.05,
         }],
@@ -69,7 +95,8 @@ def generate_launch_description():
         parameters=[
             localization_param,
             {
-                'database_path': database_path
+                'database_path': database_path,
+                'use_sim_time': use_sim_time,
             }
         ],
 
@@ -81,6 +108,9 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_database_path,
+        declare_rgb_topic,
+        declare_rgb_info,
+        declare_depth_topic,
         rgbd_sync,
         rtabmap 
     ])

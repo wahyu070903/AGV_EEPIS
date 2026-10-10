@@ -8,19 +8,20 @@ from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
 
-    mapping_param = os.Path.join(
-        get_package_share_directory('slam'),
-        'config',
-        'rtabmap_mapping.yaml'
+    mapping_param = os.path.join(
+        get_package_share_directory('slam'), 'config', 'rtabmap_mapping.yaml'
     )
 
     mode = LaunchConfiguration('mode')
     database_path = LaunchConfiguration('database_path')
+    rgb_topic = LaunchConfiguration('rgb_topic')
+    rgb_info = LaunchConfiguration('rgb_info')
+    depth_topic = LaunchConfiguration('depth_topic')
 
     declare_mode = DeclareLaunchArgument(
         'mode',
-        default_value='mapping',
-        description='SLAM running mode: mapping or mapping-new'
+        default_value='map',
+        description='SLAM running mode: map or map-new'
     )
 
     declare_database_path = DeclareLaunchArgument(
@@ -29,18 +30,33 @@ def generate_launch_description():
         description='Path for RTAB-Map database'
     )
 
+    declare_rgb_topic = DeclareLaunchArgument(
+        'rgb_topic',
+        default_value='/ascamera_hp60c/camera_publisher/rgb0/image'
+    )
+
+    declare_rgb_info = DeclareLaunchArgument(
+        'rgb_info',
+        default_value='/ascamera_hp60c/camera_publisher/rgb0/camera_info'
+    )
+
+    declare_depth_topic = DeclareLaunchArgument(
+        'depth_topic',
+        default_value='/ascamera_hp60c/camera_publisher/depth0/image_raw'
+    )
+
     camera_remappings = [
         (
             'rgb/image',
-            '/ascamera_hp60c/camera_publisher/rgb0/image'
+            rgb_topic
         ),
         (
             'rgb/camera_info',
-            '/ascamera_hp60c/camera_publisher/rgb0/camera_info'
+            rgb_info
         ),
         (
             'depth/image',
-            '/ascamera_hp60c/camera_publisher/depth0/image_raw'
+            depth_topic
         ),
         (
             'odom',
@@ -77,7 +93,7 @@ def generate_launch_description():
             '--log-level', 'WARN'
         ]
 
-        if selected_mode == 'mapping-new':
+        if selected_mode == 'map-new':
             rtabmap_args.insert(0, '-d')
 
         print(f'[SLAM] Mode: {selected_mode}')
@@ -126,6 +142,10 @@ def generate_launch_description():
     return LaunchDescription([
         declare_mode,
         declare_database_path,
+        declare_rgb_topic,
+        declare_rgb_info,
+        declare_depth_topic,
+
         rgbd_sync,
         OpaqueFunction(function=create_rtabmap),
         rtabmap_viz,
