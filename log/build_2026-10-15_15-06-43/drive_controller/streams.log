@@ -1,0 +1,18 @@
+[6.857s] Invoking command in '/home/orsted/AGV_EEPIS/build/drive_controller': PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[7.899s] running develop
+[8.534s] running egg_info
+[8.599s] writing drive_controller.egg-info/PKG-INFO
+[8.601s] writing dependency_links to drive_controller.egg-info/dependency_links.txt
+[8.602s] writing entry points to drive_controller.egg-info/entry_points.txt
+[8.603s] writing requirements to drive_controller.egg-info/requires.txt
+[8.604s] writing top-level names to drive_controller.egg-info/top_level.txt
+[8.735s] reading manifest file 'drive_controller.egg-info/SOURCES.txt'
+[8.736s] writing manifest file 'drive_controller.egg-info/SOURCES.txt'
+[8.801s] running build_ext
+[8.802s] Creating /home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages/drive-controller.egg-link (link to .)
+[8.803s] Installing ddmr_kinec_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[8.805s] Installing kinematics_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[8.810s] 
+[8.810s] Installed /home/orsted/AGV_EEPIS/build/drive_controller
+[8.811s] running symlink_data
+[9.007s] Invoked command in '/home/orsted/AGV_EEPIS/build/drive_controller' returned '0': PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data

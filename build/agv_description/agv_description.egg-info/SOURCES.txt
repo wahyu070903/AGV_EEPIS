@@ -13,6 +13,7 @@ config/gazebo.rviz
 config/ros_gz_bridge_gazebo.yaml
 launch/agv_spawn.launch.py
 launch/agv_world.launch.py
+launch/display.launch.py
 launch/state_publisher.launch.py
 meshes/base_link.stl
 meshes/l_caster_1.stl
