@@ -29,15 +29,14 @@ def generate_launch_description():
         camera_node,
         Node(
             package='linetracker',
-            executable='tracker',
-            name='tracker',
+            executable='tracker_seg',
+            name='tracker_seg',
             output='screen'
         ),
         Node(
             package='linetracker',
-            executable='follower',
-            name='follower',
+            executable='follower_seg',
+            name='follower_seg',
             output='screen',
-            # arguments=['--ros-args', '--log-level', 'DEBUG']
         )
     ])

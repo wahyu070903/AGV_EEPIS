@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing remote.egg-info/PKG-INFO
+writing dependency_links to remote.egg-info/dependency_links.txt
+writing entry points to remote.egg-info/entry_points.txt
+writing requirements to remote.egg-info/requires.txt
+writing top-level names to remote.egg-info/top_level.txt
+reading manifest file 'remote.egg-info/SOURCES.txt'
+writing manifest file 'remote.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/orsted/AGV_EEPIS/install/remote/lib/python3.12/site-packages/remote.egg-link (link to .)
+Installing radio_node script to /home/orsted/AGV_EEPIS/install/remote/lib/remote
+
+Installed /home/orsted/AGV_EEPIS/build/remote
+running symlink_data

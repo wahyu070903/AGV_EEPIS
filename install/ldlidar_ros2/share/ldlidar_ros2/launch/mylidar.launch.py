@@ -1,0 +1,1 @@
+/home/orsted/AGV_EEPIS/src/ldlidar_ros2/launch/mylidar.launch.py

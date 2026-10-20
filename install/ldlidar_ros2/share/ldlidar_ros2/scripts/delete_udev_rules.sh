@@ -1,0 +1,1 @@
+/home/orsted/AGV_EEPIS/src/ldlidar_ros2/scripts/delete_udev_rules.sh

@@ -175,7 +175,7 @@ turtlebot3_drive: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 turtlebot3_drive: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 turtlebot3_drive: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_drive: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so
-turtlebot3_drive: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
+turtlebot3_drive: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 turtlebot3_drive: /opt/ros/jazzy/lib/librmw.so
 turtlebot3_drive: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 turtlebot3_drive: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

@@ -4,7 +4,9 @@ setup.py
 launch/bringup.launch.py
 linetracker/__init__.py
 linetracker/follower.py
+linetracker/follower_seg.py
 linetracker/tracker.py
+linetracker/tracker_seg.py
 linetracker.egg-info/PKG-INFO
 linetracker.egg-info/SOURCES.txt
 linetracker.egg-info/dependency_links.txt

@@ -15,7 +15,7 @@ class Follower(Node):
 
         self.tracker_sub = self.create_subscription(
             Float32MultiArray,
-            '/tracker',
+            '/tracker_seg',
             self.tracker_callback,
             10
         )
@@ -63,7 +63,7 @@ class Follower(Node):
             self.publish_stop()
             return
 
-        self.feedback = float(msg.data[1])
+        self.feedback = float(msg.data[2])
         self.last_line_time = time.monotonic()
 
     def publish_stop(self):

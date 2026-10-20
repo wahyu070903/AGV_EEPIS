@@ -29,6 +29,7 @@ setup(
         'console_scripts': [
             'tracker = linetracker.tracker:main',
             'follower = linetracker.follower:main',
+            'tracker_seg = linetracker.tracker_seg:main',
         ],
     },
 )

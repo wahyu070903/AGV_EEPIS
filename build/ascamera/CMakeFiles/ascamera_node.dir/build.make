@@ -314,7 +314,7 @@ ascamera_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fast
 ascamera_node: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 ascamera_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 ascamera_node: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so
-ascamera_node: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
+ascamera_node: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 ascamera_node: /opt/ros/jazzy/lib/librmw.so
 ascamera_node: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 ascamera_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

@@ -1,0 +1,18 @@
+[5.197s] Invoking command in '/home/orsted/AGV_EEPIS/build/drive_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data
+[6.049s] running develop
+[6.567s] running egg_info
+[6.617s] writing drive_controller.egg-info/PKG-INFO
+[6.618s] writing dependency_links to drive_controller.egg-info/dependency_links.txt
+[6.619s] writing entry points to drive_controller.egg-info/entry_points.txt
+[6.620s] writing requirements to drive_controller.egg-info/requires.txt
+[6.621s] writing top-level names to drive_controller.egg-info/top_level.txt
+[6.723s] reading manifest file 'drive_controller.egg-info/SOURCES.txt'
+[6.723s] writing manifest file 'drive_controller.egg-info/SOURCES.txt'
+[6.777s] running build_ext
+[6.777s] Creating /home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages/drive-controller.egg-link (link to .)
+[6.778s] Installing ddmr_kinec_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[6.779s] Installing kinematics_node script to /home/orsted/AGV_EEPIS/install/drive_controller/lib/drive_controller
+[6.779s] 
+[6.779s] Installed /home/orsted/AGV_EEPIS/build/drive_controller
+[6.780s] running symlink_data
+[7.372s] Invoked command in '/home/orsted/AGV_EEPIS/build/drive_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/drive_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/drive_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/drive_controller/build --no-deps symlink_data

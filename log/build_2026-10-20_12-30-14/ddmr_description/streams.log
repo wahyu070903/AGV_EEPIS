@@ -1,0 +1,39 @@
+[5.738s] Invoking command in '/home/orsted/AGV_EEPIS/build/ddmr_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ddmr_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ddmr_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ddmr_description/build --no-deps symlink_data
+[6.534s] running develop
+[7.034s] running egg_info
+[7.034s] creating ddmr_description.egg-info
+[7.085s] writing ddmr_description.egg-info/PKG-INFO
+[7.086s] writing dependency_links to ddmr_description.egg-info/dependency_links.txt
+[7.086s] writing requirements to ddmr_description.egg-info/requires.txt
+[7.086s] writing top-level names to ddmr_description.egg-info/top_level.txt
+[7.087s] writing manifest file 'ddmr_description.egg-info/SOURCES.txt'
+[7.186s] reading manifest file 'ddmr_description.egg-info/SOURCES.txt'
+[7.191s] writing manifest file 'ddmr_description.egg-info/SOURCES.txt'
+[7.239s] running build_ext
+[7.240s] Creating /home/orsted/AGV_EEPIS/install/ddmr_description/lib/python3.12/site-packages/ddmr-description.egg-link (link to .)
+[7.241s] 
+[7.241s] Installed /home/orsted/AGV_EEPIS/build/ddmr_description
+[7.241s] running symlink_data
+[7.241s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ament_index
+[7.241s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ament_index/resource_index
+[7.242s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ament_index/resource_index/packages
+[7.242s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/resource/ddmr_description -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ament_index/resource_index/packages
+[7.242s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/package.xml -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description
+[7.242s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/launch
+[7.248s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/launch/display.launch.py -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/launch
+[7.248s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/launch/gazebo.launch.py -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/launch
+[7.249s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/urdf
+[7.249s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/urdf/ddmr.gazebo -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/urdf
+[7.249s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/urdf/ddmr.xacro -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/urdf
+[7.249s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/urdf/materials.xacro -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/urdf
+[7.249s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/urdf/ddmr.ros2control -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/urdf
+[7.249s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/meshes
+[7.249s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/meshes/camera_link.stl -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/meshes
+[7.249s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/meshes/rwheel.stl -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/meshes
+[7.250s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/meshes/base_link.stl -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/meshes
+[7.250s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/meshes/lwheel.stl -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/meshes
+[7.250s] creating /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/config
+[7.250s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/config/ros_gz_bridge_gazebo.yaml -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/config
+[7.250s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/config/display.rviz -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/config
+[7.250s] symbolically linking /home/orsted/AGV_EEPIS/build/ddmr_description/config/gazebo.rviz -> /home/orsted/AGV_EEPIS/install/ddmr_description/share/ddmr_description/config
+[7.425s] Invoked command in '/home/orsted/AGV_EEPIS/build/ddmr_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/ddmr_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/ddmr_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/ddmr_description/build --no-deps symlink_data

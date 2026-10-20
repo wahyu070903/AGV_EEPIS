@@ -1,3 +1,4 @@
 [console_scripts]
 follower = linetracker.follower:main
 tracker = linetracker.tracker:main
+tracker_seg = linetracker.tracker_seg:main

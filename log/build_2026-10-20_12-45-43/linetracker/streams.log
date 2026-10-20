@@ -1,0 +1,19 @@
+[3.110s] Invoking command in '/home/orsted/AGV_EEPIS/build/linetracker': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/linetracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/linetracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/linetracker/build --no-deps symlink_data
+[4.041s] running develop
+[4.513s] running egg_info
+[4.560s] writing linetracker.egg-info/PKG-INFO
+[4.561s] writing dependency_links to linetracker.egg-info/dependency_links.txt
+[4.562s] writing entry points to linetracker.egg-info/entry_points.txt
+[4.563s] writing requirements to linetracker.egg-info/requires.txt
+[4.564s] writing top-level names to linetracker.egg-info/top_level.txt
+[4.660s] reading manifest file 'linetracker.egg-info/SOURCES.txt'
+[4.661s] writing manifest file 'linetracker.egg-info/SOURCES.txt'
+[4.711s] running build_ext
+[4.711s] Creating /home/orsted/AGV_EEPIS/install/linetracker/lib/python3.12/site-packages/linetracker.egg-link (link to .)
+[4.714s] Installing follower script to /home/orsted/AGV_EEPIS/install/linetracker/lib/linetracker
+[4.714s] Installing tracker script to /home/orsted/AGV_EEPIS/install/linetracker/lib/linetracker
+[4.715s] Installing tracker_seg script to /home/orsted/AGV_EEPIS/install/linetracker/lib/linetracker
+[4.715s] 
+[4.715s] Installed /home/orsted/AGV_EEPIS/build/linetracker
+[4.715s] running symlink_data
+[5.137s] Invoked command in '/home/orsted/AGV_EEPIS/build/linetracker' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/orsted/AGV_EEPIS/build/linetracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orsted/AGV_EEPIS/install/linetracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orsted/AGV_EEPIS/build/linetracker/build --no-deps symlink_data
