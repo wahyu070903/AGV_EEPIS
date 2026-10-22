@@ -1,4 +1,3 @@
-
 import os
 import xacro
 from ament_index_python.packages import get_package_share_directory
@@ -30,7 +29,7 @@ def generate_launch_description():
             '-topic', 'robot_description',
             '-x', x_pose,
             '-y', y_pose,
-            '-z', '0.01',
+            '-z', '1.0',
             '-Y', '3.14159265359'
         ],
         output='screen',

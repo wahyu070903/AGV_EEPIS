@@ -9,13 +9,6 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
 
-    camera_node = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare('ascamera'), 'launch', 'hp60c.launch.py']
-            )
-        )
-    )
     canbus_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
@@ -26,7 +19,6 @@ def generate_launch_description():
 
     return LaunchDescription([
         canbus_node,
-        camera_node,
         Node(
             package='linetracker',
             executable='tracker_seg',

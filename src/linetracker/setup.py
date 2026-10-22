@@ -30,6 +30,7 @@ setup(
             'tracker = linetracker.tracker:main',
             'follower = linetracker.follower:main',
             'tracker_seg = linetracker.tracker_seg:main',
+            'follower_seg = linetracker.follower_seg:main'
         ],
     },
 )

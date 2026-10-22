@@ -16,9 +16,9 @@ class Tracker_Seg(Node):
         super().__init__('tracker_seg')
 
         # Parameters
-        self.declare_parameter('model_path', '/home/orsted/AGV_EEPIS/src/linetracker/dataset/best.pt')
+        self.declare_parameter('model_path', '/home/orsted/AGV_EEPIS/src/linetracker/dataset/best_v3.pt')
         # TODO: camera id need to fix even after restart 
-        self.declare_parameter('camera_id', 2)
+        self.declare_parameter('camera_id', 0)
         self.declare_parameter('imgsz', 640)
         self.declare_parameter('conf', 0.25)
         self.declare_parameter('test_display', True)
@@ -71,7 +71,7 @@ class Tracker_Seg(Node):
         )
         
         self.tracker_pub = self.create_publisher(
-            Float32MultiArray, '/tracker_seg'
+            Float32MultiArray, '/tracker_seg', 10
         )
 
         self.frame_count = 0
@@ -123,30 +123,36 @@ class Tracker_Seg(Node):
                         msg.data = [1.0, float(error_px), float(error_deg)]
                         self.tracker_pub.publish(msg)
 
-                        if and self.test_display:
-                            frame_copy = annotated.copy()
-                            height, width, _ = frame_copy.shape
+                    else:
+                        msg = Float32MultiArray()
+                        msg.data = [-1.0, 0.0, 0.0]
+                        self.tracker_pub.publish(msg)
 
-                            top_x = int(width / 2)
-                            top_y = int(height * 0.2)
+                    if self.test_display:
+                        frame_copy = annotated.copy()
+                        height, width, _ = frame_copy.shape
 
-                            bottom_x = int(width / 2)
-                            bottom_y = height
+                        top_x = int(width / 2)
+                        top_y = int(height * 0.2)
 
-                            cv2.line(
-                                frame_copy, 
-                                (bottom_x, bottom_y), 
-                                (top_x, top_y),        
-                                (0, 255, 0),         
-                                2                      
-                            )
+                        bottom_x = int(width / 2)
+                        bottom_y = height
 
-                            offset_bottom = int(width * 0.3) # Lebar bukaan di bawah
-                            offset_top = int(width * 0.05)
-                            
-                            cv2.line(frame_copy, (bottom_x - offset_bottom, bottom_y), (top_x - offset_top, top_y), (255, 0, 0), 2)
-                            cv2.line(frame_copy, (bottom_x + offset_bottom, bottom_y), (top_x + offset_top, top_y), (255, 0, 0), 2)
+                        cv2.line(
+                            frame_copy, 
+                            (bottom_x, bottom_y), 
+                            (top_x, top_y),        
+                            (0, 255, 0),         
+                            2                      
+                        )
 
+                        offset_bottom = int(width * 0.3) # Lebar bukaan di bawah
+                        offset_top = int(width * 0.05)
+                        
+                        cv2.line(frame_copy, (bottom_x - offset_bottom, bottom_y), (top_x - offset_top, top_y), (255, 0, 0), 2)
+                        cv2.line(frame_copy, (bottom_x + offset_bottom, bottom_y), (top_x + offset_top, top_y), (255, 0, 0), 2)
+
+                        if error_deg is not None:
                             cv2.putText(
                                 frame_copy,
                                 f'error_angle: {error_deg:.1f} deg',
@@ -175,13 +181,19 @@ class Tracker_Seg(Node):
                                 -1
                             )
 
-                            cv2.imshow('test_display', frame_copy)
-                            cv2.waitKey(1)
+                        else:
+                            cv2.putText(
+                                frame_copy,
+                                f'no line detected',
+                                (20, 20),
+                                cv2.FONT_HERSHEY_SIMPLEX,
+                                0.7,
+                                (0, 0, 255),
+                                2
+                            )
 
-                    else:
-                        msg = Float32MultiArray()
-                        msg.data = [-1.0, 0.0, 0.0]
-                        self.tracker_pub.publish(msg)
+                        cv2.imshow('test_display', frame_copy)
+                        cv2.waitKey(1)
 
             # Publish annotated image
             image_msg = self.bridge.cv2_to_imgmsg(
@@ -264,6 +276,7 @@ class Tracker_Seg(Node):
     def destroy_node(self):
         if hasattr(self, 'cap') and self.cap is not None:
             self.cap.release()
+            
         cv2.destroyAllWindows()
         super().destroy_node()
 

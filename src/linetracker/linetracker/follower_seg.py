@@ -171,7 +171,7 @@ class Follower_Seg(Node):
         # =========================
         cmd = Twist()
         cmd.linear.x = float(linear)
-        cmd.angular.z = float(omega)
+        cmd.angular.z = float(-omega)
 
         self.cmd_publisher.publish(cmd)
 
@@ -188,7 +188,7 @@ def main(args=None):
     node = None
 
     try:
-        node = Follower()
+        node = Follower_Seg()
         rclpy.spin(node)
 
     except KeyboardInterrupt:
