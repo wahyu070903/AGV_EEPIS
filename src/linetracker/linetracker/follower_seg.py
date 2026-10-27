@@ -1,4 +1,3 @@
-
 import math
 import time
 
@@ -40,11 +39,14 @@ class Follower_Seg(Node):
 
         # Initial gains; tune experimentally
         self.k_y = 0.8       # Lateral gain
-        self.k_psi = 0.8     # Heading gain
+        self.k_psi = 0.06     # Heading gain
 
-        self.base_speed = 0.14  # m/s
-        self.min_speed = 0.05   # m/s
-        self.max_turn = 0.24    # rad/s
+        self.base_speed = 0.24  # m/s
+        self.min_speed = 0.12   # m/s
+        self.max_turn = 0.08   # rad/s
+        self.lateral_deadband = 0.2
+        self.heading_deadband = 12.0
+        self.inverse_steering = True 
 
         # Reduce speed when angular correction is large
         self.speed_reduction = 0.5
@@ -120,7 +122,6 @@ class Follower_Seg(Node):
 
     def timer_callback(self):
         now = time.monotonic()
-
         # Stop when the line is missing or data is stale
         if (
             not self.is_line_exist
@@ -134,8 +135,18 @@ class Follower_Seg(Node):
         # =========================
         # 1. Convert heading to radians
         # =========================
-        e_y = self.lateral_error
-        e_psi = math.radians(self.heading_error)
+        e_y = 0
+        e_psi = 0
+
+        if -self.lateral_error < self.lateral_error < self.lateral_deadband:
+            e_y = 0
+        else:
+            e_y = self.lateral_error
+
+        if -self.heading_deadband < self.lateral_error < self.heading_deadband:
+            e_psi = math.radians(0)
+        else:
+            e_psi = math.radians(self.heading_error)
 
         # =========================
         # 2. Combined control
@@ -171,7 +182,7 @@ class Follower_Seg(Node):
         # =========================
         cmd = Twist()
         cmd.linear.x = float(linear)
-        cmd.angular.z = float(-omega)
+        cmd.angular.z = float(-omega) if self.inverse_steering else float(omega)
 
         self.cmd_publisher.publish(cmd)
 

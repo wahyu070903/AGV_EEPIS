@@ -16,9 +16,9 @@ class Tracker_Seg(Node):
         super().__init__('tracker_seg')
 
         # Parameters
-        self.declare_parameter('model_path', '/home/orsted/AGV_EEPIS/src/linetracker/dataset/best_v3.pt')
+        self.declare_parameter('model_path', '/home/orsted-793/AGV_EEPIS/src/linetracker/dataset/best_v3.pt')
         # TODO: camera id need to fix even after restart 
-        self.declare_parameter('camera_id', 0)
+        self.declare_parameter('camera_id', 2)
         self.declare_parameter('imgsz', 640)
         self.declare_parameter('conf', 0.25)
         self.declare_parameter('test_display', True)
@@ -58,6 +58,7 @@ class Tracker_Seg(Node):
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+        self.sample_ratios = [0.875, 0.8125, 0.75, 0.6875, 0.625, 0.5625]
 
         self.bridge = CvBridge()
 
@@ -101,6 +102,7 @@ class Tracker_Seg(Node):
                 imgsz=self.imgsz,
                 conf=self.conf,
                 device=self.device,
+                retina_masks=True,
                 verbose=False
             )[0]
 
@@ -108,6 +110,7 @@ class Tracker_Seg(Node):
             annotated = result.plot()
             
             # Get mask data for trajectory calculate
+            error_px, error_deg, points = None, None, None
             if result.masks is not None:
                 mask_array = result.masks.data.cpu().numpy()
                 mask_count = len(mask_array)
@@ -128,72 +131,95 @@ class Tracker_Seg(Node):
                         msg.data = [-1.0, 0.0, 0.0]
                         self.tracker_pub.publish(msg)
 
-                    if self.test_display:
-                        frame_copy = annotated.copy()
-                        height, width, _ = frame_copy.shape
+            if self.test_display:
+                frame_copy = annotated.copy()
+                height, width = frame_copy.shape[:2]
 
-                        top_x = int(width / 2)
-                        top_y = int(height * 0.2)
+                for ratio in self.sample_ratios:
+                    y = int(ratio * (height - 1))
 
-                        bottom_x = int(width / 2)
-                        bottom_y = height
+                    cv2.line(
+                        frame_copy,
+                        (0, y),
+                        (width - 1, y),
+                        (255, 255, 0),
+                        1
+                    )
 
-                        cv2.line(
-                            frame_copy, 
-                            (bottom_x, bottom_y), 
-                            (top_x, top_y),        
-                            (0, 255, 0),         
-                            2                      
-                        )
+                height, width, _ = frame_copy.shape
 
-                        offset_bottom = int(width * 0.3) # Lebar bukaan di bawah
-                        offset_top = int(width * 0.05)
-                        
-                        cv2.line(frame_copy, (bottom_x - offset_bottom, bottom_y), (top_x - offset_top, top_y), (255, 0, 0), 2)
-                        cv2.line(frame_copy, (bottom_x + offset_bottom, bottom_y), (top_x + offset_top, top_y), (255, 0, 0), 2)
+                top_x = int(width / 2)
+                top_y = int(height * 0.2)
 
-                        if error_deg is not None:
-                            cv2.putText(
-                                frame_copy,
-                                f'error_angle: {error_deg:.1f} deg',
-                                (20, 20),
-                                cv2.FONT_HERSHEY_SIMPLEX,
-                                0.7,
-                                (0, 0, 255),
-                                2
-                            )
+                bottom_x = int(width / 2)
+                bottom_y = height
 
-                            cv2.putText(
-                                frame_copy,
-                                f'error_px: {error_px:.1f} px',
-                                (20, 60),
-                                cv2.FONT_HERSHEY_SIMPLEX,
-                                0.7,
-                                (0, 0, 255),
-                                2
-                            )
+                cv2.line(
+                    frame_copy, 
+                    (bottom_x, bottom_y), 
+                    (top_x, top_y),        
+                    (0, 255, 0),         
+                    2                      
+                )
 
-                            cv2.circle(
-                                frame_copy,
-                                (int(points[-1][0]), int(points[-1][1])),
-                                6,
-                                (0, 255, 255),
-                                -1
-                            )
+                offset_bottom = int(width * 0.3) # Lebar bukaan di bawah
+                offset_top = int(width * 0.05)
+                
+                cv2.line(frame_copy, (bottom_x - offset_bottom, bottom_y), (top_x - offset_top, top_y), (255, 0, 0), 2)
+                cv2.line(frame_copy, (bottom_x + offset_bottom, bottom_y), (top_x + offset_top, top_y), (255, 0, 0), 2)
 
-                        else:
-                            cv2.putText(
-                                frame_copy,
-                                f'no line detected',
-                                (20, 20),
-                                cv2.FONT_HERSHEY_SIMPLEX,
-                                0.7,
-                                (0, 0, 255),
-                                2
-                            )
+                if error_deg is not None:
+                    cv2.putText(
+                        frame_copy,
+                        f'Points: {len(points)}',
+                        (20, 100),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        0.7,
+                        (0, 255, 255),
+                        2
+                    )
 
-                        cv2.imshow('test_display', frame_copy)
-                        cv2.waitKey(1)
+                    cv2.putText(
+                        frame_copy,
+                        f'error_angle: {error_deg:.1f} deg',
+                        (20, 20),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        0.7,
+                        (0, 0, 255),
+                        2
+                    )
+
+                    cv2.putText(
+                        frame_copy,
+                        f'error_px: {error_px:.1f} px',
+                        (20, 60),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        0.7,
+                        (0, 0, 255),
+                        2
+                    )
+
+                    cv2.circle(
+                        frame_copy,
+                        (int(points[-1][0]), int(points[-1][1])),
+                        6,
+                        (0, 255, 255),
+                        -1
+                    )
+
+                else:
+                    cv2.putText(
+                        frame_copy,
+                        f'no line detected',
+                        (20, 20),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        0.7,
+                        (0, 0, 255),
+                        2
+                    )
+
+                cv2.imshow('test_display', frame_copy)
+                cv2.waitKey(1)
 
             # Publish annotated image
             image_msg = self.bridge.cv2_to_imgmsg(
@@ -243,34 +269,28 @@ class Tracker_Seg(Node):
         height, width = mask.shape[:2]
         robot_x = width / 2.0
         
-        # TODO: Need for tunning latter
-        sample_rows = [420, 390, 360, 330, 300, 270] 
+        sample_rows = [int(r * (height - 1)) for r in self.sample_ratios]
         points = []
 
         for y in sample_rows:
-            if y >= height:
-                continue
-            
-            xs = np.where(mask[y, :] >0)[0]
+            xs = np.where(mask[y, :] > 0)[0]
 
             if len(xs) == 0:
                 continue
-            
+
             x_center = float(np.mean(xs))
-            points.append((x_center, float(y)))
+            points.append((x_center, float(y))) 
 
         if len(points) < 2:
             return None, None, points
-        
-        lookahead_x, lookahead_y = points[-1]
 
+        lookahead_x, lookahead_y = points[0]
         lateral_error_px = lookahead_x - robot_x
 
         pts = np.asarray(points, dtype=np.float64)
         a, b = np.polyfit(pts[:, 1], pts[:, 0], 1)
 
         heading_error_deg = np.degrees(np.arctan(a))
-
         return lateral_error_px, heading_error_deg, points
 
     def destroy_node(self):

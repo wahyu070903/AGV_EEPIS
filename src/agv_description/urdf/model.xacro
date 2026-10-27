@@ -174,7 +174,49 @@
   </collision>
 </link>
 
-<link name="front_lidar_link">
+<link name="left_lidar_link">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.03" length="0.012"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.03" length="0.012"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_lidar_link">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.03" length="0.012"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.03" length="0.012"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="merge_lidar_link">
   <inertial>
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
     <mass value="0.1"/>
@@ -245,9 +287,22 @@
   <limit upper="1.2" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
-<joint name="front_lidar_joint" type="fixed">
+<joint name="left_lidar_joint" type="fixed">
   <origin xyz="0.8 0.4 -0.32" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="front_lidar_link"/>
+  <child link="left_lidar_link"/>
 </joint>
+
+<joint name="right_lidar_joint" type="fixed">
+  <origin xyz="0.8 -0.4 -0.32" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_lidar_link"/>
+</joint>
+
+<joint name="merge_lidar_joint" type="fixed">
+  <origin xyz="0.0 0.0 -0.32" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="merge_lidar_link"/>
+</joint>
+
 </robot>
